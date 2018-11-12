@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import { injectGlobal } from 'styled-components';
 import logo from './logo.svg';
 import './App.css';
+
+injectGlobal`
+  * {
+    box-sizing: border-box;
+  }
+`;
 
 class App extends Component {
   render() {
