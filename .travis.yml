@@ -1,16 +1,13 @@
-
 dist: trusty
 language: node_js
 node_js: stable
 
 jobs:
   include:
-    - stage: install
-      script: yarn install
     - stage: build
       script: yarn build
-    - stage: deploy:
-        - GITHUB_TOKEN=$GITHUB_TOKEN
+    - stage: deploy
+      if: branch = master
+      env: GITHUB_TOKEN=$GITHUB_TOKEN
       script: yarn deploy-storybook:ci
-      on:
-          branch: master
+      skip-cleanup: true
