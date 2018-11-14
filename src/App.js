@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import logo from './logo.svg';
 import './App.css';
 
-injectGlobal`
+const GlobalStyles = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
@@ -13,19 +13,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <GlobalStyles />
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
       </div>
     );
