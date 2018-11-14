@@ -20,7 +20,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public -o .out",
-    "deploy-storybook": "storybook-to-ghpages -- --remote=upstream",
+    "deploy-storybook": "storybook-to-ghpages -- --remote=origin",
     "deploy-storybook:ci": "yarn build-storybook && storybook-to-ghpages -- --ci --host-token-env-variable=GITHUB_TOKEN"
   },
   "eslintConfig": {

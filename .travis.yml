@@ -8,6 +8,5 @@ jobs:
       script: yarn build
     - stage: deploy
       if: branch = master
-      env: GITHUB_TOKEN=$GITHUB_TOKEN
       script: yarn deploy-storybook:ci
       skip-cleanup: true
