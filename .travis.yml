@@ -5,15 +5,12 @@ node_js: stable
 
 jobs:
   include:
-    - stage: github pages deploy
-      node_js: stable
-      before_deploy:
-      - yarn install
-      - yarn build
-      deploy:
-        provider: pages
-        skip-cleanup: true
-        github-token: $GITHUB_TOKEN
-        keep-history: true
-        on:
+    - stage: install
+      script: yarn install
+    - stage: build
+      script: yarn build
+    - stage: deploy:
+        - GITHUB_TOKEN=$GITHUB_TOKEN
+      script: yarn deploy-storybook:ci
+      on:
           branch: master
