@@ -13,9 +13,7 @@ node {
 
         docker.image('node:10.13.0-stretch').inside('-e HOME=/tmp') {
             stage('Install') {
-                withNPM(npmrcConfig:'npmrc') {
-                    sh 'yarn install'
-                }
+                sh 'yarn install'
             }
 
             stage('Build') {
