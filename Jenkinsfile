@@ -27,7 +27,7 @@ node {
 
                 stage('Deploy') {
                     try {
-                        sh 'yarn deploy-storybook:ci'
+                        sh 'yarn deploy-storybook -- --ci'
                     } catch (err) {
                         currentBuild.result = 'UNSTABLE'
                         throw err
