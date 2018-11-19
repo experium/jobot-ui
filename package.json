@@ -16,6 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "test:ci": "CI=true yarn test",
     "build:lib": "NODE_ENV=test ./node_modules/.bin/babel src/components --out-dir ./lib",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public -o .out",
