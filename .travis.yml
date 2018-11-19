@@ -16,6 +16,6 @@ jobs:
         skip_cleanup: true
         provider: npm
         email: "webdev@experium.ru"
-        api_key: $NPM_API_KEY
+        api_key: "$NPM_API_KEY"
         on:
           branch: master

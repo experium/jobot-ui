@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/experium/jobot-ui.svg?branch=master)](https://travis-ci.com/experium/jobot-ui)
+
 [Jobot-UI Storybook](https://experium.github.io/jobot-ui/).
 
 ## Installation
