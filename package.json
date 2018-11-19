@@ -1,5 +1,5 @@
 {
-  "name": "@experium/jobot-ui",
+  "name": "experium-jobot-ui",
   "version": "1.0.0",
   "dependencies": {
     "@rebass/grid": "^6.0.0-4",
