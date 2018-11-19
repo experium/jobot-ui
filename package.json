@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:lib": "NODE_ENV=production ./node_modules/.bin/babel src/components --out-dir ./lib",
+    "build:lib": "NODE_ENV=test ./node_modules/.bin/babel src/components --out-dir ./lib",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public -o .out",
     "deploy-storybook": "storybook-to-ghpages"
@@ -32,13 +32,11 @@
   ],
   "devDependencies": {
     "@babel/cli": "^7.1.5",
-    "@babel/core": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "^4.0.4",
     "@storybook/addon-links": "^4.0.4",
     "@storybook/react": "^4.0.4",
     "@storybook/storybook-deployer": "^2.3.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.4",
-    "babel-plugin-transform-es2015-modules-umd": "^6.24.1"
+    "babel-loader": "^8.0.4"
   }
 }

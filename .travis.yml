@@ -3,17 +3,15 @@ dist: trusty
 language: node_js
 node_js: stable
 
+script: yarn test:ci
+
 jobs:
   include:
-    - stage: deploy storybook
-      if: branch = master
-      script: yarn deploy-storybook -- --ci
-      skip-cleanup: true
-     - stage: npm release
+    - stage: npm release
       node_js: stable
       before_deploy:
-        - yarn install
-        - yarn build:lib
+      - yarn install
+      - yarn build:lib
       deploy:
         skip_cleanup: true
         provider: npm
