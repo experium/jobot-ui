@@ -1,0 +1,23 @@
+
+dist: trusty
+language: node_js
+node_js: stable
+
+jobs:
+  include:
+    - stage: deploy storybook
+      if: branch = master
+      script: yarn deploy-storybook -- --ci
+      skip-cleanup: true
+     - stage: npm release
+      node_js: stable
+      before_deploy:
+        - yarn install
+        - yarn build:lib
+      deploy:
+        skip_cleanup: true
+        provider: npm
+        email: "webdev@experium.ru"
+        api_key: $NPM_API_KEY
+        on:
+          branch: master
