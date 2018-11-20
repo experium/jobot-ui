@@ -1,6 +1,13 @@
 {
-  "name": "experium-jobot-ui",
+  "name": "@experium/jobot-ui",
   "version": "1.0.0",
+  "description": "Jobot-UI components",
+  "main": "lib/index.js",
+  "homepage": "https://experium.github.io/jobot-ui",
+  "repository": "https://github.com/experium/jobot-ui",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@rebass/grid": "^6.0.0-4",
     "react": "^16.6.1",
