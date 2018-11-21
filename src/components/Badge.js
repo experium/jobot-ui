@@ -11,26 +11,53 @@ const badgeTheme = {
         background: rgba(255, 255, 255, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.3);
         &:hover{
-            background: ${props => props.link === 'true' ? '#FF4F57' : 'inherit'};
+            ${p => p.link && css`
+                background: #FF4F57;
+            `}
         }
+    `,
+    success: css`
+        background: ${th('success')};
+    `,
+    danger: css`
+        background: ${th('danger')};
+    `,
+    warning: css`
+        background: ${th('warning')};
+    `,
+    info: css`
+        background: ${th('info')};
     `,
     dark: css`
         background: ${th('dark')};
+    `,
+};
+const sizeStyle = {
+    sm: css`
+        padding: 0 .7rem;
+        font-size: ${th('fontSizeSm')};
+    `,
+    md: css`
+        padding: .2rem .9rem;
+    `,
+    lg: css`
+        padding: .3rem 1.1rem;
+        font-size: ${th('fontSizeLg')};
     `,
 };
 
 export const Badge = styled(Box)`
     cursor: ${props => props.link === 'true' ? 'pointer' : 'inherit'};
     ${p => p.variant && badgeTheme[p.variant]};
+    ${p => p.size && sizeStyle[p.size]};
 `;
 
 Badge.defaultProps = {
+    size: 'md',
     variant: 'primary',
     display: 'inline-block',
     color: '#fff',
-    fontSize: '12px',
-    ml: '10px',
-    p: '5px 10px',
+    mr: '10px',
     borderRadius: '4px',
     textDecoration: 'none'
 };

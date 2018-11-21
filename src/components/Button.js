@@ -35,7 +35,7 @@ const sizeStyleIcon = {
 export default styled(Button)`
     ${p => p.size && sizeStyleIcon[p.size]};
     ${p => p.circle && css`
-        border: ${props => props.variant === 'secondary' ? '1px solid #ddd' : 'inherit'};
+        border: ${props => props.variant === 'secondary' ? '1px solid #ddd' : 'initial'};
         border-radius: 50%;
         padding: ${th('inputBtnPaddingY')};
         width: calc(${th('inputBtnPaddingY')} + ${th('inputBtnPaddingY')} + ${th('btnLineHeight')}rem);

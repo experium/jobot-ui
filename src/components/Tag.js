@@ -1,10 +1,12 @@
-import { styled ,Box } from "@smooth-ui/core-sc";
+import { styled , Box, css } from "@smooth-ui/core-sc";
 
 export const Tag = styled(Box)`
     cursor: ${props => props.link === 'true' ? 'pointer' : 'inherit'};
     &:hover{
-        color: ${props => props.link === 'true' ? '#FF4F57' : 'inherit'};
-    }
+            ${p => p.link && css`
+                color: #FF4F57;
+            `}
+        }
     svg{
         margin-right: 5px;
         width: 16px;

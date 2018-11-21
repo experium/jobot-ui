@@ -1,9 +1,9 @@
-import { styled } from '@smooth-ui/core-sc';
+import { styled, Box } from '@smooth-ui/core-sc';
 
-export const FormGroup = styled.div`
+export const FormGroup = styled(Box)`
     position: relative;
 `;
-export const FormGroupIcon = styled.i`
+export const FormGroupIcon = styled(Box)`
     position: absolute;
     top: 50%;
     margin-top: -12px;
