@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { createGlobalStyle } from 'styled-components';
+import { ThemeProvider } from '@smooth-ui/core-sc'
+import theme from './theme'
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,12 +14,14 @@ const GlobalStyles = createGlobalStyle`
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <GlobalStyles />
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-      </div>
+        <ThemeProvider theme={theme}>
+          <div className="App">
+            <GlobalStyles />
+            <header className="App-header">
+              <img src={logo} className="App-logo" alt="logo" />
+            </header>
+          </div>
+        </ThemeProvider>
     );
   }
 }

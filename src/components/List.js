@@ -1,12 +1,7 @@
-import { Flex } from '@rebass/grid'
-import styled from 'styled-components';
+import { styled, Row } from '@smooth-ui/core-sc'
 import { Badge } from './Badge';
 
-export const Item = styled(Flex)`
-    width: 100%;
-    border: 1px solid #f1f1f1;
-    padding: 15px;
-    margin-bottom: 15px;
+export const ItemList = styled(Row)`
     ${Badge}{
         position: relative;
         top: -3px;
@@ -18,3 +13,9 @@ export const Item = styled(Flex)`
         height: 1px;
     }
 `;
+
+ItemList.defaultProps = {
+    border: '1px solid #f1f1f1',
+    p: '15px',
+    mb: '15px'
+};

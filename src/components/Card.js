@@ -1,9 +1,7 @@
-import { Box } from '@rebass/grid'
-import styled from 'styled-components';
-import { Button } from './Button';
+import { styled, Box } from '@smooth-ui/core-sc'
+import Button from './Button';
 
 export const Card = styled(Box)`
-    border: 1px solid #f1f1f1;
     &:hover{
         box-shadow: 0 13px 21px rgba(0, 0, 0, 0.13);
     }
@@ -14,10 +12,12 @@ export const Card = styled(Box)`
         height: 1px;
     }
 `;
+
+Card.defaultProps = {
+    border: '1px solid #f1f1f1',
+};
+
 export const CardBtn = styled(Box)`
-    position: relative;
-    text-align: right;
-    padding-right: 15px;
     &:before{
         content: '';
         background: #e5e5e5;
@@ -38,3 +38,8 @@ export const CardBtn = styled(Box)`
     }
 `;
 
+CardBtn.defaultProps = {
+    position: 'relative',
+    textAlign: 'right',
+    pr: '15px'
+};

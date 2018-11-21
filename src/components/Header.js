@@ -1,14 +1,9 @@
-import { Flex, Box } from '@rebass/grid'
-import styled from 'styled-components';
+import { styled, Box } from '@smooth-ui/core-sc'
 import bgHeader from '../assets/img/bg-header.jpg';
 
 export const Header = styled(Box)`
     background: url(${bgHeader}) center center no-repeat;
     background-size: cover;
-    color: #fff;
-    position: relative;
-    width: 100%;
-    padding: 200px 0;
     &:before {
         content: "";
         top: 0;
@@ -19,14 +14,10 @@ export const Header = styled(Box)`
         background-color: rgba(42, 46, 50, 0.8);
         position: absolute;
     }
-    h1{
-        font-weight: 900;
-        font-size: 50px;
-        letter-spacing: 1px;
-        line-height: 30px;
-    }
-`;
-export const HeaderToolbar = styled(Flex)`
-    background: rgba(255, 255, 255, 0.1);
 `;
 
+Header.defaultProps = {
+    position: 'relative',
+    py: '150px',
+    backgroundSize: 'cover'
+};

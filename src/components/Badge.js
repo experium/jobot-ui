@@ -1,34 +1,36 @@
-import styled from 'styled-components';
+import { styled, Box, css, th } from '@smooth-ui/core-sc';
 
 const badgeTheme = {
-    primary: {
-        background: '#2c3e50',
-    },
-    secondary: {
-        background: '#7f8c8d',
-    },
-    light: {
-        background: 'rgba(255, 255, 255, 0.1)',
-    },
-    pink: {
-        background: '#FF4F57',
-    },
+    primary: css`
+        background: ${th('primary')};
+    `,
+    secondary: css`
+        background: #7f8c8d;
+    `,
+    light: css`
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        &:hover{
+            background: ${props => props.link === 'true' ? '#FF4F57' : 'inherit'};
+        }
+    `,
+    dark: css`
+        background: ${th('dark')};
+    `,
 };
 
-export const Badge = styled.span`
-    font-size: 12px;
-    color: #fff;
-    border-radius: 4px;
-    margin-left: 10px;
-    padding: 7px 18px;
-    font-weight: 700;
-    border: ${props => props.theme === 'light' ? '1px solid rgba(255, 255, 255, 0.3)' : null};
-    background: ${props => badgeTheme[props.theme].background};
+export const Badge = styled(Box)`
+    cursor: ${props => props.link === 'true' ? 'pointer' : 'inherit'};
+    ${p => p.variant && badgeTheme[p.variant]};
 `;
 
-export const BadgeLink = styled(Badge)`
-    cursor: pointer;
-    &:hover{
-        background: ${props => props.theme === 'light' ? '#FF4F57' : null};
-    }
-`;
+Badge.defaultProps = {
+    variant: 'primary',
+    display: 'inline-block',
+    color: '#fff',
+    fontSize: '12px',
+    ml: '10px',
+    p: '5px 10px',
+    borderRadius: '4px',
+    textDecoration: 'none'
+};

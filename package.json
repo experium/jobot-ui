@@ -9,12 +9,12 @@
     "access": "public"
   },
   "dependencies": {
-    "@rebass/grid": "^6.0.0-4",
+    "@smooth-ui/core-sc": "^7.0.5",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-scripts": "2.1.1",
     "react-select": "^2.1.1",
-    "styled-components": "^4.0.3",
+    "styled-components": "^4.1.1",
     "styled-icons": "^3.6.0"
   },
   "scripts": {
