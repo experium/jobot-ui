@@ -1,8 +1,7 @@
 import { styled, Box } from '@smooth-ui/core-sc'
-import bgHeader from '../assets/img/bg-header.jpg';
 
 export const Header = styled(Box)`
-    background: url(${bgHeader}) center center no-repeat;
+    background: ${props => `url("${props.image}")`} center center no-repeat;
     background-size: cover;
     &:before {
         content: "";

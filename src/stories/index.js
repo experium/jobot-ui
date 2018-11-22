@@ -30,6 +30,7 @@ import imgItem3 from '../assets/img/img3.jpg';
 import imgItem4 from '../assets/img/img4.jpg';
 import imgItem5 from '../assets/img/img5.jpg';
 import imgBg from '../assets/img/bg2.jpg';
+import bgHeader from '../assets/img/bg-header.jpg';
 
 const Red = styled.span`
     color: red;
@@ -66,8 +67,9 @@ import { FormGroup, FormGroupIcon } from `}<Red>'../components/Form';</Red>{`
 import { Badge } from `}<Red>'../components/Badge';</Red>{`
 import Button from `}<Red>'../components/Button';</Red>{`
 import Input from `}<Red>'../components/Input';</Red>{`
-import Select from `}<Red>'../components/Select';</Red><br/>{`
-<Header>
+import Select from `}<Red>'../components/Select';</Red>{`
+import bg from `}<Red>'../assets/img/bg-header.jpg';</Red><br/>{`
+<Header `}<b>{`image={bg}`}</b>{`>
     <Container>
         <Typography `}<b>variant="h1" color="#fff" fontSize={50}</b>{`>Работа найдется для каждого</Typography>
         <Typography `}<b>variant="h2" color="#ff4f57" fontSize={30}</b>{`>Здесь находят работу и подбирают персонал</Typography>
@@ -113,7 +115,7 @@ import Select from `}<Red>'../components/Select';</Red><br/>{`
 </Header>
 `}</pre>
     </code>
-    <Header>
+    <Header image={bgHeader}>
         <Container>
             <Typography variant="h1" color="#fff" fontSize={50}>Работа найдется для каждого</Typography>
             <Typography variant="h2" color="#ff4f57" fontSize={30}>Здесь находят работу и подбирают персонал</Typography>
@@ -398,17 +400,41 @@ import Select from `}<Red>'../components/Select';</Red><br/>{`
     </Container>
 </Box>)
 
-.add('Terminal list vacancy', () => <Box textAlign="center">
-    <Typography variant="h1" fontSize="4rem" my={30}>Вакансии</Typography>
-    <Button borderRadius="1rem" p={30} display="block" my={30} mx={50} backgroundColor='#FF4F57' as="a">
-        <Typography variant="h1" color='#fff' size={50}>Продавец консультант</Typography>
-    </Button>
-    <Button borderRadius="1rem" p={30} display="block" my={30} mx={50} backgroundColor='#FF4F57' as="a">
-        <Typography variant="h1" color='#fff' size={50}>Оператор call-центра</Typography>
-    </Button>
-    <Button borderRadius="1rem" p={30} display="block" my={30} mx={50} backgroundColor='#FF4F57' as="a">
-        <Typography variant="h1" color='#fff' size={50}>Водитель</Typography>
-    </Button>
+.add('Terminal list vacancy', () => <Box>
+    <Typography variant="h1">Examples Terminal list vacancy</Typography>
+    <Alert variant="success">
+        <Typography variant="h5" mt={20}>Assembled from components: <br/><b>Box, Typography, Button</b></Typography>
+    </Alert>
+    <Typography variant="h3" mt={20}>How to Use</Typography>
+    <code>
+<pre>{`import { Box, Typography } from `}<Red>'@smooth-ui/core-sc';</Red>{`
+import Button from `}<Red>'../components/Button';</Red><br/>{`
+    <Box `}<b>textAlign="center"</b>{`>
+        <Typography `}<b>variant="h1" fontSize="4rem" my="2rem"</b>{`>Вакансии</Typography>
+        <Button `}<b>borderRadius="1rem" p="2rem" display="block" my="2rem" mx="3rem" backgroundColor='#FF4F57' as="a"</b>{`>
+            <Typography `}<b>variant="h1" color='#fff' size="3rem"</b>{`>Продавец консультант</Typography>
+        </Button>
+        <Button `}<b>borderRadius="1rem" p="2rem" display="block" my="2rem" mx="3rem" backgroundColor='#FF4F57' as="a"</b>{`>
+            <Typography `}<b>variant="h1" color='#fff' size="3rem"</b>{`>Оператор call-центра</Typography>
+        </Button>
+        <Button `}<b>borderRadius="1rem" p="2rem" display="block" my="2rem" mx="3rem" backgroundColor='#FF4F57' as="a"</b>{`>
+            <Typography `}<b>variant="h1" color='#fff' size="3rem"</b>{`>Водитель</Typography>
+        </Button>
+    </Box>
+`}</pre>
+    </code>
+    <Box textAlign="center">
+        <Typography variant="h1" fontSize="4rem" my="2rem">Вакансии</Typography>
+        <Button borderRadius="1rem" p="2rem" display="block" my="2rem" mx="3rem" backgroundColor='#FF4F57' as="a">
+            <Typography variant="h1" color='#fff' size="3rem">Продавец консультант</Typography>
+        </Button>
+        <Button borderRadius="1rem" p="2rem" display="block" my="2rem" mx="3rem" backgroundColor='#FF4F57' as="a">
+            <Typography variant="h1" color='#fff' size="3rem">Оператор call-центра</Typography>
+        </Button>
+        <Button borderRadius="1rem" p="2rem" display="block" my="2rem" mx="3rem" backgroundColor='#FF4F57' as="a">
+            <Typography variant="h1" color='#fff' size="3rem">Водитель</Typography>
+        </Button>
+    </Box>
 </Box>)
 
 .add('Terminal card vacancy', () => <Box textAlign="center">
