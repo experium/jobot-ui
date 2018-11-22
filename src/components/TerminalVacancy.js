@@ -16,7 +16,7 @@ TerminalVacancyButton.defaultProps = {
 export const TerminalVacancyTitle = styled(Typography)``;
 
 TerminalVacancyTitle.defaultProps = {
-    variant: 'h1',
+    variant: 'display-1',
     mx: '3rem',
-    fontSize: '4rem'
+    my: '2rem',
 };
