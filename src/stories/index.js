@@ -3,6 +3,10 @@ import '../index.css';
 
 import { storiesOf } from '@storybook/react';
 
+
+/*Add*/
+import TerminalListVacancy from './add/terminal_list_vavancy'
+
 /*Components*/
 import { styled, Grid, Row, Col, Typography, Box, Alert } from '@smooth-ui/core-sc'
 import Button from '../components/Button';
@@ -35,8 +39,8 @@ import bgHeader from '../assets/img/bg-header.jpg';
 const Red = styled.span`
     color: red;
 `;
-
-storiesOf('Library', module).add('smooth-ui', () => <Box my={30} textAlign="center">
+storiesOf('Library', module)
+.add('smooth-ui', () => <Box my={30} textAlign="center">
     <Typography variant="h1">smooth-ui</Typography>
     <img width={300} src="https://raw.githubusercontent.com/smooth-code/smooth-ui/master/resources/smooth-ui-logo.png" alt=""/>
     <p>Smooth UI is a style system / UI library for React. It works with Styled Components 💅 or Emotion 👩‍🎤.</p>
@@ -400,42 +404,7 @@ import bg from `}<Red>'../assets/img/bg-header.jpg';</Red><br/>{`
     </Container>
 </Box>)
 
-.add('Terminal list vacancy', () => <Box>
-    <Typography variant="h1">Examples Terminal list vacancy</Typography>
-    <Alert variant="success">
-        <Typography variant="h5" mt={20}>Assembled from components: <br/><b>Box, Typography, Button</b></Typography>
-    </Alert>
-    <Typography variant="h3" mt={20}>How to Use</Typography>
-    <code>
-<pre>{`import { Box, Typography } from `}<Red>'@smooth-ui/core-sc';</Red>{`
-import Button from `}<Red>'../components/Button';</Red><br/>{`
-    <Box `}<b>textAlign="center"</b>{`>
-        <Typography `}<b>variant="h1" fontSize="4rem" my="2rem"</b>{`>Вакансии</Typography>
-        <Button `}<b>borderRadius="1rem" p="2rem" display="block" my="2rem" mx="3rem" backgroundColor='#FF4F57' as="a"</b>{`>
-            <Typography `}<b>variant="h1" color='#fff' size="3rem"</b>{`>Продавец консультант</Typography>
-        </Button>
-        <Button `}<b>borderRadius="1rem" p="2rem" display="block" my="2rem" mx="3rem" backgroundColor='#FF4F57' as="a"</b>{`>
-            <Typography `}<b>variant="h1" color='#fff' size="3rem"</b>{`>Оператор call-центра</Typography>
-        </Button>
-        <Button `}<b>borderRadius="1rem" p="2rem" display="block" my="2rem" mx="3rem" backgroundColor='#FF4F57' as="a"</b>{`>
-            <Typography `}<b>variant="h1" color='#fff' size="3rem"</b>{`>Водитель</Typography>
-        </Button>
-    </Box>
-`}</pre>
-    </code>
-    <Box textAlign="center">
-        <Typography variant="h1" fontSize="4rem" my="2rem">Вакансии</Typography>
-        <Button borderRadius="1rem" p="2rem" display="block" my="2rem" mx="3rem" backgroundColor='#FF4F57' as="a">
-            <Typography variant="h1" color='#fff' size="3rem">Продавец консультант</Typography>
-        </Button>
-        <Button borderRadius="1rem" p="2rem" display="block" my="2rem" mx="3rem" backgroundColor='#FF4F57' as="a">
-            <Typography variant="h1" color='#fff' size="3rem">Оператор call-центра</Typography>
-        </Button>
-        <Button borderRadius="1rem" p="2rem" display="block" my="2rem" mx="3rem" backgroundColor='#FF4F57' as="a">
-            <Typography variant="h1" color='#fff' size="3rem">Водитель</Typography>
-        </Button>
-    </Box>
-</Box>)
+.add('Terminal list vacancy', () => <TerminalListVacancy />)
 
 .add('Terminal card vacancy', () => <Box textAlign="center">
     <Typography variant="h1" fontSize="4rem" my={30}>Вакансии</Typography>
