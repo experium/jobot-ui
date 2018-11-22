@@ -11,8 +11,7 @@ import Select from '../components/Select';
 import { FormGroup, FormGroupIcon } from '../components/Form';
 import { Badge } from '../components/Badge';
 import { Tag } from '../components/Tag';
-import { Container, BoxImage } from '../components/Layout';
-import { Header } from '../components/Header';
+import { Header, Container, BoxImage } from '../components/Layout';
 import { ItemList } from '../components/List';
 import { Card, CardBtn } from '../components/Card';
 import { ListUl, LinkWhite } from '../components/Typography';
@@ -54,36 +53,50 @@ storiesOf('Library', module).add('smooth-ui', () => <Box my={30} textAlign="cent
 </Box>);
 
 storiesOf('Examples', module)
-.add('Header', () => <Header>
+.add('Header', () => <Box>
+    <Typography variant="h1">Examples Header</Typography>
+    <Alert variant="success">
+        <Typography variant="h5" mt={20}>Assembled from components: <br/><b>Grid, Row, Col, Box, Typography, Header, Container, FormGroup, FormGroupIcon, Badge, Button, Input, Select</b></Typography>
+    </Alert>
+    <Typography variant="h3" mt={20}>How to Use</Typography>
+    <code>
+<pre>{`import { Grid, Row, Col, Box, Typography } from `}<Red>'@smooth-ui/core-sc';</Red>{`
+import { Header, Container } from `}<Red>'../components/Layout';</Red>{`
+import { FormGroup, FormGroupIcon } from `}<Red>'../components/Form';</Red>{`
+import { Badge } from `}<Red>'../components/Badge';</Red>{`
+import Button from `}<Red>'../components/Button';</Red>{`
+import Input from `}<Red>'../components/Input';</Red>{`
+import Select from `}<Red>'../components/Select';</Red><br/>{`
+<Header>
     <Container>
-        <Typography variant="h1" color="#fff" fontSize={50}>Работа найдется для каждого</Typography>
-        <Typography variant="h2" color="#ff4f57" fontSize={30}>Здесь находят работу и подбирают персонал</Typography>
-        <Box backgroundColor="rgba(255, 255, 255, 0.1)" p={10} my={30}>
-            <Grid gutter={0}>
+        <Typography `}<b>variant="h1" color="#fff" fontSize={50}</b>{`>Работа найдется для каждого</Typography>
+        <Typography `}<b>variant="h2" color="#ff4f57" fontSize={30}</b>{`>Здесь находят работу и подбирают персонал</Typography>
+        <Box `}<b>backgroundColor="rgba(255, 255, 255, 0.1)" p={10} my={30}</b>{`>
+            <Grid `}<b>gutter={0}</b>{`>
                 <Row>
-                    <Col xs={4}>
+                    <Col `}<b>xs={4}</b>{`>
                         <FormGroup><FormGroupIcon><Work /></FormGroupIcon><Input size="lg" icon="true" control placeholder="Название вакансии / Компания" /></FormGroup>
                     </Col>
-                    <Col xs={4}>
+                    <Col `}<b>xs={4}</b>{`>
                         <FormGroup>
                             <FormGroupIcon><LocationOn /></FormGroupIcon>
-                            <Input size="lg" icon="true" control placeholder="Название вакансии / Компания" />
+                            <Input `}<b>size="lg" icon="true" control placeholder="Название вакансии / Компания"</b>{` />
                         </FormGroup>
                     </Col>
-                    <Col xs={4}>
+                    <Col `}<b>xs={4}</b>{`>
                         <Row>
-                            <Col xs="auto" flex="auto">
+                            <Col `}<b>xs="auto" flex="auto"</b>{`>
                                 <FormGroup>
                                     <FormGroupIcon><Work /></FormGroupIcon>
-                                    <Select size="lg" control icon="true">
+                                    <Select `}<b>size="lg" control icon="true"</b>{`>
                                         <option>Все категории</option>
                                         <option>Control</option>
                                         <option>Other</option>
                                     </Select>
                                 </FormGroup>
                             </Col>
-                            <Col xs="auto" flex="none">
-                                <Button size="lg"><Search size="22" title="Search" /></Button>
+                            <Col `}<b>xs="auto" flex="none"</b>{`>
+                                <Button `}<b>size="lg"</b>{`><Search /></Button>
                             </Col>
                         </Row>
                     </Col>
@@ -91,13 +104,60 @@ storiesOf('Examples', module)
             </Grid>
         </Box>
         <Box>
-            <Typography color="#fff" as="b">Популярные запросы:</Typography>
-            <Badge variant='light' link="true" as="a">Менеджер</Badge>
-            <Badge variant='light' link="true" as="a">Дизайнер</Badge>
-            <Badge variant='light' link="true" as="a">Программист</Badge>
+            <Typography `}<b>color="#fff" as="b"</b>{`>Популярные запросы: </Typography>
+            <Badge `}<b>variant='light' link="true" as="a"</b>{`>Менеджер</Badge>
+            <Badge `}<b>variant='light' link="true" as="a"</b>{`>Дизайнер</Badge>
+            <Badge `}<b>variant='light' link="true" as="a"</b>{`>Программист</Badge>
         </Box>
     </Container>
-</Header>)
+</Header>
+`}</pre>
+    </code>
+    <Header>
+        <Container>
+            <Typography variant="h1" color="#fff" fontSize={50}>Работа найдется для каждого</Typography>
+            <Typography variant="h2" color="#ff4f57" fontSize={30}>Здесь находят работу и подбирают персонал</Typography>
+            <Box backgroundColor="rgba(255, 255, 255, 0.1)" p={10} my={30}>
+                <Grid gutter={0}>
+                    <Row>
+                        <Col xs={4}>
+                            <FormGroup><FormGroupIcon><Work /></FormGroupIcon><Input size="lg" icon="true" control placeholder="Название вакансии / Компания" /></FormGroup>
+                        </Col>
+                        <Col xs={4}>
+                            <FormGroup>
+                                <FormGroupIcon><LocationOn /></FormGroupIcon>
+                                <Input size="lg" icon="true" control placeholder="Название вакансии / Компания" />
+                            </FormGroup>
+                        </Col>
+                        <Col xs={4}>
+                            <Row>
+                                <Col xs="auto" flex="auto">
+                                    <FormGroup>
+                                        <FormGroupIcon><Work /></FormGroupIcon>
+                                        <Select size="lg" control icon="true">
+                                            <option>Все категории</option>
+                                            <option>Control</option>
+                                            <option>Other</option>
+                                        </Select>
+                                    </FormGroup>
+                                </Col>
+                                <Col xs="auto" flex="none">
+                                    <Button size="lg"><Search title="Search" /></Button>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Grid>
+            </Box>
+            <Box>
+                <Typography color="#fff" as="b">Популярные запросы: </Typography>
+                <Badge variant='light' link="true" as="a">Менеджер</Badge>
+                <Badge variant='light' link="true" as="a">Дизайнер</Badge>
+                <Badge variant='light' link="true" as="a">Программист</Badge>
+            </Box>
+        </Container>
+    </Header>
+</Box>)
 .add('List Vacancy', () => <Container>
     <Typography variant="h1" mb={30}>Вакансии дня</Typography>
     <ItemList>
