@@ -7,7 +7,7 @@ const LayoutComponents = () => ( <Box p={10}>
         <Typography variant="h1">Layout components</Typography>
         <Typography variant="h3" mt={20}>How to Use</Typography>
         <code>
-<pre>{`import { BoxImage, Container } from `}<Box color="red" display="inline-block">'../../components';</Box>{`
+<pre>{`import { BoxImage, Container } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
 `}</pre>
         </code>
         <Typography variant="h3" mb={20} mt={30}>Box Image</Typography>

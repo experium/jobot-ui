@@ -11,9 +11,7 @@ const Footer = () => ( <Box>
         </Alert>
         <Typography variant="h3" mt={20}>How to Use</Typography>
         <code>
-<pre>{`import { Row, Col, Box, Typography } from `}<Box color="red" display="inline-block">'@smooth-ui/core-sc';</Box>{`
-import { Container } from `}<Box color="red" display="inline-block">'../components/Layout';</Box>{`
-import { ListUl, LinkWhite } from `}<Box color="red" display="inline-block">'../components/Typography';</Box>{`
+<pre>{`import { Row, Col, Box, Typography, Container, ListUl, LinkWhite } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
 import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="inline-block">'styled-icons/fa-brands';</Box><br/>{`
 <Box `}<b>backgroundColor="#202020" mt={`{60}`}</b>{`>
     <Container `}<b>py={`{60}`}</b>{`>

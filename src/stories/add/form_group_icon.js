@@ -11,8 +11,7 @@ const FormGroupIconStory = () => ( <Box p={10}>
             <Typography variant="h3" mt={20}>How to Use</Typography>
             <Alert variant="info">(FormGroup, FormGroupIcon) support <a href="https://smooth-ui.smooth-code.com/docs-components-box#api">API component <b>Box</b> smooth-ui</a><br/></Alert>
             <code>
-<pre>{`import { FormGroup, FormGroupIcon } from `}<Box color="red" display="inline-block">'../components/Form';</Box>{`
-import Input from `}<Box color="red" display="inline-block">'../components/Input';</Box>{`
+<pre>{`import { FormGroup, FormGroupIcon, Input } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
 import { LocationOn } from `}<Box color="red" display="inline-block">'styled-icons/material';</Box>{`
 `}</pre>
             </code>
@@ -41,7 +40,7 @@ import { LocationOn } from `}<Box color="red" display="inline-block">'styled-ico
             </Select>
         </FormGroup>
         <code>
-<pre>{`import Select from `}<Box color="red" display="inline-block">'../components/Select';</Box><br/>{`
+<pre>{`import { Select } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box><br/>{`
 <FormGroup>
     <FormGroupIcon><LocationOn /></FormGroupIcon>
     <Select `}<b>icon="true"</b>{`>

@@ -14,9 +14,7 @@ const CardVacancy = () => ( <Box>
         </Alert>
         <Typography variant="h3" mt={20}>How to Use</Typography>
         <code>
-<pre>{`import { Row, Col, Box, Typography } from `}<Box color="red" display="inline-block">'@smooth-ui/core-sc';</Box>{`
-import { Container } from `}<Box color="red" display="inline-block">'../components/Layout';</Box>{`
-import { Card, CardBtn } from `}<Box color="red" display="inline-block">'../components/Card';</Box>{`
+<pre>{`import { Row, Col, Box, Typography, Container, Card, CardBtn } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
 import imgItem3 from `}<Box color="red" display="inline-block">'../../assets/img/img3.jpg';</Box>{`
 import imgItem4 from `}<Box color="red" display="inline-block">'../../assets/img/img4.jpg';</Box>{`
 import imgItem5 from `}<Box color="red" display="inline-block">'../../assets/img/img5.jpg';</Box>{`

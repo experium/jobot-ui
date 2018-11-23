@@ -11,13 +11,12 @@ const BoxColorBg = () => (
         </Alert>
         <Alert variant="info">
             Support <a href="https://smooth-ui.smooth-code.com/docs-components-box#api">API component <b>Box</b> smooth-ui</a><br/>
-            Support <a href="https://smooth-ui.smooth-code.com/docs-components-typography#api">API component <b>Typography</b> smooth-ui</a> for <b>TerminalVacancyTitle</b><br/>
-            Support <a href="https://smooth-ui.smooth-code.com/docs-components-button#api">API component <b>Button</b> smooth-ui</a> for <b>TerminalVacancyButton</b>
+            Support <a href="https://smooth-ui.smooth-code.com/docs-components-typography#api">API component <b>Typography</b> smooth-ui</a> for <b>TerminalTitle</b><br/>
+            Support <a href="https://smooth-ui.smooth-code.com/docs-components-button#api">API component <b>Button</b> smooth-ui</a> for <b>TerminalButton</b>
         </Alert>
         <Typography variant="h3" mt={20}>How to Use</Typography>
         <code>
-<pre>{`import { `}<b>Box, </b>{` } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
-import { `}<b>Container</b>{` } from `}<Box color="red" display="inline-block">'../../components/Layout';</Box><br/>{`
+<pre>{`import { `}<b>Box, Container</b>{` } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box><br/>{`
 <Box `}<b>backgroundColor='#FF4F57'</b>{`>
     <Container `}<b>py={`{60}`} textAlign="center"</b>{`>
         <Typography `}<b>variant="h1" color="#fff"</b>{`>Ищу работу</Typography>

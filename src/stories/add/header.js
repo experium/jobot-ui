@@ -17,13 +17,8 @@ const Header = () => (
         </Alert>
         <Typography variant="h3" mt={20}>How to Use</Typography>
         <code>
-<pre>{`import { Grid, Row, Col, Box, Typography } from `}<Box color="red" display="inline-block">'@smooth-ui/core-sc';</Box>{`
-import { BoxImage, Container } from `}<Box color="red" display="inline-block">'../components/Layout';</Box>{`
-import { FormGroup, FormGroupIcon } from `}<Box color="red" display="inline-block">'../components/Form';</Box>{`
-import { Badge } from `}<Box color="red" display="inline-block">'../components/Badge';</Box>{`
-import Button from `}<Box color="red" display="inline-block">'../components/Button';</Box>{`
-import Input from `}<Box color="red" display="inline-block">'../components/Input';</Box>{`
-import Select from `}<Box color="red" display="inline-block">'../components/Select';</Box>{`
+<pre>{`import { Grid, Row, Col, Box, Typography, BoxImage, Container, FormGroup, FormGroupIcon, Badge, Button, Input, Select } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
+import { LocationOn, Work } from `}<Box color="red" display="inline-block">'styled-icons/material';</Box>{`
 import bg from `}<Box color="red" display="inline-block">'../assets/img/bg-header.jpg';</Box><br/>{`
 <BoxImage `}<b>{`image={bg}`} mb={`{30}`} py={`{150}`}</b>{`>
     <Container>

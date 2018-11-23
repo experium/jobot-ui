@@ -14,9 +14,7 @@ const ListVacancy = () => ( <Box>
         </Alert>
         <Typography variant="h3" mt={20}>How to Use</Typography>
         <code>
-<pre>{`import { Row, Col, Box, Typography } from `}<Box color="red" display="inline-block">'@smooth-ui/core-sc';</Box>{`
-import { Container } from `}<Box color="red" display="inline-block">'../components/Layout';</Box>{`
-import { ItemList } from `}<Box color="red" display="inline-block">'../components/List';</Box>{`
+<pre>{`import { Row, Col, Box, Typography, Container, ItemList } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
 import imgItem1 from `}<Box color="red" display="inline-block">'../../assets/img/item.jpg';</Box>{`
 import imgItem2 from `}<Box color="red" display="inline-block">'../../assets/img/ite2.jpg';</Box>{`
 import { AccessTime, Brush, Computer, LocationOn } from `}<Box color="red" display="inline-block">'styled-icons/material';</Box>{`

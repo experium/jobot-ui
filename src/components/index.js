@@ -8,4 +8,5 @@ export * from './List';
 export * from './Select';
 export * from './Tag';
 export * from './Typography';
-export * from './TerminalVacancy';
+export * from './TerminalTitle';
+export * from './TerminalButton';

@@ -8,7 +8,7 @@ const BadgeStory = () => ( <Box p={10}>
             <Typography variant="h3" mt={20}>How to Use</Typography>
             <Alert variant="info">Support <a href="https://smooth-ui.smooth-code.com/docs-components-box#api">API component <b>Box</b> smooth-ui</a></Alert>
             <code>
-<pre>{`import { Badge } from `}<Box color="red" display="inline-block">'../components/Badge';</Box> <br/>{`
+<pre>{`import { Badge } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box> <br/>{`
 <Badge>Badge (primary)</Badge>
 `}</pre>
             </code>

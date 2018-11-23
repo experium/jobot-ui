@@ -18,7 +18,8 @@ import ButtonStory from './add/button';
 import BadgeStory from './add/badge';
 import TagStory from './add/tag';
 import FormGroupIconStory from './add/form_group_icon';
-import TerminalComponents from "./add/terminal_components";
+import TerminalComponentTitle from "./add/terminal_title";
+import TerminalComponentButton from "./add/terminal_button";
 import LayoutComponents from "./add/layout";
 
 /*Components*/
@@ -55,8 +56,6 @@ storiesOf('Examples', module)
 .add('Box image bg', () => <BoxImageBg />)
 .add('Box Color bg', () => <BoxColorBg />)
 .add('Footer', () => <Footer />)
-.add('Terminal list vacancy', () => <TerminalListVacancy />)
-.add('Terminal card vacancy', () => <TerminalCardVacancy />)
 .add('Main page', () => <MainPage />);
 
 storiesOf('Components', module)
@@ -64,5 +63,12 @@ storiesOf('Components', module)
 .add('Badge', () => <BadgeStory />)
 .add('Tag', () => <TagStory />)
 .add('Form Group Icon', () => <FormGroupIconStory />)
-.add('Layout', () => <LayoutComponents />)
-.add('Terminal', () => <TerminalComponents />);
+.add('Layout', () => <LayoutComponents />);
+
+storiesOf('Terminal/Examples', module)
+.add('List vacancy', () => <TerminalListVacancy />)
+.add('Card vacancy', () => <TerminalCardVacancy />);
+
+storiesOf('Terminal/Components', module)
+.add('Title', () => <TerminalComponentTitle />)
+.add('Button', () => <TerminalComponentButton />);

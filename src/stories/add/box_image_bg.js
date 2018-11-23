@@ -12,14 +12,12 @@ const BoxImageBg = () => (
         </Alert>
         <Alert variant="info">
             Support <a href="https://smooth-ui.smooth-code.com/docs-components-box#api">API component <b>Box</b> smooth-ui</a><br/>
-            Support <a href="https://smooth-ui.smooth-code.com/docs-components-typography#api">API component <b>Typography</b> smooth-ui</a> for <b>TerminalVacancyTitle</b><br/>
-            Support <a href="https://smooth-ui.smooth-code.com/docs-components-button#api">API component <b>Button</b> smooth-ui</a> for <b>TerminalVacancyButton</b>
+            Support <a href="https://smooth-ui.smooth-code.com/docs-components-typography#api">API component <b>Typography</b> smooth-ui</a> for <b>TerminalTitle</b><br/>
+            Support <a href="https://smooth-ui.smooth-code.com/docs-components-button#api">API component <b>Button</b> smooth-ui</a> for <b>TerminalButton</b>
         </Alert>
         <Typography variant="h3" mt={20}>How to Use</Typography>
         <code>
-<pre>{`import { `}<b>Box, </b>{` } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
-import { `}<b>Container, BoxImage</b>{` } from `}<Box color="red" display="inline-block">'../../components/Layout';</Box>{`
-import `}<b>Button</b>{` from `}<Box color="red" display="inline-block">'../../components/Button';</Box><br/>{`
+<pre>{`import { `}<b>Box, Container, BoxImage, Button </b>{` } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box><br/>{`
 <BoxImage `}<b>image={`{imgBg}`}</b>{`>
     <Container `}<b>py={`{60}`} textAlign="center"</b>{`>
         <Typography `}<b>variant="h1" color="#fff"</b>{`>Ищу работу</Typography>

@@ -9,7 +9,7 @@ const ButtonStory = () => ( <Box p={10}>
             <Typography variant="h3" mt={20}>How to Use</Typography>
             <Alert variant="info">Support <a href="https://smooth-ui.smooth-code.com/docs-components-button#api">API component <b>Button</b> smooth-ui</a></Alert>
             <code>
-<pre>{`import Button from `}<Box color="red" display="inline-block">'../components/Badge';</Box> <br/>{`
+<pre>{`import Button from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box> <br/>{`
 <Button>Default (primary)</Button>
 `}</pre>
             </code>
