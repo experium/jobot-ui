@@ -18,6 +18,8 @@ import ButtonStory from './add/button';
 import BadgeStory from './add/badge';
 import TagStory from './add/tag';
 import FormGroupIconStory from './add/form_group_icon';
+import TerminalComponents from "./add/terminal_components";
+import LayoutComponents from "./add/layout";
 
 /*Components*/
 import { Typography, Box } from '@smooth-ui/core-sc'
@@ -61,4 +63,6 @@ storiesOf('Components', module)
 .add('Button', () => <ButtonStory />)
 .add('Badge', () => <BadgeStory />)
 .add('Tag', () => <TagStory />)
-.add('Form Group Icon', () => <FormGroupIconStory />);
+.add('Form Group Icon', () => <FormGroupIconStory />)
+.add('Layout', () => <LayoutComponents />)
+.add('Terminal', () => <TerminalComponents />);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Alert, Box, Typography } from "@smooth-ui/core-sc";
-import imgBg from "../../assets/img/bg2.jpg";
+import imgBg from "../../assets/img/bg-header.jpg";
 import { BoxImage, Container } from "../../components";
 import Button from "../../components/Button";
 

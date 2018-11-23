@@ -1,21 +1,20 @@
 import React from 'react';
 import { Box, Col, Grid, Row, Typography} from "@smooth-ui/core-sc";
-import { HeaderBox } from "../../components/Layout";
 import bgHeader from "../../assets/img/bg-header.jpg";
-import {Badge, Container, FormGroup, FormGroupIcon, ItemList, LinkWhite, ListUl, Tag} from "../../components";
-import {AccessTime, Brush, Computer, LocationOn, Work} from "styled-icons/material";
+import {Badge, BoxImage, Container, FormGroup, FormGroupIcon, ItemList, LinkWhite, ListUl, Tag} from "../../components";
+import { AccessTime, Brush, Computer, LocationOn, Work } from "styled-icons/material";
 import Input from "../../components/Input";
 import Select from "../../components/Select";
 import Button from "../../components/Button";
-import {Search} from "styled-icons/octicons";
+import { Search } from "styled-icons/octicons";
 import imgItem1 from "../../assets/img/item.jpg";
-import {Heart} from "styled-icons/fa-regular";
+import { Heart } from "styled-icons/fa-regular";
 import imgItem2 from "../../assets/img/item2.png";
-import {Facebook, LinkedinIn, Twitter, Vk} from "styled-icons/fa-brands";
+import { Facebook, LinkedinIn, Twitter, Vk } from "styled-icons/fa-brands";
 
 const MainPage = () => (
     <Box>
-        <HeaderBox image={bgHeader} mb={30}>
+        <BoxImage image={bgHeader} mb={30} py={150}>
             <Container>
                 <Typography variant="h1" color="#fff" fontSize={50}>Работа найдется для каждого</Typography>
                 <Typography variant="h2" color="#ff4f57" fontSize={30}>Здесь находят работу и подбирают персонал</Typography>
@@ -58,7 +57,7 @@ const MainPage = () => (
                     <Badge variant="light" link="true" as="a">Программист</Badge>
                 </Box>
             </Container>
-        </HeaderBox>
+        </BoxImage>
         <Container>
             <Typography variant="h1" mb={30}>Вакансии дня</Typography>
             <ItemList>

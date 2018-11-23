@@ -1,13 +1,13 @@
 import React from 'react';
-import {Alert, Box, Col, Grid, Row, Typography} from "@smooth-ui/core-sc";
-import { HeaderBox } from "../../components/Layout";
+import { Alert, Box, Col, Grid, Row, Typography } from "@smooth-ui/core-sc";
+import { BoxImage } from "../../components/Layout";
 import bgHeader from "../../assets/img/bg-header.jpg";
-import {Badge, Container, FormGroup, FormGroupIcon} from "../../components";
-import {LocationOn, Work} from "styled-icons/material";
+import { Badge, Container, FormGroup, FormGroupIcon } from "../../components";
+import { LocationOn, Work } from "styled-icons/material";
 import Input from "../../components/Input";
 import Select from "../../components/Select";
 import Button from "../../components/Button";
-import {Search} from "styled-icons/octicons";
+import { Search } from "styled-icons/octicons";
 
 const Header = () => (
     <Box>
@@ -18,14 +18,14 @@ const Header = () => (
         <Typography variant="h3" mt={20}>How to Use</Typography>
         <code>
 <pre>{`import { Grid, Row, Col, Box, Typography } from `}<Box color="red" display="inline-block">'@smooth-ui/core-sc';</Box>{`
-import { Header, Container } from `}<Box color="red" display="inline-block">'../components/Layout';</Box>{`
+import { BoxImage, Container } from `}<Box color="red" display="inline-block">'../components/Layout';</Box>{`
 import { FormGroup, FormGroupIcon } from `}<Box color="red" display="inline-block">'../components/Form';</Box>{`
 import { Badge } from `}<Box color="red" display="inline-block">'../components/Badge';</Box>{`
 import Button from `}<Box color="red" display="inline-block">'../components/Button';</Box>{`
 import Input from `}<Box color="red" display="inline-block">'../components/Input';</Box>{`
 import Select from `}<Box color="red" display="inline-block">'../components/Select';</Box>{`
 import bg from `}<Box color="red" display="inline-block">'../assets/img/bg-header.jpg';</Box><br/>{`
-<HeaderBox `}<b>{`image={bg}`} mb={`{30}`}</b>{`>
+<BoxImage `}<b>{`image={bg}`} mb={`{30}`} py={`{150}`}</b>{`>
     <Container>
         <Typography `}<b>variant="h1" color="#fff" fontSize={`{50}`}</b>{`>Работа найдется для каждого</Typography>
         <Typography `}<b>variant="h2" color="#ff4f57" fontSize={`{30}`}</b>{`>Здесь находят работу и подбирают персонал</Typography>
@@ -68,10 +68,10 @@ import bg from `}<Box color="red" display="inline-block">'../assets/img/bg-heade
             <Badge `}<b>variant="light" link="true" as="a"</b>{`>Программист</Badge>
         </Box>
     </Container>
-</HeaderBox>
+</BoxImage>
 `}</pre>
         </code>
-        <HeaderBox image={bgHeader} mb={30}>
+        <BoxImage image={bgHeader} mb={30} py={150}>
             <Container>
                 <Typography variant="h1" color="#fff" fontSize={50}>Работа найдется для каждого</Typography>
                 <Typography variant="h2" color="#ff4f57" fontSize={30}>Здесь находят работу и подбирают персонал</Typography>
@@ -114,7 +114,7 @@ import bg from `}<Box color="red" display="inline-block">'../assets/img/bg-heade
                     <Badge variant="light" link="true" as="a">Программист</Badge>
                 </Box>
             </Container>
-        </HeaderBox>
+        </BoxImage>
     </Box>
 );
 
