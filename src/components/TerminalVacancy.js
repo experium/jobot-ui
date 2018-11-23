@@ -18,5 +18,5 @@ export const TerminalVacancyTitle = styled(Typography)``;
 TerminalVacancyTitle.defaultProps = {
     variant: 'display-1',
     mx: '3rem',
-    my: '2rem',
+    py: '2rem',
 };
