@@ -1,6 +1,6 @@
 import { styled, Box } from '@smooth-ui/core-sc'
 
-export const Header = styled(Box)`
+export const HeaderBox = styled(Box)`
     background: ${props => `url("${props.image}")`} center center no-repeat;
     background-size: cover;
     &:before {
@@ -15,7 +15,7 @@ export const Header = styled(Box)`
     }
 `;
 
-Header.defaultProps = {
+HeaderBox.defaultProps = {
     position: 'relative',
     py: '150px',
     backgroundSize: 'cover'
@@ -23,7 +23,10 @@ Header.defaultProps = {
 
 export const Container = styled(Box)`
     position: relative;
-    max-width: 1140px;
+    max-width: 1120px;
+    @media (max-width: 1170px){
+        padding: 0 25px;
+    }
 `;
 
 Container.defaultProps = {

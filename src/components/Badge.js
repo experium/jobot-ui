@@ -39,6 +39,7 @@ const sizeStyle = {
     `,
     md: css`
         padding: .2rem .9rem;
+        font-size: ${th('fontSizeBase')};
     `,
     lg: css`
         padding: .3rem 1.1rem;

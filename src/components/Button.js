@@ -1,4 +1,5 @@
 import { styled, css, Button, th } from '@smooth-ui/core-sc';
+import PropTypes from 'prop-types';
 
 const sizeStyle = {
     sm: css`
@@ -34,7 +35,7 @@ const sizeStyleIcon = {
 
 export default styled(Button)`
     ${p => p.size && sizeStyleIcon[p.size]};
-    ${p => p.circle && css`
+    ${p => p.round && css`
         border: ${props => props.variant === 'secondary' ? '1px solid #ddd' : 'initial'};
         border-radius: 50%;
         padding: ${th('inputBtnPaddingY')};
@@ -42,3 +43,7 @@ export default styled(Button)`
         ${p => p.size && sizeStyle[p.size]};
     `}
 `;
+
+Button.propTypes ={
+    round: PropTypes.bool
+};

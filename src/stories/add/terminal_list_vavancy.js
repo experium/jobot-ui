@@ -15,8 +15,7 @@ const TerminalListVacancy = () => (
         </Alert>
         <Typography variant="h3" mt={20}>How to Use</Typography>
         <code>
-<pre>{`import { `}<b>Box</b>{` } from `}<Box color="red" display="inline-block">'@smooth-ui/core-sc';</Box>{`
-import { `}<b>TerminalVacancyBtn, TerminalVacancyTitle</b>{` } from `}<Box color="red" display="inline-block">'../components/TerminalVacancy';</Box><br/>{`
+<pre>{`import { `}<b>Box, TerminalVacancyButton, TerminalVacancyTitle</b>{` } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
 <Box `}<b>textAlign="center"</b>{`>
     <TerminalVacancyTitle>Вакансии</TerminalVacancyTitle>
     <TerminalVacancyButton `}<b>as="a"</b>{`>Продавец консультант</TerminalVacancyButton>
@@ -34,4 +33,4 @@ import { `}<b>TerminalVacancyBtn, TerminalVacancyTitle</b>{` } from `}<Box color
     </Box>
 );
 
-export default TerminalListVacancy
+export default TerminalListVacancy;
