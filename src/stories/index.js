@@ -21,6 +21,13 @@ import FormGroupIconStory from './add/form_group_icon';
 import TerminalComponentTitle from "./add/terminal_title";
 import TerminalComponentButton from "./add/terminal_button";
 import LayoutComponents from "./add/layout";
+import RadioStory from "./add/radio";
+import CheckboxStory from "./add/checkbox";
+import SwitchStory from "./add/switch";
+import SelectStory from "./add/select";
+import TextareaStory from "./add/textarea";
+import TypographyStory from "./add/typography";
+import Inputtory from "./add/input";
 
 /*Components*/
 import { Typography, Box } from '@smooth-ui/core-sc'
@@ -61,9 +68,16 @@ storiesOf('Examples', module)
 storiesOf('Components', module)
 .add('Button', () => <ButtonStory />)
 .add('Badge', () => <BadgeStory />)
-.add('Tag', () => <TagStory />)
+.add('Radio', () => <RadioStory />)
+.add('Checkbox', () => <CheckboxStory />)
+.add('Switch', () => <SwitchStory />)
+.add('Select', () => <SelectStory />)
+.add('Input', () => <Inputtory />)
 .add('Form Group Icon', () => <FormGroupIconStory />)
-.add('Layout', () => <LayoutComponents />);
+.add('Textarea', () => <TextareaStory />)
+.add('Tag', () => <TagStory />)
+.add('Layout', () => <LayoutComponents />)
+.add('Typography', () => <TypographyStory />);
 
 storiesOf('Terminal/Examples', module)
 .add('List vacancy', () => <TerminalListVacancy />)
