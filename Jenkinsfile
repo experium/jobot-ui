@@ -16,6 +16,11 @@ node {
                 sh 'yarn install'
             }
 
+            stage('Test') {
+                sh 'yarn test:ci'
+                junit allowEmptyResults: true, testResults: 'reports/junit.xml'
+            }
+
             stage('Build') {
                 sh 'yarn build-storybook'
             }

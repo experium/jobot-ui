@@ -1,4 +1,4 @@
-import { styled, css, Button, th } from '@smooth-ui/core-sc';
+import { styled, css, Button as SmoothButton, th } from '@smooth-ui/core-sc';
 import PropTypes from 'prop-types';
 
 const sizeStyle = {
@@ -33,7 +33,7 @@ const sizeStyleIcon = {
     `,
 };
 
-export default styled(Button)`
+export const Button = styled(SmoothButton)`
     ${p => p.size && sizeStyleIcon[p.size]};
     ${p => p.round && css`
         border: ${props => props.variant === 'secondary' ? '1px solid #ddd' : 'initial'};

@@ -1,7 +1,7 @@
-import { theme } from '@smooth-ui/core-sc'
+import { theme as smoothTheme } from '@smooth-ui/core-sc'
 
-export default {
-    ...theme,
+export const theme = {
+    ...smoothTheme,
     fontFamily: '"Nunito Sans",Roboto,"Helvetica Neue",Arial,sans-serif',
     primary: '#FF4F57',
     secondary: '#f1f1f1',

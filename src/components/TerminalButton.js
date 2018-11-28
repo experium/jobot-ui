@@ -1,6 +1,5 @@
-import {Box, styled} from "@smooth-ui/core-sc";
-import Button from "./Button";
-import React from "react";
+import { styled } from "@smooth-ui/core-sc";
+import { Button } from "./Button";
 
 export const TerminalButton = styled(Button)`
     &:after,&:before{
