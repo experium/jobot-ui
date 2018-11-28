@@ -1,6 +1,10 @@
 import React from 'react';
-import {Alert, Box, Col, Row, Typography} from "@smooth-ui/core-sc";
-import Button from "../../components/Button";
+
+import {
+    Alert, Box, Col, Row, Typography,
+    Button
+} from '../ui';
+
 import company1 from "../../assets/img/company/1.png";
 import company2 from "../../assets/img/company/2.png";
 import company3 from "../../assets/img/company/3.jpeg";

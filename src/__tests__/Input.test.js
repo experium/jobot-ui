@@ -1,9 +1,7 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import { ThemeProvider } from '@smooth-ui/core-sc';
 
-import { Input } from '../components/Input';
-import { theme } from '../theme';
+import { ThemeProvider, theme, Input } from '../ui';
 
 it('Input: should renders input with placeholder', () => {
     const testId = 'input';

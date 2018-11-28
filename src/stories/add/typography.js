@@ -1,5 +1,6 @@
 import React from 'react';
-import { Alert, Box, Grid, Typography } from "@smooth-ui/core-sc";
+
+import { Alert, Box, Grid, Typography } from '../ui';
 
 const TypographyStory = () => ( <Box p={10}>
         <Grid fluid gutter={5}>

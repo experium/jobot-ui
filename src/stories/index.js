@@ -3,7 +3,6 @@ import '../index.css';
 
 import { storiesOf } from '@storybook/react';
 
-
 /*Add*/
 import MainPage from './add/main_page';
 import TerminalListVacancy from './add/terminal_list_vavancy';
@@ -33,8 +32,7 @@ import TypographyStory from "./add/typography";
 import InputStory from "./add/input";
 
 /*Components*/
-import { Typography, Box } from '@smooth-ui/core-sc'
-import Button from '../components/Button';
+import { Typography, Box, Button } from './ui';
 
 /*Icon*/
 import { LightBulb } from 'styled-icons/octicons';

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Alert, Box, Grid, Typography, Textarea } from "@smooth-ui/core-sc";
+
+import { Alert, Box, Grid, Typography, Textarea } from '../ui';
 
 const TextareaStory = () => ( <Box p={10}>
         <Grid fluid gutter={5}>

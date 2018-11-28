@@ -1,6 +1,5 @@
 import React from 'react';
-import { Alert, Box, Grid, Typography } from "@smooth-ui/core-sc";
-import Input from "../../components/Input";
+import { Alert, Box, Grid, Typography, Input } from '../ui';
 
 const InputStory = () => ( <Box p={10}>
         <Grid fluid gutter={5}>

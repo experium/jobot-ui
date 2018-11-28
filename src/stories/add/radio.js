@@ -1,5 +1,9 @@
 import React from 'react';
-import { Alert, Box, Grid, Typography, Radio, FormCheck, FormCheckLabel, RadioGroup } from "@smooth-ui/core-sc";
+
+import {
+    Alert, Box, Grid, Typography,
+    Radio, FormCheck, FormCheckLabel, RadioGroup
+} from '../ui';
 
 const RadioStory = () => ( <Box p={10}>
         <Grid fluid gutter={5}>

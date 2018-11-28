@@ -1,9 +1,7 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import { ThemeProvider } from '@smooth-ui/core-sc';
 
-import { ItemList } from '../components/List';
-import { theme } from '../theme';
+import { ThemeProvider, ItemList, theme } from '../ui';
 
 it('ItemList: should renders text', () => {
     const text = 'Text';

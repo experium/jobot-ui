@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-testing-library';
 
-import { LinkWhite, ListUl } from '../components/Typography';
+import { LinkWhite, ListUl } from '../ui';
 
 it('LinkWhite: should renders with text', () => {
     const text = 'Text';

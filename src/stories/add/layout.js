@@ -1,7 +1,8 @@
 import React from 'react';
-import { Alert, Box, Typography } from "@smooth-ui/core-sc";
-import { BoxImage, Container } from "../../components";
-import imgBg from "../../assets/img/bg-header.jpg";
+
+import { Alert, Box, Typography, BoxImage, Container } from '../ui';
+
+import imgBg from '../../assets/img/bg-header.jpg';
 
 const LayoutComponents = () => ( <Box p={10}>
         <Typography variant="h1">Layout components</Typography>

@@ -1,9 +1,7 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import { ThemeProvider } from '@smooth-ui/core-sc';
 
-import { Badge } from '../components/Badge';
-import { theme } from '../theme';
+import { theme, Badge, ThemeProvider } from '../ui';
 
 it('Badge: should renders with text', () => {
     const text = 'Text';

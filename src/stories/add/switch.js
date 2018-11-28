@@ -1,5 +1,9 @@
 import React from 'react';
-import { Alert, Box, Grid, Typography, Switch, FormCheck, FormCheckLabel } from "@smooth-ui/core-sc";
+
+import {
+    Alert, Box, Grid, Typography,
+    Switch, FormCheck, FormCheckLabel
+} from '../ui';
 
 const SwitchStory = () => ( <Box p={10}>
         <Grid fluid gutter={5}>

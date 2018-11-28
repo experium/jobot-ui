@@ -1,6 +1,9 @@
 import React from 'react';
-import { Alert, Box, Typography } from "@smooth-ui/core-sc";
-import { TerminalButton, TerminalTitle } from "../../components";
+
+import {
+    Alert, Box, Typography,
+    TerminalButton, TerminalTitle
+} from '../ui';
 
 const TerminalListVacancy = () => (
     <Box>

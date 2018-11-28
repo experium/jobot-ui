@@ -1,8 +1,7 @@
 import React from 'react';
-import { Alert, Box, Col, Row, Typography } from "@smooth-ui/core-sc";
-import { Container, LinkWhite, ListUl} from "../../components";
-import Button from "../../components/Button";
-import { Facebook, LinkedinIn, Twitter, Vk } from "styled-icons/fa-brands";
+import { Facebook, LinkedinIn, Twitter, Vk } from 'styled-icons/fa-brands';
+
+import { Alert, Box, Col, Row, Typography, Button, Container, LinkWhite, ListUl } from '../ui';
 
 const Footer = () => ( <Box>
         <Typography variant="h1">Examples Footer</Typography>

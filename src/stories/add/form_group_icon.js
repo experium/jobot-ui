@@ -1,9 +1,7 @@
 import React from 'react';
-import { Alert, Box, Grid, Typography } from "@smooth-ui/core-sc";
-import { FormGroup, FormGroupIcon } from "../../components";
-import { LocationOn} from "styled-icons/material";
-import Input from "../../components/Input";
-import Select from "../../components/Select";
+import { LocationOn } from 'styled-icons/material';
+
+import { Alert, Box, Grid, Typography, FormGroup, FormGroupIcon, Select, Input } from '../ui';
 
 const FormGroupIconStory = () => ( <Box p={10}>
         <Grid fluid gutter={5}>

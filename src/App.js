@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { createGlobalStyle } from 'styled-components';
-import { ThemeProvider } from '@smooth-ui/core-sc'
-import { theme } from './theme'
+
+import { ThemeProvider, theme } from './ui';
 import logo from './logo.svg';
 import './App.css';
 

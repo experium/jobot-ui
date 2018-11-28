@@ -1,16 +1,20 @@
 import React from 'react';
-import {Alert, Box, Col, Grid, Row, Typography} from "@smooth-ui/core-sc";
-import bgHeader from "../../assets/img/bg-header.jpg";
-import {Badge, BoxImage, Container, FormGroup, FormGroupIcon, ItemList, LinkWhite, ListUl, Tag} from "../../components";
 import { AccessTime, Brush, Computer, LocationOn, Work } from "styled-icons/material";
-import Input from "../../components/Input";
-import Select from "../../components/Select";
-import Button from "../../components/Button";
 import { Search } from "styled-icons/octicons";
-import imgItem1 from "../../assets/img/item.jpg";
 import { Heart } from "styled-icons/fa-regular";
-import imgItem2 from "../../assets/img/item2.png";
 import { Facebook, LinkedinIn, Twitter, Vk } from "styled-icons/fa-brands";
+
+
+import {
+    Alert, Box, Col, Grid, Row, Typography,
+    Badge, BoxImage, Container, FormGroup,
+    FormGroupIcon, ItemList, LinkWhite, ListUl, Tag,
+    Button, Input, Select
+} from '../ui';
+
+import bgHeader from "../../assets/img/bg-header.jpg";
+import imgItem1 from "../../assets/img/item.jpg";
+import imgItem2 from "../../assets/img/item2.png";
 
 const MainPage = () => (
     <Box>

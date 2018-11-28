@@ -1,7 +1,10 @@
 import React from 'react';
-import { Alert, Box, Grid, Typography } from "@smooth-ui/core-sc";
-import { Tag } from "../../components";
 import { Computer } from "styled-icons/material";
+
+import {
+    Alert, Box, Grid, Typography,
+    Tag
+} from '../ui';
 
 const TagStory = () => ( <Box p={10}>
         <Grid fluid gutter={5}>

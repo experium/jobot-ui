@@ -1,6 +1,9 @@
 import React from 'react';
-import { Alert, Box, Typography } from "@smooth-ui/core-sc";
-import { TerminalTitle } from "../../components";
+
+import {
+    Alert, Box, Typography,
+    TerminalTitle
+} from '../ui';
 
 const TerminalComponentTitle = () => ( <Box p={10}>
         <Typography variant="h1">Terminal Title</Typography>

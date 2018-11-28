@@ -1,9 +1,12 @@
 import React from 'react';
-import { Alert, Box, Typography, Button } from "@smooth-ui/core-sc";
-import { TerminalButton, TerminalTitle } from "../../components";
-import company1 from "../../assets/img/company/1.png";
 import { ChevronLeft } from "styled-icons/fa-solid/ChevronLeft";
 
+import {
+    Alert, Box, Typography,
+    TerminalButton, TerminalTitle
+} from '../ui';
+
+import company1 from '../../assets/img/company/1.png';
 
 const TerminalListVacancyCompany = () => (
     <Box>

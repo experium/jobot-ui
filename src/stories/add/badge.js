@@ -1,6 +1,5 @@
 import React from 'react';
-import { Alert, Box, Grid, Typography } from "@smooth-ui/core-sc";
-import { Badge } from "../../components";
+import { Alert, Box, Grid, Typography, Badge } from '../ui';
 
 const BadgeStory = () => ( <Box p={10}>
         <Grid fluid gutter={5}>
