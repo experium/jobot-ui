@@ -1,9 +1,7 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import { ThemeProvider } from '@smooth-ui/core-sc';
 
-import { Select } from '../components/Select';
-import { theme } from '../theme';
+import { ThemeProvider, Select, theme } from '../ui';
 
 it('Select: should renders select with placeholder and options', () => {
     const testId1 = 'option1';

@@ -1,10 +1,14 @@
 import React from 'react';
-import { Alert, Box, Col, Row, Typography } from "@smooth-ui/core-sc";
-import { Badge, Container, ItemList, Tag } from "../../components";
-import Button from "../../components/Button";
-import imgItem1 from "../../assets/img/item.jpg";
 import { AccessTime, Brush, Computer, LocationOn } from "styled-icons/material";
 import { Heart } from "styled-icons/fa-regular";
+
+import {
+    Alert, Box, Col, Row, Typography,
+    Badge, Container, ItemList, Tag,
+    Button
+} from '../ui';
+
+import imgItem1 from "../../assets/img/item.jpg";
 import imgItem2 from "../../assets/img/item2.png";
 
 const ListVacancy = () => ( <Box>

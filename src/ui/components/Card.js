@@ -1,5 +1,5 @@
 import { styled, Box } from '@smooth-ui/core-sc'
-import Button from './Button';
+import { Button } from './Button';
 
 export const Card = styled(Box)`
     &:hover{

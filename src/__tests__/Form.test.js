@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from 'react-testing-library';
 import { LocationOn } from 'styled-icons/material/LocationOn.cjs';
-import { ThemeProvider } from '@smooth-ui/core-sc'
 
-import { FormGroup, FormGroupIcon } from '../components/Form';
-import { Input } from '../components/Input';
-import { theme } from '../theme';
+import {
+    ThemeProvider, theme,
+    FormGroup, FormGroupIcon, Input
+} from '../ui';
 
 it('FormGroup: should renders input', () => {
     const testId = 'input';

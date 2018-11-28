@@ -1,5 +1,6 @@
 import React from 'react';
-import { Alert, Box, Grid, Typography, Checkbox, FormCheck, FormCheckLabel } from "@smooth-ui/core-sc";
+
+import { Alert, Box, Grid, Typography, Checkbox, FormCheck, FormCheckLabel } from '../ui';
 
 const CheckboxStory = () => ( <Box p={10}>
         <Grid fluid gutter={5}>

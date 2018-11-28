@@ -1,11 +1,11 @@
 import React from 'react';
-import { Alert, Box, Col, Row, Typography } from "@smooth-ui/core-sc";
-import { Card, CardBtn, Container, Tag} from "../../components";
-import Button from "../../components/Button";
-import { AccessTime, ArrowForward, Comment, DateRange, LocationOn } from "styled-icons/material";
-import imgItem3 from "../../assets/img/img3.jpg";
-import imgItem4 from "../../assets/img/img4.jpg";
-import imgItem5 from "../../assets/img/img5.jpg";
+import { AccessTime, ArrowForward, Comment, DateRange, LocationOn } from 'styled-icons/material';
+
+import { Alert, Box, Col, Row, Typography, Button, Card, CardBtn, Container, Tag} from '../ui';
+
+import imgItem3 from '../../assets/img/img3.jpg';
+import imgItem4 from '../../assets/img/img4.jpg';
+import imgItem5 from '../../assets/img/img5.jpg';
 
 const CardVacancy = () => ( <Box>
         <Typography variant="h1">Examples Card Vacancy</Typography>

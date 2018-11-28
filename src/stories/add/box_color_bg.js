@@ -1,7 +1,5 @@
 import React from 'react';
-import { Alert, Box, Typography } from "@smooth-ui/core-sc";
-import { Container } from "../../components";
-import Button from "../../components/Button";
+import { Alert, Box, Typography, Button, Container } from '../ui';
 
 const BoxColorBg = () => (
     <Box>

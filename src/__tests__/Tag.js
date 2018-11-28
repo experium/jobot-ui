@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-testing-library';
 import { Computer } from 'styled-icons/material/Computer.cjs';
 
-import { Tag } from '../components/Tag';
+import { Tag } from '../ui';
 
 it('Tag: should renders text', () => {
     const text = 'Text';

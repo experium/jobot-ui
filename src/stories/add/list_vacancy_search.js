@@ -1,13 +1,16 @@
 import React from 'react';
-import { Alert, Box, Col, Row, Typography, } from "@smooth-ui/core-sc";
-import {Badge, Container, ItemList, ListUl, Tag} from "../../components";
-import Button from "../../components/Button";
-import imgItem1 from "../../assets/img/item.jpg";
-import { AccessTime, Brush, Computer, LocationOn } from "styled-icons/material";
-import { Heart } from "styled-icons/fa-regular";
-import imgItem2 from "../../assets/img/item2.png";
-import Input from "../../components/Input";
-import { Search } from "styled-icons/octicons";
+import { AccessTime, Brush, Computer, LocationOn } from 'styled-icons/material';
+import { Heart } from 'styled-icons/fa-regular';
+import { Search } from 'styled-icons/octicons';
+
+import {
+    Alert, Box, Col, Row, Typography,
+    Badge, Container, ItemList, ListUl, Tag,
+    Input, Button
+} from '../ui';
+
+import imgItem1 from '../../assets/img/item.jpg';
+import imgItem2 from '../../assets/img/item2.png';
 
 const ListVacancySearch = () => ( <Box>
         <Typography variant="h1">Examples List Vacancy</Typography>

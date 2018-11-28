@@ -1,8 +1,7 @@
 import React from 'react';
-import { Alert, Box, Typography } from "@smooth-ui/core-sc";
-import imgBg from "../../assets/img/bg-header.jpg";
-import { BoxImage, Container } from "../../components";
-import Button from "../../components/Button";
+
+import { Alert, Box, Typography, Button, BoxImage, Container } from '../ui';
+import imgBg from '../../assets/img/bg-header.jpg';
 
 const BoxImageBg = () => (
     <Box>

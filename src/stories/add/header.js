@@ -1,13 +1,15 @@
 import React from 'react';
-import { Alert, Box, Col, Grid, Row, Typography } from "@smooth-ui/core-sc";
-import { BoxImage } from "../../components/Layout";
-import bgHeader from "../../assets/img/bg-header.jpg";
-import { Badge, Container, FormGroup, FormGroupIcon } from "../../components";
-import { LocationOn, Work } from "styled-icons/material";
-import Input from "../../components/Input";
-import Select from "../../components/Select";
-import Button from "../../components/Button";
+import { LocationOn, Work } from 'styled-icons/material';
 import { Search } from "styled-icons/octicons";
+
+import {
+    Alert, Box, Col, Grid, Row, Typography,
+    Badge, Container, FormGroup, FormGroupIcon,
+    Input, Select, Button, BoxImage
+} from '../ui';
+
+
+import bgHeader from '../../assets/img/bg-header.jpg';
 
 const Header = () => (
     <Box>

@@ -1,4 +1,4 @@
-import { theme as smoothTheme } from '@smooth-ui/core-sc'
+import { theme as smoothTheme } from '@smooth-ui/core-sc';
 
 export const theme = {
     ...smoothTheme,
@@ -9,4 +9,4 @@ export const theme = {
     light: '#fff',
     yikTextDark: '#FF4F57',
     inputPlaceholderText: '#bbb',
-}
+};

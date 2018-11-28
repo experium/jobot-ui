@@ -1,7 +1,7 @@
 import React from 'react';
-import {Alert, Box, Grid, Typography} from "@smooth-ui/core-sc";
-import Button from "../../components/Button";
-import {Heart} from "styled-icons/fa-regular";
+import { Heart } from "styled-icons/fa-regular";
+
+import { Alert, Box, Grid, Typography, Button } from '../ui';
 
 const ButtonStory = () => ( <Box p={10}>
         <Grid fluid gutter={5}>

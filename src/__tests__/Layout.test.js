@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-testing-library';
 
-import { BoxImage, Container } from '../components/Layout';
+import { BoxImage, Container } from '../ui';
 
 it('Container: should renders text', () => {
     const text = 'Text';

@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-testing-library';
 import { Search } from 'styled-icons/octicons/Search.cjs';
 
-import { Button } from '../components/Button';
+import { Button } from '../ui';
 
 it('Button: should renders with text', () => {
     const text = 'Text';

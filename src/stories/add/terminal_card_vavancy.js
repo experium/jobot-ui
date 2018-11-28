@@ -1,6 +1,9 @@
 import React from 'react';
-import {Alert, Box, Col, Row, Typography} from "@smooth-ui/core-sc";
-import Button from "../../components/Button";
+
+import {
+    Alert, Box, Col, Row, Typography,
+    Button
+} from '../ui';
 
 const TerminalCardVacancy = () => (
     <Box>

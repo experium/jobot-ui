@@ -1,9 +1,7 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import { ThemeProvider } from '@smooth-ui/core-sc';
 
-import { TerminalTitle } from '../components/TerminalTitle';
-import { theme } from '../theme';
+import { ThemeProvider, theme, TerminalTitle } from '../ui';
 
 it('TerminalTitle: should renders with text', () => {
     const text = 'Text';

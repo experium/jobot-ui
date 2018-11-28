@@ -1,8 +1,7 @@
 import React from 'react';
 import { render } from 'react-testing-library';
 
-import { Card, CardBtn } from '../components/Card';
-import { Button } from '../components/Button';
+import { Card, CardBtn, Button } from '../ui';
 
 it('Card: should renders with text', () => {
     const text = 'Text';
