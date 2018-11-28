@@ -62,13 +62,13 @@ const ButtonStory = () => ( <Box p={10}>
         <Button mr={10} round="true" size='lg'><Heart /></Button>
         <code>
 <pre>{`import { Heart } from `}<Box color="red" display="inline-block">'styled-icons/fa-regular/Heart';</Box> <br/>{`
-<Button `}<b> circle size='sm'</b>{`>
+<Button `}<b> round size='sm'</b>{`>
     <Heart />
 </Button>
-<Button `}<b> circle</b>{`>
+<Button `}<b> round</b>{`>
     <Heart />
 </Button>
-<Button `}<b> circle size='lg'</b>{`>
+<Button `}<b> round size='lg'</b>{`>
     <Heart />
 </Button>
 `}</pre>

@@ -7,10 +7,13 @@ import { storiesOf } from '@storybook/react';
 /*Add*/
 import MainPage from './add/main_page';
 import TerminalListVacancy from './add/terminal_list_vavancy';
+import TerminalListVacancyCompany from './add/terminal_list_vavancy_company';
 import TerminalCardVacancy from './add/terminal_card_vavancy';
+import TerminalCardCompany from './add/terminal_card_company';
 import Header from './add/header';
 import Footer from './add/footer';
 import ListVacancy from './add/list_vacancy';
+import ListVacancySearch from './add/list_vacancy_search';
 import CardVacancy from './add/card_vacancy';
 import BoxImageBg from './add/box_image_bg';
 import BoxColorBg from './add/box_color_bg';
@@ -27,7 +30,7 @@ import SwitchStory from "./add/switch";
 import SelectStory from "./add/select";
 import TextareaStory from "./add/textarea";
 import TypographyStory from "./add/typography";
-import Inputtory from "./add/input";
+import InputStory from "./add/input";
 
 /*Components*/
 import { Typography, Box } from '@smooth-ui/core-sc'
@@ -59,6 +62,7 @@ storiesOf('Library', module)
 storiesOf('Examples', module)
 .add('Header', () => <Header />)
 .add('List Vacancy', () => <ListVacancy />)
+.add('List Vacancy Search', () => <ListVacancySearch />)
 .add('Card Vacancy', () => <CardVacancy />)
 .add('Box image bg', () => <BoxImageBg />)
 .add('Box Color bg', () => <BoxColorBg />)
@@ -72,7 +76,7 @@ storiesOf('Components', module)
 .add('Checkbox', () => <CheckboxStory />)
 .add('Switch', () => <SwitchStory />)
 .add('Select', () => <SelectStory />)
-.add('Input', () => <Inputtory />)
+.add('Input', () => <InputStory />)
 .add('Form Group Icon', () => <FormGroupIconStory />)
 .add('Textarea', () => <TextareaStory />)
 .add('Tag', () => <TagStory />)
@@ -81,7 +85,9 @@ storiesOf('Components', module)
 
 storiesOf('Terminal/Examples', module)
 .add('List vacancy', () => <TerminalListVacancy />)
-.add('Card vacancy', () => <TerminalCardVacancy />);
+.add('List vacancy company', () => <TerminalListVacancyCompany />)
+.add('Card vacancy', () => <TerminalCardVacancy />)
+.add('Card company', () => <TerminalCardCompany />);
 
 storiesOf('Terminal/Components', module)
 .add('Title', () => <TerminalComponentTitle />)
