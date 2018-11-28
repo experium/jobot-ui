@@ -1,6 +1,6 @@
-import { styled, Select, css } from '@smooth-ui/core-sc'
+import { styled, Select as SmoothSelect, css } from '@smooth-ui/core-sc'
 
-export default styled(Select)`
+export const Select = styled(SmoothSelect)`
         select{
             border-radius: 0;
         }

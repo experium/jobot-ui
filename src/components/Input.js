@@ -1,6 +1,6 @@
-import { styled, Input, css } from '@smooth-ui/core-sc';
+import { styled, Input as SmoothInput, css } from '@smooth-ui/core-sc';
 
-export default styled(Input)`
+export const Input = styled(SmoothInput)`
     border-radius: 0;
     ${p => p.icon && css`
         padding-left: 40px;
