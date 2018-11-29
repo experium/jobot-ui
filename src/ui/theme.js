@@ -1,7 +1,7 @@
-import { theme as smoothTheme } from '@smooth-ui/core-sc';
+import { theme as defaultTheme } from '@smooth-ui/core-sc';
 
 export const theme = {
-    ...smoothTheme,
+    ...defaultTheme,
     fontFamily: '"Nunito Sans",Roboto,"Helvetica Neue",Arial,sans-serif',
     primary: '#FF4F57',
     secondary: '#f1f1f1',
@@ -10,3 +10,5 @@ export const theme = {
     yikTextDark: '#FF4F57',
     inputPlaceholderText: '#bbb',
 };
+
+export const smoothTheme = defaultTheme;
