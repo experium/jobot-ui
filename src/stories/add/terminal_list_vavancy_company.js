@@ -3,7 +3,7 @@ import { ChevronLeft } from "styled-icons/fa-solid/ChevronLeft";
 
 import {
     Alert, Box, Typography,
-    TerminalButton, TerminalTitle
+    TerminalButton, TerminalTitle, Button
 } from '../ui';
 
 import company1 from '../../assets/img/company/1.png';
