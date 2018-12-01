@@ -14,10 +14,7 @@ TerminalButton.defaultProps = {
     borderRadius: '1rem',
     alignItems: "center",
     justifyContent: "center",
-    p: '2rem',
-    display: 'flex',
-    mb: '2rem',
-    mx: '3rem',
+    height: "100%",
     color: '#fff',
     fontSize: '3rem',
     variant: "primary"
