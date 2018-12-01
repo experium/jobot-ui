@@ -10,12 +10,13 @@ export const TerminalButton = styled(Button)`
 `;
 
 TerminalButton.defaultProps = {
-    textAlign: 'center',
-    borderRadius: '1rem',
+    display: "block",
+    textAlign: "center",
+    borderRadius: "1rem",
     alignItems: "center",
     justifyContent: "center",
     height: "100%",
     color: '#fff',
-    fontSize: '3rem',
+    fontSize: "3rem",
     variant: "primary"
 };
