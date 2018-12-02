@@ -1,5 +1,5 @@
 import { styled, css, Box, Button } from "@smooth-ui/core-sc";
-import { TerminalTextfit } from "./TerminalTextfit";
+import { TerminalButtonTextfit } from "./TerminalButton";
 
 const gridCalcH = "100vh/12";
 const gridCalcW = "100vw/12";
@@ -7,12 +7,13 @@ const gridCalcW = "100vw/12";
 export const TerminalEqualButton = styled(Button)`
     height: 100%;
     img{
-        height: 100%;
         width: 100%;
     }
 `;
 
 TerminalEqualButton.defaultProps = {
+    p: 0,
+    borderRadius: "1rem",
     variant: "secondary",
     display: "inline-flex",
     justifyContent: "center",
@@ -23,7 +24,7 @@ export const TerminalRow = styled(Box)`
     ${p => p.num && css`
         height: calc(${gridCalcH}*${p.num});
         ${Button}{
-            ${TerminalTextfit}{
+            ${TerminalButtonTextfit}{
                 ${p => p.py && css`
                     & > div{
                         line-height: calc(${gridCalcH}*${p.num} - (${p.py}px*2));
