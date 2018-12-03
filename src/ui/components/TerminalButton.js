@@ -13,6 +13,7 @@ export const TerminalButton = styled(Button)`
 TerminalButton.defaultProps = {
     display: "block",
     height: "100%",
+    width: "100%",
     p: 0,
     textAlign: "center",
     borderRadius: "1rem",

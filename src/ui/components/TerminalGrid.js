@@ -21,10 +21,14 @@ TerminalEqualButton.defaultProps = {
 };
 
 export const TerminalRow = styled(Box)`
+    display: flex;
     ${p => p.num && css`
         height: calc(${gridCalcH}*${p.num});
         ${Button}{
             ${TerminalButtonTextfit}{
+                & > div{
+                    line-height: calc(${gridCalcH}*${p.num});
+                }
                 ${p => p.py && css`
                     & > div{
                         line-height: calc(${gridCalcH}*${p.num} - (${p.py}px*2));
