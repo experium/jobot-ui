@@ -12,13 +12,13 @@
     "@smooth-ui/core-sc": "^7.0.5",
     "jest-dom": "^2.1.1",
     "jest-junit": "^5.2.0",
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "react-scripts": "2.1.1",
-    "react-select": "^2.1.1",
-    "react-testing-library": "^5.3.0",
+    "react-select": "^2.1.2",
+    "react-testing-library": "^5.3.1",
     "react-textfit": "^1.1.0",
-    "styled-components": "^4.1.1",
+    "styled-components": "^4.1.2",
     "styled-icons": "^3.6.0"
   },
   "scripts": {
