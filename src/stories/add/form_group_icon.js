@@ -18,12 +18,12 @@ import { LocationOn } from `}<Box color="red" display="inline-block">'styled-ico
         <Alert variant="info">Support <a href="https://smooth-ui.smooth-code.com/docs-components-input#api">API component <b>Input</b> smooth-ui</a><br/></Alert>
         <FormGroup mb={10}>
             <FormGroupIcon><LocationOn /></FormGroupIcon>
-            <Input icon="true" placeholder="placeholder" />
+            <Input icon placeholder="placeholder" />
         </FormGroup>
         <code>
 <pre>{`<FormGroup>
     <FormGroupIcon><LocationOn /></FormGroupIcon>
-    <Input `}<b>icon="true"</b>{` placeholder="placeholder" />
+    <Input `}<b>icon</b>{` placeholder="placeholder" />
 </FormGroup>
 `}</pre>
         </code>
@@ -31,7 +31,7 @@ import { LocationOn } from `}<Box color="red" display="inline-block">'styled-ico
         <Alert variant="info">Support <a href="https://smooth-ui.smooth-code.com/docs-components-select#api">API component <b>Select</b> smooth-ui</a><br/></Alert>
         <FormGroup mb={10}>
             <FormGroupIcon><LocationOn /></FormGroupIcon>
-            <Select icon="true">
+            <Select icon>
                 <option>Все категории</option>
                 <option>Control</option>
                 <option>Other</option>
@@ -41,7 +41,7 @@ import { LocationOn } from `}<Box color="red" display="inline-block">'styled-ico
 <pre>{`import { Select } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box><br/>{`
 <FormGroup>
     <FormGroupIcon><LocationOn /></FormGroupIcon>
-    <Select `}<b>icon="true"</b>{`>
+    <Select `}<b>icon</b>{`>
         <option>Control</option>
         <option>Other</option>
     </Select>

@@ -57,16 +57,16 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
                         <Typography `}<b>variant="h3" color='#fff' mb={`{30}`}</b>{`>Подписаться</Typography>
                         <Row>
                             <Col `}<b>xs="auto" mr={`{10}`}</b>{`>
-                                <Button `}<b>round="true" icon="true"</b>{`><Vk /></Button>
+                                <Button `}<b>round icon</b>{`><Vk /></Button>
                             </Col>
                             <Col `}<b>xs="auto" mr={`{10}`}</b>{`>
-                                <Button `}<b>round="true" icon="true"</b>{`><Facebook /></Button>
+                                <Button `}<b>round icon</b>{`><Facebook /></Button>
                             </Col>
                             <Col `}<b>xs="auto" mr={`{10}`}</b>{`>
-                                <Button `}<b>round="true" icon="true"</b>{`><Twitter /></Button>
+                                <Button `}<b>round icon</b>{`><Twitter /></Button>
                             </Col>
                             <Col `}<b>xs="auto" mr={`{10}`}</b>{`>
-                                <Button `}<b>round="true" icon="true"</b>{`><LinkedinIn /></Button>
+                                <Button `}<b>round icon</b>{`><LinkedinIn /></Button>
                             </Col>
                         </Row>
                         <Box `}<b>mt={`{10}`}</b>{`>
@@ -123,16 +123,16 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
                         <Typography variant="h3" color='#fff' mb={30}>Подписаться</Typography>
                         <Row>
                             <Col xs="auto" mr={10}>
-                                <Button round="true" icon="true"><Vk /></Button>
+                                <Button round icon><Vk /></Button>
                             </Col>
                             <Col xs="auto" mr={10}>
-                                <Button round="true" icon="true"><Facebook /></Button>
+                                <Button round icon><Facebook /></Button>
                             </Col>
                             <Col xs="auto" mr={10}>
-                                <Button round="true" icon="true"><Twitter /></Button>
+                                <Button round icon><Twitter /></Button>
                             </Col>
                             <Col xs="auto" mr={10}>
-                                <Button round="true" icon="true"><LinkedinIn /></Button>
+                                <Button round icon><LinkedinIn /></Button>
                             </Col>
                         </Row>
                         <Box mt={10}>

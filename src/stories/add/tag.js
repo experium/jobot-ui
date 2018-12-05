@@ -19,7 +19,7 @@ const TagStory = () => ( <Box p={10}>
         </Grid>
         <Typography variant="h3" mb={20} mt={30}>Variants</Typography>
         <Tag>Tag Default</Tag><br/>
-        <Tag link="true" as="a"><Computer />Tag Icon</Tag>
+        <Tag link as="a"><Computer />Tag Icon</Tag>
         <code>
 <pre>{`<Tag>Tag Default</Tag>
 <Tag><Computer />Tag</Tag>
@@ -27,9 +27,9 @@ const TagStory = () => ( <Box p={10}>
         </code>
 
         <Typography variant="h3" mb={20} mt={30}>Tag Link</Typography>
-        <Tag link="true" as="a"><Computer />Tag Link</Tag>
+        <Tag link as="a"><Computer />Tag Link</Tag>
         <code>
-<pre>{`<Tag `}<b>link="true" as="a"</b>{`>Tag Link</Tag>
+<pre>{`<Tag `}<b>link as="a"</b>{`>Tag Link</Tag>
 `}</pre>
         </code>
     </Box>

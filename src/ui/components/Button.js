@@ -17,18 +17,18 @@ const sizeStyle = {
 const sizeStyleIcon = {
     sm: css`
         svg{
-            min-width: calc(${th('btnLineHeightSm')}rem / 3);
+            width: calc(${th('btnLineHeightSm')}rem / 3);
         }
     `,
     md: css`
         svg{
-            min-width: ${th('fontSizeBase')};
+            width: ${th('fontSizeBase')};
         }
     `,
     lg: css`
         svg{
-            min-width: ${th('btnLineHeightLg')}rem;
-            min-height: ${th('btnLineHeightLg')}rem;
+            width: ${th('btnLineHeightLg')}rem;
+            height: ${th('btnLineHeightLg')}rem;
         }
     `,
 };

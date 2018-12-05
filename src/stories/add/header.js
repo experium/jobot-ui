@@ -30,12 +30,12 @@ import bg from `}<Box color="red" display="inline-block">'../assets/img/bg-heade
             <Grid `}<b>fluid gutter={`{0}`}</b>{`>
                 <Row>
                     <Col `}<b>xs={`{12}`} md={`{12}`} mb={`{{ md: '10px', xs: '10px' }}`} lg={`{4}`}</b>{`>
-                        <FormGroup><FormGroupIcon><Work /></FormGroupIcon><Input size="lg" icon="true" control placeholder="Название вакансии / Компания" /></FormGroup>
+                        <FormGroup><FormGroupIcon><Work /></FormGroupIcon><Input size="lg" icon control placeholder="Название вакансии / Компания" /></FormGroup>
                     </Col>
                     <Col `}<b>xs={`{12}`} md={`{12}`} mb={`{{ md: '10px', xs: '10px' }}`} lg={`{4}`}</b>{`>
                         <FormGroup>
                             <FormGroupIcon><LocationOn /></FormGroupIcon>
-                            <Input `}<b>size="lg" icon="true" control placeholder="Название вакансии / Компания"</b>{` />
+                            <Input `}<b>size="lg" icon control placeholder="Название вакансии / Компания"</b>{` />
                         </FormGroup>
                     </Col>
                     <Col `}<b>xs={`{12}`} md={`{12}`} lg={`{4}`}</b>{`>
@@ -43,7 +43,7 @@ import bg from `}<Box color="red" display="inline-block">'../assets/img/bg-heade
                             <Col `}<b>xs="auto" flex="auto"</b>{`>
                                 <FormGroup>
                                     <FormGroupIcon><Work /></FormGroupIcon>
-                                    <Select `}<b>size="lg" control icon="true"</b>{`>
+                                    <Select `}<b>size="lg" control icon</b>{`>
                                         <option>Все категории</option>
                                         <option>Control</option>
                                         <option>Other</option>
@@ -60,9 +60,9 @@ import bg from `}<Box color="red" display="inline-block">'../assets/img/bg-heade
         </Box>
         <Box>
             <Typography `}<b>color="#fff" as="b"</b>{`>Популярные запросы: </Typography>
-            <Badge `}<b>variant="light" link="true" as="a"</b>{`>Менеджер</Badge>
-            <Badge `}<b>variant="light" link="true" as="a"</b>{`>Дизайнер</Badge>
-            <Badge `}<b>variant="light" link="true" as="a"</b>{`>Программист</Badge>
+            <Badge `}<b>variant="light" link as="a"</b>{`>Менеджер</Badge>
+            <Badge `}<b>variant="light" link as="a"</b>{`>Дизайнер</Badge>
+            <Badge `}<b>variant="light" link as="a"</b>{`>Программист</Badge>
         </Box>
     </Container>
 </BoxImage>
@@ -76,12 +76,12 @@ import bg from `}<Box color="red" display="inline-block">'../assets/img/bg-heade
                     <Grid fluid gutter={0}>
                         <Row>
                             <Col xs={12} md={12} mb={{ md: '10px', xs: "10px" }} lg={4}>
-                                <FormGroup><FormGroupIcon><Work /></FormGroupIcon><Input size="lg" icon="true" control placeholder="Название вакансии / Компания" /></FormGroup>
+                                <FormGroup><FormGroupIcon><Work /></FormGroupIcon><Input size="lg" icon control placeholder="Название вакансии / Компания" /></FormGroup>
                             </Col>
                             <Col xs={12}  md={12} mb={{ md: '10px', xs: "10px" }} lg={4}>
                                 <FormGroup>
                                     <FormGroupIcon><LocationOn /></FormGroupIcon>
-                                    <Input size="lg" icon="true" control placeholder="Название вакансии / Компания" />
+                                    <Input size="lg" icon control placeholder="Название вакансии / Компания" />
                                 </FormGroup>
                             </Col>
                             <Col xs={12} md={12} lg={4}>
@@ -89,7 +89,7 @@ import bg from `}<Box color="red" display="inline-block">'../assets/img/bg-heade
                                     <Col xs="auto" flex="auto">
                                         <FormGroup>
                                             <FormGroupIcon><Work /></FormGroupIcon>
-                                            <Select size="lg" control icon="true">
+                                            <Select size="lg" control icon>
                                                 <option>Все категории</option>
                                                 <option>Control</option>
                                                 <option>Other</option>
@@ -106,9 +106,9 @@ import bg from `}<Box color="red" display="inline-block">'../assets/img/bg-heade
                 </Box>
                 <Box>
                     <Typography color="#fff" as="b">Популярные запросы: </Typography>
-                    <Badge variant="light" link="true" as="a">Менеджер</Badge>
-                    <Badge variant="light" link="true" as="a">Дизайнер</Badge>
-                    <Badge variant="light" link="true" as="a">Программист</Badge>
+                    <Badge variant="light" link as="a">Менеджер</Badge>
+                    <Badge variant="light" link as="a">Дизайнер</Badge>
+                    <Badge variant="light" link as="a">Программист</Badge>
                 </Box>
             </Container>
         </BoxImage>

@@ -49,12 +49,12 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
                     <hr/>
                     <Row `}<b>mt={`{10}`}</b>{`>
                         <Col `}<b>flex="auto"</b>{`>
-                            <Tag `}<b>link="true" as="a"</b>{`><Brush />Дизайн</Tag>
+                            <Tag `}<b>link as="a"</b>{`><Brush />Дизайн</Tag>
                             <Tag><LocationOn />Москва</Tag>
                             <Tag><AccessTime />12:00</Tag>
                         </Col>
                         <Col `}<b>xs='auto' flex="none"</b>{`>
-                            <Button `}<b>mr={`{20}`} variant="secondary" round="true"</b>{`><Heart /></Button>
+                            <Button `}<b>mr={`{20}`} variant="secondary" round</b>{`><Heart /></Button>
                             <Button>Подробнее</Button>
                         </Col>
                     </Row>
@@ -72,12 +72,12 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
                     <hr/>
                     <Row `}<b>mt={`{10}`}</b>{`>
                         <Box `}<b>flex="auto"</b>{`>
-                            <Tag l`}<b>ink="true" as="a"</b>{`><Computer />Информационные технологии</Tag>
+                            <Tag l`}<b>ink as="a"</b>{`><Computer />Информационные технологии</Tag>
                             <Tag><LocationOn />Москва</Tag>
                             <Tag><AccessTime />12:00</Tag>
                         </Box>
                         <Box `}<b>xs='auto' flex="none"</b>{`>
-                            <Button `}<b>mr={`{20}`} variant="secondary" round="true"</b>{`><Heart /></Button>
+                            <Button `}<b>mr={`{20}`} variant="secondary" round</b>{`><Heart /></Button>
                             <Button>Подробнее</Button>
                         </Box>
                     </Row>
@@ -88,7 +88,7 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
             <Box `}<b>mb={`{30}`} p={`{30}`} border="1px solid #eee;"</b>{`>
                 <Typography `}<b>variant="h4" mb={`{20}`}</b>{`>Категории</Typography>
                 <Box `}<b>textAlign="left"</b>{`>
-                    <ListUl `}<b>styleNone="true" borderItem="true"</b>{`>
+                    <ListUl `}<b>styleNone borderItem</b>{`>
                         <li>
                             <a href="#">IT, телеком (720)</a>
                         </li>
@@ -113,7 +113,7 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
             <Box `}<b>mb={`{30}`} p={`{30}`} border="1px solid #eee;"</b>{`>
                 <Typography `}<b>variant="h4" mb={`{20}`}</b>{`>График работы</Typography>
                 <Box `}<b>textAlign="left"</b>{`>
-                    <ListUl `}<b>styleNone="true" borderItem="true"</b>{`>
+                    <ListUl `}<b>styleNone borderItem</b>{`>
                         <li>
                             <a href="#">Полный день (120)</a>
                         </li>
@@ -161,12 +161,12 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
                             <hr/>
                             <Row mt={10}>
                                 <Col flex="auto">
-                                    <Tag link="true" as="a"><Brush />Дизайн</Tag>
+                                    <Tag link as="a"><Brush />Дизайн</Tag>
                                     <Tag><LocationOn />Москва</Tag>
                                     <Tag><AccessTime />12:00</Tag>
                                 </Col>
                                 <Col xs='auto' flex="none">
-                                    <Button mr={20} variant="secondary" round="true"><Heart /></Button>
+                                    <Button mr={20} variant="secondary" round><Heart /></Button>
                                     <Button>Подробнее</Button>
                                 </Col>
                             </Row>
@@ -184,12 +184,12 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
                             <hr/>
                             <Row mt={10}>
                                 <Box flex="auto">
-                                    <Tag link="true" as="a"><Computer />Информационные технологии</Tag>
+                                    <Tag link as="a"><Computer />Информационные технологии</Tag>
                                     <Tag><LocationOn />Москва</Tag>
                                     <Tag><AccessTime />12:00</Tag>
                                 </Box>
                                 <Box xs='auto' flex="none">
-                                    <Button mr={20} variant="secondary" round="true"><Heart /></Button>
+                                    <Button mr={20} variant="secondary" round><Heart /></Button>
                                     <Button>Подробнее</Button>
                                 </Box>
                             </Row>
@@ -207,12 +207,12 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
                             <hr/>
                             <Row mt={10}>
                                 <Col flex="auto">
-                                    <Tag link="true" as="a"><Brush />Дизайн</Tag>
+                                    <Tag link as="a"><Brush />Дизайн</Tag>
                                     <Tag><LocationOn />Москва</Tag>
                                     <Tag><AccessTime />12:00</Tag>
                                 </Col>
                                 <Col xs='auto' flex="none">
-                                    <Button mr={20} variant="secondary" round="true"><Heart /></Button>
+                                    <Button mr={20} variant="secondary" round><Heart /></Button>
                                     <Button>Подробнее</Button>
                                 </Col>
                             </Row>
@@ -223,7 +223,7 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
                     <Box mr="3rem" mb={30} p={30} border="1px solid #eee;">
                         <Typography variant="h4" mb={20}>Категории</Typography>
                         <Box textAlign="left">
-                            <ListUl styleNone="true" borderItem="true">
+                            <ListUl styleNone borderItem>
                                 <li>
                                     <a href="#">IT, телеком (720)</a>
                                 </li>
@@ -248,7 +248,7 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
                     <Box mr="3rem" mb={30} p={30} border="1px solid #eee;">
                         <Typography variant="h4" mb={20}>График работы</Typography>
                         <Box textAlign="left">
-                            <ListUl styleNone="true" borderItem="true">
+                            <ListUl styleNone borderItem>
                                 <li>
                                     <a href="#">Полный день (120)</a>
                                 </li>

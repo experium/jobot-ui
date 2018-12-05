@@ -28,11 +28,11 @@ import { AccessTime, ArrowForward, Comment, DateRange, LocationOn } from `}<Box 
                 <Box `}<b>m={10}</b>{`>
                     <Typography `}<b>variant="h3"</b>{`>Название вакансии</Typography>
                     <Box `}<b>mt={`{10}`}</b>{`>
-                        <Tag `}<b>link="true" as="a"</b>{`><LocationOn />Москва</Tag>
+                        <Tag `}<b>link as="a"</b>{`><LocationOn />Москва</Tag>
                     </Box>
                 </Box>
                 <CardBtn>
-                    <Button `}<b>size="lg" round="true"</b>{`><ArrowForward /></Button>
+                    <Button `}<b>size="lg" round</b>{`><ArrowForward /></Button>
                 </CardBtn>
                 <Box `}<b>m={`{10}`}</b>{`>
                     <Tag><DateRange />12.11.2018</Tag>
@@ -46,11 +46,11 @@ import { AccessTime, ArrowForward, Comment, DateRange, LocationOn } from `}<Box 
                 <Box `}<b>m={10}</b>{`>
                     <Typography `}<b>variant="h3"</b>{`>Название вакансии 2</Typography>
                     <Box `}<b>mt={`{10}`}</b>{`>
-                        <Tag `}<b>link="true" as="a"</b>{`><LocationOn />Москва</Tag>
+                        <Tag `}<b>link as="a"</b>{`><LocationOn />Москва</Tag>
                     </Box>
                 </Box>
                 <CardBtn>
-                    <Button `}<b>size="lg" round="true"</b>{`><ArrowForward /></Button>
+                    <Button `}<b>size="lg" round</b>{`><ArrowForward /></Button>
                 </CardBtn>
                 <Box `}<b>m={`{10}`}</b>{`>
                     <Tag><DateRange />12.11.2018</Tag>
@@ -64,11 +64,11 @@ import { AccessTime, ArrowForward, Comment, DateRange, LocationOn } from `}<Box 
                 <Box `}<b>m={10}</b>{`>
                     <Typography `}<b>variant="h3"</b>{`>Название вакансии 3</Typography>
                     <Box `}<b>mt={`{10}`}</b>{`>
-                        <Tag `}<b>link="true" as="a"</b>{`><LocationOn />Москва</Tag>
+                        <Tag `}<b>link as="a"</b>{`><LocationOn />Москва</Tag>
                     </Box>
                 </Box>
                 <CardBtn>
-                    <Button `}<b>size="lg" round="true"</b>{`><ArrowForward /></Button>
+                    <Button `}<b>size="lg" round</b>{`><ArrowForward /></Button>
                 </CardBtn>
                 <Box `}<b>m={`{10}`}</b>{`>
                     <Tag><DateRange />12.11.2018</Tag>
@@ -134,11 +134,11 @@ import { AccessTime, ArrowForward, Comment, DateRange, LocationOn } from `}<Box 
                         <Box m={10}>
                             <Typography variant="h3">Название вакансии</Typography>
                             <Box mt={10}>
-                                <Tag link="true" as="a"><LocationOn />Москва</Tag>
+                                <Tag link as="a"><LocationOn />Москва</Tag>
                             </Box>
                         </Box>
                         <CardBtn>
-                            <Button size="lg" round="true"><ArrowForward /></Button>
+                            <Button size="lg" round><ArrowForward /></Button>
                         </CardBtn>
                         <Box m={10}>
                             <Tag><DateRange />12.11.2018</Tag>
@@ -152,11 +152,11 @@ import { AccessTime, ArrowForward, Comment, DateRange, LocationOn } from `}<Box 
                         <Box m={10}>
                             <Typography variant="h3">Название вакансии 2</Typography>
                             <Box mt={10}>
-                                <Tag link="true" as="a"><LocationOn />Москва</Tag>
+                                <Tag link as="a"><LocationOn />Москва</Tag>
                             </Box>
                         </Box>
                         <CardBtn>
-                            <Button size="lg" round="true"><ArrowForward /></Button>
+                            <Button size="lg" round><ArrowForward /></Button>
                         </CardBtn>
                         <Box m={10}>
                             <Tag><DateRange />12.11.2018</Tag>
@@ -170,11 +170,11 @@ import { AccessTime, ArrowForward, Comment, DateRange, LocationOn } from `}<Box 
                         <Box m={10}>
                             <Typography variant="h3">Название вакансии 3</Typography>
                             <Box mt={10}>
-                                <Tag link="true" as="a"><LocationOn />Москва</Tag>
+                                <Tag link as="a"><LocationOn />Москва</Tag>
                             </Box>
                         </Box>
                         <CardBtn>
-                            <Button size="lg" round="true"><ArrowForward /></Button>
+                            <Button size="lg" round><ArrowForward /></Button>
                         </CardBtn>
                         <Box m={10}>
                             <Tag><DateRange />12.11.2018</Tag>

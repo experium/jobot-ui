@@ -57,9 +57,9 @@ const ButtonStory = () => ( <Box p={10}>
         </code>
 
         <Typography variant="h3" mb={20} mt={30}>Circle</Typography>
-        <Button mr={10} round="true" size='sm'><Heart /></Button>
-        <Button mr={10} round="true"><Heart /></Button>
-        <Button mr={10} round="true" size='lg'><Heart /></Button>
+        <Button mr={10} round size='sm'><Heart /></Button>
+        <Button mr={10} round><Heart /></Button>
+        <Button mr={10} round size='lg'><Heart /></Button>
         <code>
 <pre>{`import { Heart } from `}<Box color="red" display="inline-block">'styled-icons/fa-regular/Heart';</Box> <br/>{`
 <Button `}<b> round size='sm'</b>{`>

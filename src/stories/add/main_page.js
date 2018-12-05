@@ -39,12 +39,12 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
             <Grid `}<b>fluid gutter={`{0}`}</b>{`>
                 <Row>
                     <Col `}<b>xs={`{12}`} md={`{12}`} mb={`{{ md: '10px', xs: '10px' }}`} lg={`{4}`}</b>{`>
-                        <FormGroup><FormGroupIcon><Work /></FormGroupIcon><Input size="lg" icon="true" control placeholder="Название вакансии / Компания" /></FormGroup>
+                        <FormGroup><FormGroupIcon><Work /></FormGroupIcon><Input size="lg" icon control placeholder="Название вакансии / Компания" /></FormGroup>
                     </Col>
                     <Col `}<b>xs={`{12}`} md={`{12}`} mb={`{{ md: '10px', xs: '10px' }}`} lg={`{4}`}</b>{`>
                         <FormGroup>
                             <FormGroupIcon><LocationOn /></FormGroupIcon>
-                            <Input `}<b>size="lg" icon="true" control placeholder="Название вакансии / Компания"</b>{` />
+                            <Input `}<b>size="lg" icon control placeholder="Название вакансии / Компания"</b>{` />
                         </FormGroup>
                     </Col>
                     <Col `}<b>xs={`{12}`} md={`{12}`} lg={`{4}`}</b>{`>
@@ -52,7 +52,7 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
                             <Col `}<b>xs="auto" flex="auto"</b>{`>
                                 <FormGroup>
                                     <FormGroupIcon><Work /></FormGroupIcon>
-                                    <Select `}<b>size="lg" control icon="true"</b>{`>
+                                    <Select `}<b>size="lg" control icon</b>{`>
                                         <option>Все категории</option>
                                         <option>Control</option>
                                         <option>Other</option>
@@ -69,9 +69,9 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
         </Box>
         <Box>
             <Typography `}<b>color="#fff" as="b"</b>{`>Популярные запросы: </Typography>
-            <Badge `}<b>variant="light" link="true" as="a"</b>{`>Менеджер</Badge>
-            <Badge `}<b>variant="light" link="true" as="a"</b>{`>Дизайнер</Badge>
-            <Badge `}<b>variant="light" link="true" as="a"</b>{`>Программист</Badge>
+            <Badge `}<b>variant="light" link as="a"</b>{`>Менеджер</Badge>
+            <Badge `}<b>variant="light" link as="a"</b>{`>Дизайнер</Badge>
+            <Badge `}<b>variant="light" link as="a"</b>{`>Программист</Badge>
         </Box>
     </Container>
 </BoxImage>
@@ -89,12 +89,12 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
             <hr/>
             <Row `}<b>mt={`{10}`}</b>{`>
                 <Col `}<b>flex="auto"</b>{`>
-                    <Tag `}<b>link="true" as="a"</b>{`><Brush />Дизайн</Tag>
+                    <Tag `}<b>link as="a"</b>{`><Brush />Дизайн</Tag>
                     <Tag><LocationOn />Москва</Tag>
                     <Tag><AccessTime />12:00</Tag>
                 </Col>
                 <Col `}<b>xs='auto' flex="none"</b>{`>
-                    <Button `}<b>mr={`{20}`} variant="secondary" round="true"</b>{`><Heart /></Button>
+                    <Button `}<b>mr={`{20}`} variant="secondary" round</b>{`><Heart /></Button>
                     <Button>Подробнее</Button>
                 </Col>
             </Row>
@@ -112,12 +112,12 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
             <hr/>
             <Row `}<b>mt={`{10}`}</b>{`>
                 <Box `}<b>flex="auto"</b>{`>
-                    <Tag l`}<b>ink="true" as="a"</b>{`><Computer />Информационные технологии</Tag>
+                    <Tag l`}<b>ink as="a"</b>{`><Computer />Информационные технологии</Tag>
                     <Tag><LocationOn />Москва</Tag>
                     <Tag><AccessTime />12:00</Tag>
                 </Box>
                 <Box `}<b>xs='auto' flex="none"</b>{`>
-                    <Button `}<b>mr={`{20}`} variant="secondary" round="true"</b>{`><Heart /></Button>
+                    <Button `}<b>mr={`{20}`} variant="secondary" round</b>{`><Heart /></Button>
                     <Button>Подробнее</Button>
                 </Box>
             </Row>
@@ -169,16 +169,16 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
                         <Typography `}<b>variant="h3" color='#fff' mb={`{30}`}</b>{`>Подписаться</Typography>
                         <Row>
                             <Col `}<b>xs="auto" mr={`{10}`}</b>{`>
-                                <Button `}<b>round="true" icon="true"</b>{`><Vk /></Button>
+                                <Button `}<b>round icon</b>{`><Vk /></Button>
                             </Col>
                             <Col `}<b>xs="auto" mr={`{10}`}</b>{`>
-                                <Button `}<b>round="true" icon="true"</b>{`><Facebook /></Button>
+                                <Button `}<b>round icon</b>{`><Facebook /></Button>
                             </Col>
                             <Col `}<b>xs="auto" mr={`{10}`}</b>{`>
-                                <Button `}<b>round="true" icon="true"</b>{`><Twitter /></Button>
+                                <Button `}<b>round icon</b>{`><Twitter /></Button>
                             </Col>
                             <Col `}<b>xs="auto" mr={`{10}`}</b>{`>
-                                <Button `}<b>round="true" icon="true"</b>{`><LinkedinIn /></Button>
+                                <Button `}<b>round icon</b>{`><LinkedinIn /></Button>
                             </Col>
                         </Row>
                         <Box `}<b>mt={`{10}`}</b>{`>
@@ -199,12 +199,12 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
                         <Grid fluid gutter={0}>
                             <Row>
                                 <Col xs={12} md={12} mb={{ md: '10px', xs: '10px' }} lg={4}>
-                                    <FormGroup><FormGroupIcon><Work /></FormGroupIcon><Input size="lg" icon="true" control placeholder="Название вакансии / Компания" /></FormGroup>
+                                    <FormGroup><FormGroupIcon><Work /></FormGroupIcon><Input size="lg" icon control placeholder="Название вакансии / Компания" /></FormGroup>
                                 </Col>
                                 <Col xs={12} md={12} mb={{ md: '10px', xs: '10px' }} lg={4}>
                                     <FormGroup>
                                         <FormGroupIcon><LocationOn /></FormGroupIcon>
-                                        <Input size="lg" icon="true" control placeholder="Название вакансии / Компания" />
+                                        <Input size="lg" icon control placeholder="Название вакансии / Компания" />
                                     </FormGroup>
                                 </Col>
                                 <Col xs={12} md={12} lg={4}>
@@ -212,7 +212,7 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
                                         <Col xs="auto" flex="auto">
                                             <FormGroup>
                                                 <FormGroupIcon><Work /></FormGroupIcon>
-                                                <Select size="lg" control icon="true">
+                                                <Select size="lg" control icon>
                                                     <option>Все категории</option>
                                                     <option>Control</option>
                                                     <option>Other</option>
@@ -229,9 +229,9 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
                     </Box>
                     <Box>
                         <Typography color="#fff" as="b">Популярные запросы: </Typography>
-                        <Badge variant="light" link="true" as="a">Менеджер</Badge>
-                        <Badge variant="light" link="true" as="a">Дизайнер</Badge>
-                        <Badge variant="light" link="true" as="a">Программист</Badge>
+                        <Badge variant="light" link as="a">Менеджер</Badge>
+                        <Badge variant="light" link as="a">Дизайнер</Badge>
+                        <Badge variant="light" link as="a">Программист</Badge>
                     </Box>
                 </Container>
             </BoxImage>
@@ -249,12 +249,12 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
                         <hr/>
                         <Row mt={10}>
                             <Col flex="auto">
-                                <Tag link="true" as="a"><Brush />Дизайн</Tag>
+                                <Tag link as="a"><Brush />Дизайн</Tag>
                                 <Tag><LocationOn />Москва</Tag>
                                 <Tag><AccessTime />12:00</Tag>
                             </Col>
                             <Col xs='auto' flex="none">
-                                <Button mr={20} variant="secondary" round="true"><Heart /></Button>
+                                <Button mr={20} variant="secondary" round><Heart /></Button>
                                 <Button>Подробнее</Button>
                             </Col>
                         </Row>
@@ -272,12 +272,12 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
                         <hr/>
                         <Row mt={10}>
                             <Box flex="auto">
-                                <Tag link="true" as="a"><Computer />Информационные технологии</Tag>
+                                <Tag link as="a"><Computer />Информационные технологии</Tag>
                                 <Tag><LocationOn />Москва</Tag>
                                 <Tag><AccessTime />12:00</Tag>
                             </Box>
                             <Box xs='auto' flex="none">
-                                <Button mr={20} variant="secondary" round="true"><Heart /></Button>
+                                <Button mr={20} variant="secondary" round><Heart /></Button>
                                 <Button>Подробнее</Button>
                             </Box>
                         </Row>
@@ -329,16 +329,16 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
                             <Typography variant="h3" color='#fff' mb={30}>Подписаться</Typography>
                             <Row>
                                 <Col xs="auto" mr={10}>
-                                    <Button round="true" icon="true"><Vk /></Button>
+                                    <Button round icon><Vk /></Button>
                                 </Col>
                                 <Col xs="auto" mr={10}>
-                                    <Button round="true" icon="true"><Facebook /></Button>
+                                    <Button round icon><Facebook /></Button>
                                 </Col>
                                 <Col xs="auto" mr={10}>
-                                    <Button round="true" icon="true"><Twitter /></Button>
+                                    <Button round icon><Twitter /></Button>
                                 </Col>
                                 <Col xs="auto" mr={10}>
-                                    <Button round="true" icon="true"><LinkedinIn /></Button>
+                                    <Button round icon><LinkedinIn /></Button>
                                 </Col>
                             </Row>
                             <Box mt={10}>

@@ -37,12 +37,12 @@ import { Heart } from `}<Box color="red" display="inline-block">'styled-icons/fa
             <hr/>
             <Row `}<b>mt={`{10}`}</b>{`>
                 <Col `}<b>flex="auto"</b>{`>
-                    <Tag `}<b>link="true" as="a"</b>{`><Brush />Дизайн</Tag>
+                    <Tag `}<b>link as="a"</b>{`><Brush />Дизайн</Tag>
                     <Tag><LocationOn />Москва</Tag>
                     <Tag><AccessTime />12:00</Tag>
                 </Col>
                 <Col `}<b>xs='auto' flex="none"</b>{`>
-                    <Button `}<b>mr={`{20}`} variant="secondary" round="true"</b>{`><Heart /></Button>
+                    <Button `}<b>mr={`{20}`} variant="secondary" round</b>{`><Heart /></Button>
                     <Button>Подробнее</Button>
                 </Col>
             </Row>
@@ -60,12 +60,12 @@ import { Heart } from `}<Box color="red" display="inline-block">'styled-icons/fa
             <hr/>
             <Row `}<b>mt={`{10}`}</b>{`>
                 <Box `}<b>flex="auto"</b>{`>
-                    <Tag l`}<b>ink="true" as="a"</b>{`><Computer />Информационные технологии</Tag>
+                    <Tag l`}<b>ink as="a"</b>{`><Computer />Информационные технологии</Tag>
                     <Tag><LocationOn />Москва</Tag>
                     <Tag><AccessTime />12:00</Tag>
                 </Box>
                 <Box `}<b>xs='auto' flex="none"</b>{`>
-                    <Button `}<b>mr={`{20}`} variant="secondary" round="true"</b>{`><Heart /></Button>
+                    <Button `}<b>mr={`{20}`} variant="secondary" round</b>{`><Heart /></Button>
                     <Button>Подробнее</Button>
                 </Box>
             </Row>
@@ -88,12 +88,12 @@ import { Heart } from `}<Box color="red" display="inline-block">'styled-icons/fa
                     <hr/>
                     <Row mt={10}>
                         <Col flex="auto">
-                            <Tag link="true" as="a"><Brush />Дизайн</Tag>
+                            <Tag link as="a"><Brush />Дизайн</Tag>
                             <Tag><LocationOn />Москва</Tag>
                             <Tag><AccessTime />12:00</Tag>
                         </Col>
                         <Col xs='auto' flex="none">
-                            <Button mr={20} variant="secondary" round="true"><Heart /></Button>
+                            <Button mr={20} variant="secondary" round><Heart /></Button>
                             <Button>Подробнее</Button>
                         </Col>
                     </Row>
@@ -111,12 +111,12 @@ import { Heart } from `}<Box color="red" display="inline-block">'styled-icons/fa
                     <hr/>
                     <Row mt={10}>
                         <Box flex="auto">
-                            <Tag link="true" as="a"><Computer />Информационные технологии</Tag>
+                            <Tag link as="a"><Computer />Информационные технологии</Tag>
                             <Tag><LocationOn />Москва</Tag>
                             <Tag><AccessTime />12:00</Tag>
                         </Box>
                         <Box xs='auto' flex="none">
-                            <Button mr={20} variant="secondary" round="true"><Heart /></Button>
+                            <Button mr={20} variant="secondary" round><Heart /></Button>
                             <Button>Подробнее</Button>
                         </Box>
                     </Row>
