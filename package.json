@@ -22,8 +22,8 @@
     "styled-icons": "^3.6.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "yarn storybook",
+    "build": "yarn build-storybook",
     "test": "react-scripts test",
     "test:ci": "CI=true yarn test --reporters=jest-junit",
     "eject": "react-scripts eject",

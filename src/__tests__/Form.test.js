@@ -13,7 +13,7 @@ it('FormGroup: should renders input', () => {
         <ThemeProvider theme={theme}>
             <FormGroup mb={10}>
                 <FormGroupIcon><LocationOn /></FormGroupIcon>
-                <Input data-testid={testId} icon='true' placeholder='placeholder' />
+                <Input data-testid={testId} icon placeholder='placeholder' />
             </FormGroup>
         </ThemeProvider>
     );

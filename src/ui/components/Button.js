@@ -1,3 +1,4 @@
+import React from 'react';
 import { styled, css, Button as SmoothButton, th } from '@smooth-ui/core-sc';
 import PropTypes from 'prop-types';
 
@@ -33,17 +34,22 @@ const sizeStyleIcon = {
     `,
 };
 
-export const Button = styled(SmoothButton)`
-    ${p => p.size && sizeStyleIcon[p.size]};
-    ${p => p.round && css`
-        border: ${props => props.variant === 'secondary' ? '1px solid #ddd' : 'initial'};
-        border-radius: 50%;
-        padding: ${th('inputBtnPaddingY')};
-        width: calc(${th('inputBtnPaddingY')} + ${th('inputBtnPaddingY')} + ${th('btnLineHeight')}rem);
-        ${p => p.size && sizeStyle[p.size]};
-    `}
-`;
+export const Button = ({ round, ...props }) => {
+    const Component = styled(SmoothButton)`
+        ${p => p.size && sizeStyleIcon[p.size]};
+        ${round && css`
+            border: ${props => props.variant === 'secondary' ? '1px solid #ddd' : 'initial'};
+            border-radius: 50%;
+            padding: ${th('inputBtnPaddingY')};
+            width: calc(${th('inputBtnPaddingY')} + ${th('inputBtnPaddingY')} + ${th('btnLineHeight')}rem);
+            ${p => p.size && sizeStyle[p.size]};
+        `}
+    `;
 
-Button.propTypes ={
+    return <Component {...props} />;
+};
+
+Button.propTypes = {
     round: PropTypes.bool
 };
+
