@@ -48,13 +48,8 @@ const sizeStyle = {
     `,
 };
 
-export const Badge = styled(({ link, ...props }) => {
-    const Component = styled(Box)`
-        cursor: ${link === 'true' ? 'pointer' : 'inherit'};
-    `;
-
-    return <Component {...props} />;
-})`
+export const Badge = styled(Box)`
+    cursor: ${p => p.link === 'true' ? 'pointer' : 'inherit'};
     ${p => p.variant && badgeTheme[p.variant]};
     ${p => p.size && sizeStyle[p.size]};
 `;
