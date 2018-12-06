@@ -5,8 +5,10 @@ import { storiesOf } from '@storybook/react';
 
 /*Add*/
 import MainPage from './add/main_page';
+import TerminalGrid from './add/terminal_grid';
+import TerminalMain from './add/terminal_main';
 import TerminalListVacancy from './add/terminal_list_vavancy';
-import TerminalListVacancyCompany from './add/terminal_list_vavancy_company';
+import TerminalVacancy from './add/terminal_vavancy';
 import TerminalCardVacancy from './add/terminal_card_vavancy';
 import TerminalCardCompany from './add/terminal_card_company';
 import Header from './add/header';
@@ -38,6 +40,7 @@ import { Typography, Box, Button } from './ui';
 import { LightBulb } from 'styled-icons/octicons';
 import {  Github } from 'styled-icons/fa-brands';
 import { Globe } from 'styled-icons/fa-solid/Globe';
+import { TextFields } from 'styled-icons/material/TextFields';
 
 storiesOf('Library', module)
 .add('smooth-ui', () => <Box my={30} textAlign="center">
@@ -55,6 +58,15 @@ storiesOf('Library', module)
     <p>Font Awesome, Feather, Material Design, and Octicons icon packs as Styled Components</p>
     <Button as="a" href="https://styled-icons.js.org/" size="lg" mr={20}><Globe /> Site</Button>
     <Button as="a" href="https://github.com/jacobwgillespie/styled-icons" variant="dark" size="lg"><Github /> Github</Button>
+</Box>)
+.add('react-textfit', () => <Box my={30} textAlign="center">
+    <Typography variant="h1">react-textfit</Typography>
+    <Box my={50}>
+        <TextFields size={100} />
+    </Box>
+    <p>React component to fit headlines and paragraphs into elements</p>
+    <Button as="a" href="http://malte-wessel.github.io/react-textfit/" size="lg" mr={20}><Globe /> Site</Button>
+    <Button as="a" href="https://github.com/malte-wessel/react-textfit" variant="dark" size="lg"><Github /> Github</Button>
 </Box>);
 
 storiesOf('Examples', module)
@@ -82,11 +94,13 @@ storiesOf('Components', module)
 .add('Typography', () => <TypographyStory />);
 
 storiesOf('Terminal/Examples', module)
+.add('Main', () => <TerminalMain />)
 .add('List vacancy', () => <TerminalListVacancy />)
-.add('List vacancy company', () => <TerminalListVacancyCompany />)
+.add('Vacancy', () => <TerminalVacancy />)
 .add('Card vacancy', () => <TerminalCardVacancy />)
 .add('Card company', () => <TerminalCardCompany />);
 
 storiesOf('Terminal/Components', module)
+.add('Grid', () => <TerminalGrid />)
 .add('Title', () => <TerminalComponentTitle />)
 .add('Button', () => <TerminalComponentButton />);

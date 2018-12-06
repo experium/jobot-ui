@@ -9,6 +9,7 @@ import {
     Input, Button
 } from '../ui';
 
+import logo from '../../assets/img/logo.svg';
 import imgItem1 from '../../assets/img/item.jpg';
 import imgItem2 from '../../assets/img/item2.png';
 
@@ -22,13 +23,29 @@ const ListVacancySearch = () => ( <Box>
 <pre>{`import { Row, Col, Box, Typography, Container, ItemList, Input } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
 import imgItem1 from `}<Box color="red" display="inline-block">'../../assets/img/item.jpg';</Box>{`
 import imgItem2 from `}<Box color="red" display="inline-block">'../../assets/img/ite2.jpg';</Box>{`
+import logo from `}<Box color="red" display="inline-block">'../../assets/img/logo.svg';</Box>{`
 import { AccessTime, Brush, Computer, LocationOn } from `}<Box color="red" display="inline-block">'styled-icons/material';</Box>{`
 import { Heart } from `}<Box color="red" display="inline-block">'styled-icons/fa-regular';</Box>{`
 import { Search } from `}<Box color="red" display="inline-block">'styled-icons/octicons';</Box><br/>{`
 <Container>
-    <Typography `}<b>variant="h1" mb={`{30}`}</b>{`>Вакансии дня</Typography>
+    <Row `}<b>m="0  0 20px" flexWrap="nowrap" alignItems="center" borderBottom="1px solid #eee"</b>{`>
+        <Col `}<b>xs="auto" flex="none"</b>{`>
+            <img `}<b>src={`{logo}`} width={`{80}`} </b>{`alt=""/>
+        </Col>
+        <Col `}<b>xs="auto" flex="auto"</b>{`>
+            <Row `}<b>flexWrap="nowrap"  alignItems="center"</b>{`>
+                <Col `}<b>xs="auto" flex="auto"</b>{`>
+                    <Input `}<b>size="lg" control placeholder="Поиск"</b>{` />
+                </Col>
+                <Col `}<b>xs="auto" flex="none"</b>{`>
+                    <Button `}<b>size="lg"</b>{`><Search /></Button>
+                </Col>
+            </Row>
+        </Col>
+    </Row>
     <Row>
         <Col `}<b>xs={`{12}`} sm={`{8}`} pr={`{15}`}</b>{`>
+            <Typography `}<b>variant="h1" mb={`{30}`}</b>{`>Вакансии</Typography>
             <Row `}<b>gutter={`{16}`} mb={`{20}`}</b>{`>
                 <Col `}<b>xs="auto" flex="auto"</b>{`>
                     <Input `}<b>size="lg" control</b>{` placeholder="Поиск" />
@@ -138,10 +155,12 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
 `}</pre>
         </code>
         <Container>
-            <Typography variant="h1" mb={30}>Вакансии</Typography>
-            <Row>
-                <Col xs={12} sm={8} pr={15}>
-                    <Row gutter={16} mb={20}>
+            <Row m="0  0 20px" flexWrap="nowrap" alignItems="center" borderBottom="1px solid #eee">
+                <Col xs="auto" flex="none">
+                    <img src={logo} width={80} alt=""/>
+                </Col>
+                <Col xs="auto" flex="auto">
+                    <Row flexWrap="nowrap"  alignItems="center">
                         <Col xs="auto" flex="auto">
                             <Input size="lg" control placeholder="Поиск" />
                         </Col>
@@ -149,6 +168,11 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
                             <Button size="lg"><Search /></Button>
                         </Col>
                     </Row>
+                </Col>
+            </Row>
+            <Row>
+                <Col xs={12} sm={8} pr={15}>
+                    <Typography variant="h1" mb={30}>Вакансии</Typography>
                     <ItemList>
                         <Col xs="auto" display={{ xs: 'none', md: "block" }}>
                             <img width={100} src={imgItem1} alt=""/>
@@ -220,7 +244,7 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
                     </ItemList>
                 </Col>
                 <Col xs={12} sm={4} pl={15}>
-                    <Box mr="3rem" mb={30} p={30} border="1px solid #eee;">
+                    <Box pl={15} mb={30} p={30} border="1px solid #eee;">
                         <Typography variant="h4" mb={20}>Категории</Typography>
                         <Box textAlign="left">
                             <ListUl styleNone borderItem>
@@ -245,7 +269,7 @@ import { Search } from `}<Box color="red" display="inline-block">'styled-icons/o
                             </ListUl>
                         </Box>
                     </Box>
-                    <Box mr="3rem" mb={30} p={30} border="1px solid #eee;">
+                    <Box pl={15} mb={30} p={30} border="1px solid #eee;">
                         <Typography variant="h4" mb={20}>График работы</Typography>
                         <Box textAlign="left">
                             <ListUl styleNone borderItem>
