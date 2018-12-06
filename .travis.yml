@@ -9,12 +9,12 @@ jobs:
       script:
         - yarn test:ci
     - stage: storybook release
+      if: branch = master
       script:
         - yarn build-storybook
         - yarn deploy-storybook -- --ci
-      on:
-        branch: master
     - stage: npm release
+      if: branch = master
       before_deploy:
       - yarn build:lib
       deploy:
