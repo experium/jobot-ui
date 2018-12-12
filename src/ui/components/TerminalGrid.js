@@ -4,6 +4,7 @@ import { TerminalButtonTextfit } from "./TerminalButton";
 const gridCalcH = "100vh/12";
 const gridCalcW = "100vw/12";
 
+
 export const TerminalEqualButton = styled(Button)`
     height: 100%;
     img{
@@ -19,6 +20,13 @@ TerminalEqualButton.defaultProps = {
     justifyContent: "center",
     alignItems: "center"
 };
+export const TerminalLogoBox = styled(Box)`
+    height: 100%;
+    img{
+        width: auto;
+        max-height: 100%;
+    }
+`;
 
 export const TerminalRow = styled(Box)`
     display: flex;

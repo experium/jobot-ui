@@ -7,7 +7,7 @@ import {
     Alert, Box, Typography,
     TerminalButton, TerminalTitle,
     TerminalButtonTextfit, TerminalRow,
-    TerminalCol, TerminalEqualButton
+    TerminalCol, TerminalEqualButton, TerminalLogoBox
 } from '../ui';
 
 const TerminalListVacancy = () => (
@@ -24,7 +24,7 @@ const TerminalListVacancy = () => (
         </Alert>
         <Typography variant="h3" mt={20}>How to Use</Typography>
         <code>
-<pre>{`import { `}<b>Box, TerminalButton, TerminalTitle, TerminalButtonTextfit, TerminalRow, TerminalCol, TerminalEqualButton</b>{` } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
+<pre>{`import { `}<b>Box, TerminalButton, TerminalTitle, TerminalButtonTextfit, TerminalRow, TerminalCol, TerminalEqualButton, TerminalLogoBox</b>{` } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
 import `}<b>logo</b>{` from `}<Box color="red" display="inline-block">'../../assets/img/logo.svg';</Box>{`
 import { `}<b>ChevronLeft, ChevronRight</b>{` } from `}<Box color="red" display="inline-block">'styled-icons/fa-solid';</Box>{`
 import { `}<b>Textfit</b>{` } from `}<Box color="red" display="inline-block">'react-textfit';</Box><br/>{`
@@ -38,9 +38,9 @@ import { `}<b>Textfit</b>{` } from `}<Box color="red" display="inline-block">'re
                 <Box `}<b>fontSize={`{18}`}</b>{`>1 из 2 страниц</Box>
             </TerminalCol>
             <TerminalCol `}<b>num={`{2.5}`} textAlign="right"</b>{`>
-                <TerminalEqualButton `}<b>borderRadius='0' height="100%"</b>{`>
+                <TerminalLogoBox>
                     <img alt="" `}<b>src={`{logo}`}/</b>{`>
-                </TerminalEqualButton>
+                </TerminalLogoBox>
             </TerminalCol>
         </TerminalRow>
         <Box `}<b>display="flex" alignItems="center"</b>{`>
@@ -88,9 +88,9 @@ import { `}<b>Textfit</b>{` } from `}<Box color="red" display="inline-block">'re
                 <Box fontSize={18}>1 из 2 страниц</Box>
             </TerminalCol>
             <TerminalCol num={2.5} textAlign="right">
-                <TerminalEqualButton borderRadius='0' height="100%">
+                <TerminalLogoBox>
                     <img alt="" src={logo}/>
-                </TerminalEqualButton>
+                </TerminalLogoBox>
             </TerminalCol>
         </TerminalRow>
         <Box display="flex" alignItems="center">

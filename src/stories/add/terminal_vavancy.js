@@ -8,7 +8,7 @@ import {
     TerminalButton, TerminalTitle,
     TerminalButtonTextfit, TerminalRow,
     TerminalCol, TerminalEqualButton,
-    TerminalText
+    TerminalText, TerminalLogoBox
 } from '../ui';
 
 const TerminalVacancy = () => (
@@ -25,7 +25,7 @@ const TerminalVacancy = () => (
         </Alert>
         <Typography variant="h3" mt={20}>How to Use</Typography>
         <code>
-<pre>{`import { `}<b>Box, TerminalButton, TerminalTitle, TerminalButtonTextfit, TerminalRow, TerminalCol, TerminalEqualButton</b>{` } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
+<pre>{`import { `}<b>Box, TerminalButton, TerminalTitle, TerminalButtonTextfit, TerminalRow, TerminalCol, TerminalEqualButton, TerminalLogoBox</b>{` } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
 import `}<b>logo</b>{` from `}<Box color="red" display="inline-block">'../../assets/img/logo.svg';</Box>{`
 import `}<b>qr</b>{` from `}<Box color="red" display="inline-block">'../../assets/img/qr.png';</Box>{`
 import { `}<b>Textfit</b>{` } from `}<Box color="red" display="inline-block">'react-textfit';</Box><br/>{`
@@ -39,9 +39,9 @@ import { `}<b>Textfit</b>{` } from `}<Box color="red" display="inline-block">'re
                 <Box `}<b>fontSize={`{18}`}</b>{`>1 из 2 страниц</Box>
             </TerminalCol>
             <TerminalCol `}<b>num={`{2.5}`} textAlign="right"</b>{`>
-                <TerminalEqualButton `}<b>borderRadius='0' height="100%"</b>{`>
+                <TerminalLogoBox>
                     <img alt="" `}<b>src={`{logo}`}/</b>{`>
-                </TerminalEqualButton>
+                </TerminalLogoBox>
             </TerminalCol>
         </TerminalRow>
         <TerminalRow `}<b>num={`{8}`} my={`{15}`} mx={`{-15}`} px={`{15}`} overflow="auto" display="block"</b>{`>
@@ -74,21 +74,22 @@ import { `}<b>Textfit</b>{` } from `}<Box color="red" display="inline-block">'re
                 <TerminalTitle><Textfit min={20} max="1.5rem" mode="multi">Вакансии</Textfit></TerminalTitle>
             </TerminalCol>
             <TerminalCol num={2.5} textAlign="right">
-                <TerminalEqualButton borderRadius='0' height="100%">
+                <TerminalLogoBox>
                     <img alt="" src={logo}/>
-                </TerminalEqualButton>
+                </TerminalLogoBox>
             </TerminalCol>
         </TerminalRow>
-        <TerminalRow num={8} my={15} mx={-15} px={15} overflow="auto" display="block">
+        <TerminalRow num={8} my={15} overflow="auto" display="block">
             <TerminalText flex={1} display="flex" justifyContent="space-around" flexDirection="column">
                 <Box display="flex" alignItems="center">
-                    <TerminalCol num={6}>Col 1/2</TerminalCol>
+                    <TerminalCol num={6}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</TerminalCol>
                     <TerminalCol num={6} display="flex" alignItems="flex-end" justifyContent="flex-end" pr={15}>
                         <img width="300px" height="300px" src={qr} alt="" />
                     </TerminalCol>
                 </Box>
                 <Box textAlign="left" mt={20}>
-                    Col full width
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br/>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </Box>
             </TerminalText>
         </TerminalRow>
