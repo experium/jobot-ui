@@ -34,20 +34,16 @@ const sizeStyleIcon = {
     `,
 };
 
-export const Button = ({ round, ...props }) => {
-    const Component = styled(SmoothButton)`
-        ${p => p.size && sizeStyleIcon[p.size]};
-        ${round && css`
-            border: ${props => props.variant === 'secondary' ? '1px solid #ddd' : 'initial'};
-            border-radius: 50%;
-            padding: ${th('inputBtnPaddingY')};
-            width: calc(${th('inputBtnPaddingY')} + ${th('inputBtnPaddingY')} + ${th('btnLineHeight')}rem);
-            ${p => p.size && sizeStyle[p.size]};
-        `}
-    `;
-
-    return <Component {...props} />;
-};
+export const Button = styled(SmoothButton)`
+    ${p => p.size && sizeStyleIcon[p.size]};
+    ${p => p.round && css`
+        border: ${props => props.variant === 'secondary' ? '1px solid #ddd' : 'initial'};
+        border-radius: 50%;
+        padding: ${th('inputBtnPaddingY')};
+        width: calc(${th('inputBtnPaddingY')} + ${th('inputBtnPaddingY')} + ${th('btnLineHeight')}rem);
+        ${p => p.size && sizeStyle[p.size]};
+    `}
+`;
 
 Button.propTypes = {
     round: PropTypes.bool
