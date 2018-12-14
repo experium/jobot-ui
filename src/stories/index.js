@@ -11,6 +11,7 @@ import TerminalListVacancy from './add/terminal_list_vavancy';
 import TerminalVacancy from './add/terminal_vavancy';
 import TerminalCardVacancy from './add/terminal_card_vavancy';
 import TerminalCardCompany from './add/terminal_card_company';
+import Terminal404 from './add/terminal_404';
 import Header from './add/header';
 import Footer from './add/footer';
 import ListVacancy from './add/list_vacancy';
@@ -98,7 +99,8 @@ storiesOf('Terminal/Examples', module)
 .add('List vacancy', () => <TerminalListVacancy />)
 .add('Vacancy', () => <TerminalVacancy />)
 .add('Card vacancy', () => <TerminalCardVacancy />)
-.add('Card company', () => <TerminalCardCompany />);
+.add('Card company', () => <TerminalCardCompany />)
+.add('404', () => <Terminal404 />);
 
 storiesOf('Terminal/Components', module)
 .add('Grid', () => <TerminalGrid />)

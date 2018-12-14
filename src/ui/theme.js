@@ -2,7 +2,7 @@ import { theme as defaultTheme } from '@smooth-ui/core-sc';
 
 export const theme = {
     ...defaultTheme,
-    fontFamily: '"Nunito Sans",Roboto,"Helvetica Neue",Arial,sans-serif',
+    fontFamily: 'Arial,sans-serif',
     primary: '#FF4F57',
     secondary: '#f1f1f1',
     dark: '#2c3e50',
