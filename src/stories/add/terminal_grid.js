@@ -57,6 +57,51 @@ const TerminalGrid = () => (
                 TerminalCol 2.5/12 width 100vw
             </TerminalCol>
         </TerminalRow>
+
+
+        <Typography variant="h1" mt={50}>Custom height & width grid</Typography>
+        <Typography variant="h3" mt={20}>How to Use</Typography>
+        <code>
+<pre>{`import { `}<b>TerminalRow, TerminalCol</b>{` } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box><br/>{`
+<Box>
+    <TerminalRow `}<b>gridRowHeight="300px" num={`{2}`} p={`{50}`} display="flex" justifyContent="space-around"</b>{`>
+        TerminalRow 2/12 height 100vh
+    </TerminalRow>
+    <TerminalRow `}<b>gridRowHeight="300px" num={`{8}`}</b>{`>
+        <TerminalCol `}<b>gridColWidth="800px" num={`{2}`} p={`{50}`}</b>{`>
+            TerminalCol 2/12 width 100vw
+        </TerminalCol>
+        <TerminalCol `}<b>gridColWidth="800px" num={`{5}`} p={`{50}`}</b>{`>
+            TerminalCol 5/12 width 100vw
+        </TerminalCol>
+        <TerminalCol `}<b>gridColWidth="800px" num={`{2.5}`} p={`{50}`}</b>{`>
+            TerminalCol 2.5/12 width 100vw
+        </TerminalCol>
+        <TerminalCol `}<b>gridColWidth="800px" num={`{2.5}`} p={`{50}`}</b>{`>
+            TerminalCol 2.5/12 width 100vw
+        </TerminalCol>
+    </TerminalRow>
+</Box>
+`}</pre>
+        </code>
+
+        <TerminalRow gridRowHeight="300px" num={2} p={50} display="flex" justifyContent="space-around"  border="1px solid #ccc">
+            TerminalRow 2/12 height 300px
+        </TerminalRow>
+        <TerminalRow gridRowHeight="300px" num={8} textAlign="center">
+            <TerminalCol gridColWidth="800px" num={2} p={50} backgroundColor="#eee" border="1px solid #ccc">
+                TerminalCol 2/12 width 800px
+            </TerminalCol>
+            <TerminalCol gridColWidth="800px" num={5} p={50} backgroundColor="#eee" border="1px solid #ccc">
+                TerminalCol 5/12 width 800px
+            </TerminalCol>
+            <TerminalCol gridColWidth="800px" num={2.5} p={50} backgroundColor="#eee" border="1px solid #ccc">
+                TerminalCol 2.5/12 width 800px
+            </TerminalCol>
+            <TerminalCol gridColWidth="800px" num={2.5} p={50} backgroundColor="#eee" border="1px solid #ccc">
+                TerminalCol 2.5/12 width 800px
+            </TerminalCol>
+        </TerminalRow>
     </Box>
 );
 
