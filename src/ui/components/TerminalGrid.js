@@ -2,6 +2,7 @@ import { styled, css, Box, Button } from "@smooth-ui/core-sc";
 import { TerminalButtonTextfit } from "./TerminalButton";
 
 export const TerminalEqualButton = styled(Button)`
+    box-sizing: border-box;
     height: 100%;
     img{
         width: 100%;
@@ -17,6 +18,7 @@ TerminalEqualButton.defaultProps = {
     alignItems: "center"
 };
 export const TerminalLogoBox = styled(Box)`
+    box-sizing: border-box;
     height: 100%;
     img{
         width: auto;
@@ -28,6 +30,7 @@ export const TerminalRow = styled(Box)`
     display: flex;
     ${p => p.num && css`
         height: calc(${p.gridRowHeight}/12*${p.num});
+        box-sizing: border-box;
         ${Button}{
             ${TerminalButtonTextfit}{
                 & > div{
@@ -85,6 +88,7 @@ TerminalRow.defaultProps = {
 };
 
 export const TerminalCol = styled(Box)`
+    box-sizing: border-box;
     ${p => p.num && css`
         height: 100%;
         width: calc(${p.gridColWidth}/12*${p.num});

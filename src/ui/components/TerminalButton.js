@@ -3,6 +3,7 @@ import { Button } from "./Button";
 import { Textfit } from 'react-textfit';
 
 export const TerminalButton = styled(Button)`
+    box-sizing: border-box;
     &:after,&:before{
         content: '';
         display: table;

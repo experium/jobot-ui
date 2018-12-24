@@ -1,6 +1,7 @@
 import { styled, css, Box } from '@smooth-ui/core-sc'
 
 export const BoxImage = styled(Box)`
+    box-sizing: border-box;
     ${p => p.image && css`
         background: ${props => `url("${props.image}")`} center center no-repeat;
         &:before {
@@ -24,6 +25,7 @@ BoxImage.defaultProps = {
 export const Container = styled(Box)`
     position: relative;
     max-width: 1120px;
+    box-sizing: border-box;
     @media (max-width: 1170px){
         padding: 0 25px;
     }

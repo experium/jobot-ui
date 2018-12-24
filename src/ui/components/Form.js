@@ -2,6 +2,7 @@ import { styled, Box } from '@smooth-ui/core-sc';
 
 export const FormGroup = styled(Box)`
     position: relative;
+    box-sizing: border-box;
 `;
 export const FormGroupIcon = styled(Box)`
     position: absolute;

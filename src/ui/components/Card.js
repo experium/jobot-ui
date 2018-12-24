@@ -2,6 +2,7 @@ import { styled, Box } from '@smooth-ui/core-sc'
 import { Button } from './Button';
 
 export const Card = styled(Box)`
+    box-sizing: border-box;
     &:hover{
         box-shadow: 0 13px 21px rgba(0, 0, 0, 0.13);
     }
