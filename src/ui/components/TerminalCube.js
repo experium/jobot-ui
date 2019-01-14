@@ -4,17 +4,22 @@ export const CubeVacancy = styled(Box)`
     box-sizing: border-box;
     border: 2px solid #fff;
 `;
+CubeVacancy.defaultProps = {
+    display: "flex",
+    flexDirection: "column",
+};
 
 export const CubeVacancyName = styled(Box)`
     overflow: hidden;
 `;
+
 CubeVacancyName.defaultProps = {
     display: "flex",
 };
 
 export const CubeContainer = styled(Box)`
     box-sizing: border-box;
-    margin: -4px;
+    margin: -2px;
 `;
 
 CubeContainer.defaultProps = {
@@ -54,4 +59,23 @@ CubeControlsBtn.defaultProps = {
     alignItems: "center",
     justifyContent: "center",
     color: "#fff",
+};
+
+export const CubeVacancyText = styled(Box)`
+    box-sizing: border-box;
+`;
+
+CubeVacancyText.defaultProps = {
+    display: "flex",
+    flexDirection: "column",
+    p: 15,
+    justifyContent: "space-between",
+};
+
+export const CubeVacancySalary = styled(Box)`
+    box-sizing: border-box;
+`;
+
+CubeVacancySalary.defaultProps = {
+    display: "flex",
 };
