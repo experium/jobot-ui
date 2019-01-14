@@ -1,8 +1,15 @@
-import { styled, Box, } from "@smooth-ui/core-sc";
+import { styled, css, Box, Button } from "@smooth-ui/core-sc";
 
 export const CubeVacancy = styled(Box)`
     box-sizing: border-box;
     border: 2px solid #fff;
+    flex: 1 0 calc(100%/5);
+    ${p => p.columnCount && css`
+        flex: 1 0 calc(100%/${p.columnCount});
+    `}
+    ${p => p.rowCount && css`
+        height: calc(100%/${p.rowCount});
+    `}
 `;
 CubeVacancy.defaultProps = {
     display: "flex",
@@ -30,12 +37,17 @@ CubeContainer.defaultProps = {
 
 export const CubeVacancies = styled(Box)`
     box-sizing: border-box;
+    align-content: baseline;
+    &:after {
+      content: "";
+      flex: auto;
+    }
 `;
 
 CubeVacancies.defaultProps = {
     display: "flex",
     flexWrap: "wrap",
-    justifyContent: "space-around",
+    justifyContent: "normal",
     flex: "10",
 };
 
@@ -48,9 +60,19 @@ CubeControls.defaultProps = {
     flex: "1",
 };
 
-export const CubeControlsBtn = styled(Box)`
+export const CubeControlsBtn = styled(Button)`
+    outline: 0;
     box-sizing: border-box;
     border: 2px solid #fff;
+    flex: 1 0 auto;
+    ${p => p.columnCount && css`
+        flex: 0 0 calc(100%/${p.columnCount});
+    `}
+    &:disabled {
+    
+      color: #333;
+      background: #eff1f7;
+    }
 `;
 
 CubeControlsBtn.defaultProps = {
@@ -59,6 +81,8 @@ CubeControlsBtn.defaultProps = {
     alignItems: "center",
     justifyContent: "center",
     color: "#fff",
+    borderRadius: 0
+
 };
 
 export const CubeVacancyText = styled(Box)`
@@ -74,6 +98,7 @@ CubeVacancyText.defaultProps = {
 
 export const CubeVacancySalary = styled(Box)`
     box-sizing: border-box;
+    overflow: hidden;
 `;
 
 CubeVacancySalary.defaultProps = {

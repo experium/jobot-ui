@@ -7,23 +7,24 @@ import {
 } from '../ui';
 
 
-const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
 const TerminalMainNew = () => (
     <Box>
         <Typography variant="h1">Examples Terminal Cube Vacancy</Typography>
         <Alert variant="success">
-            <Typography variant="h5">Assembled from components: <br/><b>Box</b></Typography>
+            <Typography variant="h5">Assembled from components: <br/><b>Box, Button</b></Typography>
         </Alert>
         <Alert variant="info">
             Support <a href="https://smooth-ui.smooth-code.com/docs-components-box#api">API component <b>Box</b> smooth-ui</a><br/>
+            Support <a href="https://smooth-ui.smooth-code.com/docs-components-button#api">API component <b>Button</b> smooth-ui</a><br/>
         </Alert>
-        <Typography variant="h3" mt={20}>How to Use <br/><small><small>Need to specify the number of columns from <b>CubeVacancy, CubeControlsBtn</b> <br/><b>CubeVacancies</b> defaultProps flex="10", <b>CubeControls</b> defaultProps flex="1" from the height</small></small></Typography>
+        <Typography variant="h3" mt={20}>How to Use <br/><small><small>Need to specify the number of columns & row for <b>CubeVacancy</b> and columns for <b>CubeControlsBtn</b> <br/><b>CubeVacancies</b> defaultProps flex="10", <b>CubeControls</b> defaultProps flex="1" from the height</small></small></Typography>
         <code>
 <pre>{`import { `}<b>Box,CubeControlsBtn, CubeContainer, CubeControls, CubeVacancies, CubeVacancy, CubeVacancyName, CubeVacancySalary</b>{` } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
 <CubeContainer height={'600px'} >
     <CubeVacancies>
-        {data.map((i) => <CubeVacancy backgroundColor={i % 2 ? '#f23735' : '#fafafa'} color={i % 2 ? '#fff' : '#000'} flex={'1 0 ' + (100/`}<b style={{ color: 'red'}}>7</b>{`) + '%'}>
+        {data.map((i) => <CubeVacancy `}<b>columnCount={5} rowCount={3}</b>{` backgroundColor={i % 2 ? '#f23735' : '#fafafa'} color={i % 2 ? '#fff' : '#000'}>
             <Box display={'flex'} height={'50%'}></Box>
             <CubeVacancyText height={'50%'}>
                 <CubeVacancyName>Название вакансии {i}</CubeVacancyName>
@@ -32,16 +33,16 @@ const TerminalMainNew = () => (
         </CubeVacancy>)}
     </CubeVacancies>
     <CubeControls>
-        <CubeControlsBtn backgroundColor={'#eff1f7'} color={"#333"} flex={'0 0 ' + (100/`}<b style={{ color: 'red'}}>7</b>{`) + '%'}>Назад</CubeControlsBtn>
-        <CubeControlsBtn flex={'0 0 ' + (100/`}<b style={{ color: 'red'}}>7</b>{`) + '%'}>Вперед</CubeControlsBtn>
-        <CubeControlsBtn flex={'1 0 auto'}>Поиск</CubeControlsBtn>
+        <CubeControlsBtn `}<b>columnCount={5}</b>{`>Назад</CubeControlsBtn>
+        <CubeControlsBtn `}<b>columnCount={5}</b>{`>Вперед</CubeControlsBtn>
+        <CubeControlsBtn>Поиск</CubeControlsBtn>
     </CubeControls>
 </CubeContainer>
 `}</pre>
         </code>
         <CubeContainer height={'600px'} >
             <CubeVacancies>
-                {data.map((i) => <CubeVacancy backgroundColor={i % 2 ? '#f23735' : '#fafafa'} color={i % 2 ? '#fff' : '#000'} flex={'1 0 ' + (100/7) + '%'}>
+                {data.map((i) => <CubeVacancy backgroundColor={i % 2 ? '#f23735' : '#fafafa'} color={i % 2 ? '#fff' : '#000'} columnCount={5} rowCount={3}>
                     <Box display={'flex'} height={'50%'}></Box>
                     <CubeVacancyText height={'50%'}>
                         <CubeVacancyName>Название вакансии {i}</CubeVacancyName>
@@ -50,9 +51,9 @@ const TerminalMainNew = () => (
                 </CubeVacancy>)}
             </CubeVacancies>
             <CubeControls>
-                <CubeControlsBtn backgroundColor={'#eff1f7'} color={"#333"} flex={'0 0 ' + (100/7) + '%'}>Назад</CubeControlsBtn>
-                <CubeControlsBtn flex={'0 0 ' + (100/7) + '%'}>Вперед</CubeControlsBtn>
-                <CubeControlsBtn flex={'1 0 auto'}>Поиск</CubeControlsBtn>
+                <CubeControlsBtn columnCount={5} disabled>Назад</CubeControlsBtn>
+                <CubeControlsBtn columnCount={5}>Вперед</CubeControlsBtn>
+                <CubeControlsBtn>Поиск</CubeControlsBtn>
             </CubeControls>
         </CubeContainer>
 
