@@ -12,3 +12,4 @@ export * from './TerminalTitle';
 export * from './TerminalButton';
 export * from './TerminalGrid';
 export * from './TerminalText';
+export * from './TerminalCube';

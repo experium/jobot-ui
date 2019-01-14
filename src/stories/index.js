@@ -7,6 +7,7 @@ import { storiesOf } from '@storybook/react';
 import MainPage from './add/main_page';
 import TerminalGrid from './add/terminal_grid';
 import TerminalMain from './add/terminal_main';
+import TerminalMainNew from './add/terminal_main_new';
 import TerminalListVacancy from './add/terminal_list_vavancy';
 import TerminalVacancy from './add/terminal_vavancy';
 import TerminalCardVacancy from './add/terminal_card_vavancy';
@@ -95,6 +96,7 @@ storiesOf('Components', module)
 .add('Typography', () => <TypographyStory />);
 
 storiesOf('Terminal/Examples', module)
+.add('Main New', () => <TerminalMainNew />)
 .add('Main', () => <TerminalMain />)
 .add('List vacancy', () => <TerminalListVacancy />)
 .add('Vacancy', () => <TerminalVacancy />)
