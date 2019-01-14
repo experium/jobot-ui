@@ -2,10 +2,11 @@ import { styled, css, Box, Button } from "@smooth-ui/core-sc";
 
 export const CubeVacancy = styled(Box)`
     box-sizing: border-box;
+    overflow: hidden;
     border: 2px solid #fff;
-    flex: 1 0 calc(100%/5);
+    flex: 0 0 calc(100%/5);
     ${p => p.columnCount && css`
-        flex: 1 0 calc(100%/${p.columnCount});
+        flex: 0 0 calc(100%/${p.columnCount});
     `}
     ${p => p.rowCount && css`
         height: calc(100%/${p.rowCount});
@@ -26,7 +27,7 @@ CubeVacancyName.defaultProps = {
 
 export const CubeContainer = styled(Box)`
     box-sizing: border-box;
-    margin: -2px;
+    overflow: hidden;
 `;
 
 CubeContainer.defaultProps = {
@@ -36,6 +37,7 @@ CubeContainer.defaultProps = {
 };
 
 export const CubeVacancies = styled(Box)`
+    margin: -2px -2px 0;
     box-sizing: border-box;
     align-content: baseline;
     &:after {
@@ -69,7 +71,6 @@ export const CubeControlsBtn = styled(Button)`
         flex: 0 0 calc(100%/${p.columnCount});
     `}
     &:disabled {
-    
       color: #333;
       background: #eff1f7;
     }

@@ -7,7 +7,7 @@ import {
 } from '../ui';
 
 
-const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
 const TerminalMainNew = () => (
     <Box>
@@ -24,7 +24,7 @@ const TerminalMainNew = () => (
 <pre>{`import { `}<b>Box,CubeControlsBtn, CubeContainer, CubeControls, CubeVacancies, CubeVacancy, CubeVacancyName, CubeVacancySalary</b>{` } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
 <CubeContainer height={'600px'} >
     <CubeVacancies>
-        {data.map((i) => <CubeVacancy `}<b>columnCount={5} rowCount={3}</b>{` backgroundColor={i % 2 ? '#f23735' : '#fafafa'} color={i % 2 ? '#fff' : '#000'}>
+        {data.map((i) => <CubeVacancy `}<b>columnCount={5} rowCount={4}</b>{` backgroundColor={i % 2 ? '#f23735' : '#fafafa'} color={i % 2 ? '#fff' : '#000'}>
             <Box display={'flex'} height={'50%'}></Box>
             <CubeVacancyText height={'50%'}>
                 <CubeVacancyName>Название вакансии {i}</CubeVacancyName>
@@ -42,7 +42,7 @@ const TerminalMainNew = () => (
         </code>
         <CubeContainer height={'600px'} >
             <CubeVacancies>
-                {data.map((i) => <CubeVacancy backgroundColor={i % 2 ? '#f23735' : '#fafafa'} color={i % 2 ? '#fff' : '#000'} columnCount={5} rowCount={3}>
+                {data.map((i) => <CubeVacancy backgroundColor={i % 2 ? '#f23735' : '#fafafa'} color={i % 2 ? '#fff' : '#000'} columnCount={5} rowCount={4}>
                     <Box display={'flex'} height={'50%'}></Box>
                     <CubeVacancyText height={'50%'}>
                         <CubeVacancyName>Название вакансии {i}</CubeVacancyName>
