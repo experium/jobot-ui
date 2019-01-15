@@ -7,7 +7,7 @@ import {
 } from '../ui';
 
 
-const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+const data = [{text: 1, color1: '#e52629',  color2: '#fff'}, {text: 1, color1: '',  color2: '#fff'}, {text: 1, color1: '#0657a6',  color2: '#fff'}, {text: 1, color1: '#0657a6',  color2: '#fff'}, {text: 1, color1: '#095c2f',  color2: '#fff'}, {text: 1, color1: '#095c2f',  color2: '#fff'}, {text: 1, color1: '#318acb',  color2: '#fff'}, {text: 1, color1: '#318acb',  color2: '#fff'}, {text: 1, color1: '#f23735',  color2: '#fff'}, {text: 1, color1: '#f23735',  color2: '#fff'}, {text: 1, color1: '#095c2f',  color2: '#fff'}, {text: 1, color1: '#095c2f',  color2: '#fff'}, {text: 1, color1: '#65b822',  color2: '#fff'}, {text: 1, color1: '#0152a2',  color2: '#fff'}, {text: 1, color1: '#fef200',  color2: '#000'}, {text: 1, color1: '#0152a2',  color2: '#fff'}, {text: 1, color1: '#101426',  color2: '#fff'}, {text: 1, color1: '#101426',  color2: '#fff'}, {text: 1, color1: '#01ad3d',  color2: '#fff'}, {text: 1, color1: '#101426',  color2: '#fff'}];//, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
 const TerminalMainNew = () => (
     <Box>
@@ -42,7 +42,7 @@ const TerminalMainNew = () => (
         </code>
         <CubeContainer height={'600px'} >
             <CubeVacancies>
-                {data.map((i) => <CubeVacancy backgroundColor={i % 2 ? '#f23735' : '#fafafa'} color={i % 2 ? '#fff' : '#000'} columnCount={5} rowCount={4}>
+                {data.map(({ text, color1, color2 }, i) => <CubeVacancy backgroundColor={i % 2 ? '#fafafa' : color1} color={i % 2 ? '#000' : color2} columnCount={5} rowCount={4}>
                     <Box display={'flex'} height={'50%'}></Box>
                     <CubeVacancyText height={'50%'}>
                         <CubeVacancyName>Название вакансии {i}</CubeVacancyName>

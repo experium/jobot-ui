@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic-ext');
+
 body{
-    font-family: Arial,sans-serif;
+    font-family: 'Open Sans',sans-serif;
     font-size: 13px;
     line-height: 24px;
-    color: #444;
+    color: #444c63;
 }
 a{
     text-decoration: none;

@@ -13,3 +13,7 @@ export * from './TerminalButton';
 export * from './TerminalGrid';
 export * from './TerminalText';
 export * from './TerminalCube';
+export * from './TerminalInput';
+export * from './TerminalRadio';
+export * from './TerminalIcon';
+export * from './TerminalTypeBox';

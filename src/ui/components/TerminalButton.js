@@ -4,6 +4,7 @@ import { Textfit } from 'react-textfit';
 
 export const TerminalButton = styled(Button)`
     box-sizing: border-box;
+    text-transform: uppercase;
     &:after,&:before{
         content: '';
         display: table;
@@ -12,16 +13,17 @@ export const TerminalButton = styled(Button)`
 `;
 
 TerminalButton.defaultProps = {
+    size: "lg",
     display: "block",
     height: "100%",
     width: "100%",
-    p: 0,
     textAlign: "center",
-    borderRadius: "1rem",
+    borderRadius: 0,
     alignItems: "center",
     justifyContent: "center",
     color: '#fff',
-    fontSize: "3rem",
+    fontSize: "1.6rem",
+    fontWeight: 600,
     variant: "primary"
 };
 
