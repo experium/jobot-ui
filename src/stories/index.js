@@ -35,6 +35,7 @@ import SelectStory from "./add/select";
 import TextareaStory from "./add/textarea";
 import TypographyStory from "./add/typography";
 import InputStory from "./add/input";
+import IconStory from "./add/icon";
 
 /*Components*/
 import { Typography, Box, Button } from './ui';
@@ -83,6 +84,7 @@ storiesOf('Examples', module)
 .add('Main page', () => <MainPage />);
 
 storiesOf('Components', module)
+.add('Icon', () => <IconStory />)
 .add('Button', () => <ButtonStory />)
 .add('Badge', () => <BadgeStory />)
 .add('Radio', () => <RadioStory />)
