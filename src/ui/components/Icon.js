@@ -21,5 +21,5 @@ export const Icon = p => (
 
 Icon.defaultProps = {
     size: '22',
-    color: '#000',
+    color: 'currentColor',
 };

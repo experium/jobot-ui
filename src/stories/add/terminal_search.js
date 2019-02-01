@@ -12,7 +12,7 @@ import {
     TerminalFormCheckLabel,
     TerminalButton,
     TypeIcon,
-    TypeBox
+    TerminalTypeBox
 
 } from '../ui';
 import { AccessTime } from 'styled-icons/material/AccessTime';
@@ -31,7 +31,7 @@ const TerminalSearch = () => (
         </Alert>
         <Typography variant="h3" mt={20}>How to Use</Typography>
 
-        <Box display={'flex'} flexDirection={'column'}>
+        <Box display={'flex'} flexDirection={'column'} >
             <Box>
                 <FormGroup>
                     <TerminalLabel htmlFor="form-group-input-name">Профессия</TerminalLabel>
@@ -42,14 +42,14 @@ const TerminalSearch = () => (
                 <FormGroup>
                     <TerminalLabel htmlFor="form-group-input-name">Тип</TerminalLabel>
                     <Box display={'flex'}>
-                        <TypeBox>
+                        <TerminalTypeBox>
                             <TypeIcon><AccessTime /></TypeIcon>
                             <Box>Подработка</Box>
-                        </TypeBox>
-                        <TypeBox>
+                        </TerminalTypeBox>
+                        <TerminalTypeBox>
                             <TypeIcon><AccessTime /></TypeIcon>
                             <Box>Подработка</Box>
-                        </TypeBox>
+                        </TerminalTypeBox>
 
                     </Box>
                 </FormGroup>

@@ -36,6 +36,7 @@ import TextareaStory from "./add/textarea";
 import TypographyStory from "./add/typography";
 import InputStory from "./add/input";
 import IconStory from "./add/icon";
+import TerminalCategories from "./add/terminal_categories";
 
 /*Components*/
 import { Typography, Box, Button } from './ui';
@@ -100,6 +101,7 @@ storiesOf('Components', module)
 
 storiesOf('Terminal/Examples', module)
 .add('Main New', () => <TerminalMainNew />)
+.add('Categories', () => <TerminalCategories />)
 .add('Search', () => <TerminalSearch />)
 .add('Main', () => <TerminalMain />)
 .add('List vacancy', () => <TerminalListVacancy />)
