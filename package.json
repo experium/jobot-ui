@@ -1,6 +1,6 @@
 {
   "name": "@experium/jobot-ui",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Jobot-UI components",
   "main": "lib/index.js",
   "homepage": "https://experium.github.io/jobot-ui",
@@ -11,6 +11,7 @@
   "dependencies": {
     "@smooth-ui/core-sc": "^7.0.5",
     "react-select": "^2.1.2",
+    "react-tabs": "^3.0.0",
     "react-textfit": "^1.1.0",
     "styled-icons": "^3.6.0"
   },

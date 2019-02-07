@@ -1,0 +1,13 @@
+.tabs-example .react-tabs__tab-list{
+    border: 0;
+}
+.tabs-example .react-tabs__tab{
+    border-radius: 5px;
+}
+.tabs-example .react-tabs__tab.react-tabs__tab--selected{
+    background: #cc4a58;
+    color: #fff;
+}
+.tabs-example .react-tabs__tab-panel--selected{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}

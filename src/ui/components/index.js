@@ -16,4 +16,5 @@ export * from './TerminalCube';
 export * from './TerminalInput';
 export * from './TerminalRadio';
 export * from './TerminalType';
+export * from './TerminalSlider';
 export * from './Icon';

@@ -37,6 +37,7 @@ import TypographyStory from "./add/typography";
 import InputStory from "./add/input";
 import IconStory from "./add/icon";
 import TerminalCategories from "./add/terminal_categories";
+import TerminalSliderTemplate1 from "./add/terminal/slider/template1";
 
 /*Components*/
 import { Typography, Box, Button } from './ui';
@@ -103,6 +104,7 @@ storiesOf('Terminal/Examples', module)
 .add('Main New', () => <TerminalMainNew />)
 .add('Categories', () => <TerminalCategories />)
 .add('Search', () => <TerminalSearch />)
+.add('Slider', () => <TerminalSliderTemplate1 />)
 .add('Main', () => <TerminalMain />)
 .add('List vacancy', () => <TerminalListVacancy />)
 .add('Vacancy', () => <TerminalVacancy />)
