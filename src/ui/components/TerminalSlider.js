@@ -6,6 +6,7 @@ export const TerminalSliderWrap = styled(Box)`
     background: ${p => `url("${p.image}")`} no-repeat;
     background-size: cover;
     overflow: hidden;
+    position: relative;
 `;
 
 TerminalSliderWrap.defaultProps = {
@@ -25,13 +26,20 @@ TerminalSliderRow.defaultProps = {
 export const TerminalSliderBg = styled(Box)`
     background: ${p => `url("${p.image}")`} no-repeat;
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    ${p => p.absolute && css`
+        position: absolute;
+        height: 70%;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    `}
 `;
 
 TerminalSliderBg.defaultProps = {
     display: 'flex',
     backgroundSize: 'cover',
-    width: '100%',
-    height: '100%',
 };
 
 export const TerminalSliderFlex = styled(Box)`
@@ -137,6 +145,24 @@ export const TerminalSliderTitle = styled(Textfit)`
     ${p => p.color && css`
         color: ${p.color};
     `}
+    ${p => p.flex && css`
+        flex: ${p.flex};
+    `}
+    ${p => p.fontWeight && css`
+        font-weight: ${p.fontWeight};
+    `}
+    ${p => p.textTransform && css`
+        text-transform: ${p.textTransform};
+    `}
+    ${p => p.p && css`
+        padding: ${p.p};
+    `}
+    ${p => p.alignItems && css`
+        align-items: ${p.alignItems};
+    `}
+    ${p => p.justifyContent && css`
+        justify-content: ${p.justifyContent};
+    `}
 `;
 
 TerminalSliderTitle.defaultProps = {
@@ -157,6 +183,15 @@ export const TerminalSliderList = styled(Textfit)`
     ${p => p.color && css`
         color: ${p.color};
     `}
+    ${p => p.flex && css`
+        flex: ${p.flex};
+    `}
+    ${p => p.p && css`
+        padding: ${p.p};
+    `}
+    ${p => p.fontWeight && css`
+        font-weight: ${p.fontWeight};
+    `}
     span:before{
         content: "\\2713";
         margin-right: 8px;
@@ -166,8 +201,6 @@ export const TerminalSliderList = styled(Textfit)`
             content: none;
         }
     `}
-   
-    
 `;
 
 TerminalSliderList.defaultProps = {

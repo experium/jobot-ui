@@ -4,43 +4,42 @@ import { Textfit } from 'react-textfit';
 
 const themeStyle = {
     white: css`
-        height: auto;
         color: #bd102c;
-        border-radius: 40px;
         background: #fff;
-        font-weight: bold;
-        padding: 1.5rem 1rem;
         &:not(:disabled):hover{
             background: #fff;
         }
     `,
     red: css`
-        height: auto;
-        border-radius: 40px;
         background: #b23249;
-        font-weight: bold;
-        padding: 1.5rem 1rem;
         &:not(:disabled):hover{
             background: #b23249;
         }
     `,
     blue: css`
-        height: auto;
         border-radius: 10px;
         background: #095f9c;
-        font-weight: bold;
-        padding: 1.5rem 1rem;
         &:not(:disabled):hover{
             background: #095f9c;
         }
     `,
     green: css`
-        height: auto;
-        border-radius: 40px;
         background: #1b7f37;
-        font-weight: bold;
         &:not(:disabled):hover{
             background: #1b7f37;
+        }
+    `,
+    lightGreen: css`
+        background: #70be5e;
+        border: 3px solid #fff;
+        &:not(:disabled):hover{
+            background: #70be5e;
+        }
+    `,
+    lightBlue: css`
+        background: #0083c5;
+        &:not(:disabled):hover{
+            background: #0083c5;
         }
     `,
 };
@@ -63,6 +62,12 @@ export const TerminalButton = styled(Button)`
     height: 100%;
     width: 100%;
     display: block;
+    ${p => p.themes && css`
+        height: auto;
+        border-radius: 50px;
+        font-weight: bold;
+        padding: 1.5rem 2rem;
+    `}
     ${p => p.themes && themeStyle[p.themes]};
     box-sizing: border-box;
     text-transform: uppercase;
