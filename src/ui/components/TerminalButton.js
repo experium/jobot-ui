@@ -36,6 +36,13 @@ const themeStyle = {
             background: #70be5e;
         }
     `,
+    lightGrey: css`
+        background: #667391;
+        border: 3px solid #495268;
+        &:not(:disabled):hover{
+            background: #667391;
+        }
+    `,
     lightBlue: css`
         background: #0083c5;
         &:not(:disabled):hover{

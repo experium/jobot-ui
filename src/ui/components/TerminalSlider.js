@@ -42,6 +42,28 @@ TerminalSliderBg.defaultProps = {
     backgroundSize: 'cover',
 };
 
+export const TerminalSliderFigure = styled(Box)`
+    background: #8C97B2;
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    right: -42%;
+    top: 16%;
+    z-index: -1;
+    transform: rotate(50deg) skew(20deg);
+    border-radius: 50px;
+    &:before{
+        content: '';
+        position: relative;
+        background: #8C97B2;
+        width: 100%;
+        height: 100%;
+        display: block;
+        right: -15%;
+        top: -10%;
+    }
+`;
+
 export const TerminalSliderFlex = styled(Box)`
     box-sizing: border-box;
 `;

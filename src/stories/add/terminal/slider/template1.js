@@ -7,7 +7,7 @@ import {
     TerminalSliderTitle, TerminalSliderRow,
     TerminalCompanyLogoBox, TerminalSliderBg,
     TerminalSliderContentColumn, TerminalSliderQRBtn,
-    TerminalSliderBoxFloat,
+    TerminalSliderBoxFloat, TerminalSliderFigure,
     TerminalSliderFlex, TerminalSliderFooterBg,
     TerminalCompanyLogo, TerminalSliderList,
     TerminalQRCodeImg, TerminalQRCodeBox,
@@ -18,6 +18,7 @@ import logoRed from "../../../../assets/img/slider/logo_red.png";
 import logoBlue from "../../../../assets/img/slider/logo_blue.png";
 import logoGreen from "../../../../assets/img/slider/logo_green.png";
 import logoOrange from "../../../../assets/img/slider/logo_orange.png";
+import logoGrey from "../../../../assets/img/slider/logo_grey.png";
 import qr from "../../../../assets/img/slider/qr.svg";
 import bg1 from "../../../../assets/img/slider/1.png";
 import bg2 from "../../../../assets/img/slider/2.png";
@@ -29,6 +30,7 @@ import bg7 from "../../../../assets/img/slider/7.png";
 import bg8 from "../../../../assets/img/slider/8.png";
 import bg9 from "../../../../assets/img/slider/9.png";
 import bg10 from "../../../../assets/img/slider/10.png";
+import bg11 from "../../../../assets/img/slider/11.png";
 
 const TerminalSliderTemplate1 = () => (
     <Box>
@@ -44,6 +46,7 @@ const TerminalSliderTemplate1 = () => (
                 <Tab>th 8</Tab>
                 <Tab>th 9</Tab>
                 <Tab>th 10</Tab>
+                <Tab>th 11</Tab>
             </TabList>
 
             {/*Theme1 start*/}
@@ -971,6 +974,98 @@ const TerminalSliderTemplate1 = () => (
                     </TabPanel>
                 </Tabs>
             </TabPanel>
+
+            {/*Theme10 end Theme11 start*/}
+            <TabPanel>
+                <Tabs className='tabs-example'>
+                    <TabList>
+                        <Tab>Example 1</Tab>
+                        <Tab>Example 2</Tab>
+                        <Tab>Example 3</Tab>
+                    </TabList>
+
+                    <TabPanel>
+                        <TerminalSliderWrap>
+                            <TerminalSliderFigure />
+                            <TerminalSliderFlex>
+                                <Box display='flex' width='50%' flexDirection='column'>
+                                    <TerminalCompanyLogoBox flex={1} width='100%'>
+                                        <TerminalCompanyLogo image={logoGrey}></TerminalCompanyLogo>
+                                    </TerminalCompanyLogoBox>
+                                    <TerminalSliderBg flex={5} image={bg11} backgroundSize='contain' backgroundPosition='center bottom'></TerminalSliderBg>
+                                </Box>
+                                <TerminalSliderContentColumn p='4% 4% 4% 10%'>
+                                    <TerminalSliderTitle>Стань частью команды!</TerminalSliderTitle>
+                                    <TerminalSliderList>
+                                        <span>Продавца-кассира</span><br/>
+                                        <span>Администратора зала</span><br/>
+                                        <span>Грузчика</span><br/>
+                                        <span>еще 50 вакансий</span><br/>
+                                    </TerminalSliderList>
+                                    <TerminalSliderQRBtn flex={3}>
+                                        <TerminalQRCodeBox>
+                                            <TerminalQRCodeImg src={qr} backgroundColor='#eef1f7' alt="" />
+                                        </TerminalQRCodeBox>
+                                    </TerminalSliderQRBtn>
+                                </TerminalSliderContentColumn>
+                            </TerminalSliderFlex>
+                        </TerminalSliderWrap>
+                    </TabPanel>
+
+                    <TabPanel>
+                        <TerminalSliderWrap>
+                            <TerminalSliderFigure />
+                            <TerminalSliderFlex>
+                                <Box display='flex' width='50%' flexDirection='column'>
+                                    <TerminalCompanyLogoBox flex={1} width='100%'>
+                                        <TerminalCompanyLogo image={logoGrey}></TerminalCompanyLogo>
+                                    </TerminalCompanyLogoBox>
+                                    <TerminalSliderBg flex={5} image={bg11} backgroundSize='contain' backgroundPosition='center bottom'></TerminalSliderBg>
+                                </Box>
+                                <TerminalSliderContentColumn p='4% 4% 4% 10%'>
+                                    <TerminalSliderTitle>Стань частью команды!</TerminalSliderTitle>
+                                    <TerminalSliderList>
+                                        <span>Продавца-кассира</span><br/>
+                                        <span>Администратора зала</span><br/>
+                                        <span>Грузчика</span><br/>
+                                        <span>еще 50 вакансий</span><br/>
+                                    </TerminalSliderList>
+                                    <TerminalSliderQRBtn flex={3}>
+                                        <TerminalButton themes='lightGrey' width='auto'><TerminalButtonTextfit mode="single" max={40}>Подробнее</TerminalButtonTextfit></TerminalButton>
+                                    </TerminalSliderQRBtn>
+                                </TerminalSliderContentColumn>
+                            </TerminalSliderFlex>
+                        </TerminalSliderWrap>
+                    </TabPanel>
+
+                    <TabPanel>
+                        <TerminalSliderWrap>
+                            <TerminalSliderFigure />
+                            <TerminalSliderFlex>
+                                <Box display='flex' width='50%' flexDirection='column'>
+                                    <TerminalCompanyLogoBox flex={1} width='100%'>
+                                        <TerminalCompanyLogo image={logoGrey}></TerminalCompanyLogo>
+                                    </TerminalCompanyLogoBox>
+                                    <TerminalSliderBg flex={5} image={bg11} backgroundSize='contain' backgroundPosition='center bottom'></TerminalSliderBg>
+                                </Box>
+                                <TerminalSliderContentColumn p='4% 4% 4% 10%'>
+                                    <TerminalSliderTitle>Стань частью команды!</TerminalSliderTitle>
+                                    <TerminalSliderList>
+                                        <span>Продавца-кассира</span><br/>
+                                    </TerminalSliderList>
+                                    <TerminalSliderQRBtn flex={3}>
+                                        <TerminalQRCodeBox>
+                                            <TerminalQRCodeImg src={qr} backgroundColor='#eef1f7' alt="" />
+                                        </TerminalQRCodeBox>
+                                    </TerminalSliderQRBtn>
+                                </TerminalSliderContentColumn>
+                            </TerminalSliderFlex>
+                        </TerminalSliderWrap>
+                    </TabPanel>
+                </Tabs>
+            </TabPanel>
+
+            {/*Theme11 end*/}
 
         </Tabs>
 
