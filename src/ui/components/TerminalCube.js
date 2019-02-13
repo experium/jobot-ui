@@ -5,12 +5,23 @@ export const CubeVacancy = styled(Box)`
     overflow: hidden;
     border: 2px solid #fff;
     flex: 0 0 calc(100%/5);
+    color: #444c63;
+    position: relative;
     ${p => p.columnCount && css`
         flex: 0 0 calc(100%/${p.columnCount});
     `}
     ${p => p.rowCount && css`
         height: calc(100%/${p.rowCount});
     `}
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 60px solid transparent;
+        position: absolute;
+        right: 0;
+        border-top: 60px solid ${p => `${p.triangleColor}`};
+    }
 `;
 CubeVacancy.defaultProps = {
     display: "flex",
@@ -19,6 +30,10 @@ CubeVacancy.defaultProps = {
 
 export const CubeVacancyName = styled(Box)`
     overflow: hidden;
+    font-weight: 600;
+    min-height: 40px;
+    line-height: 1.16;
+    font-size: 1rem;
 `;
 
 CubeVacancyName.defaultProps = {
@@ -88,12 +103,12 @@ CubeControlsBtn.defaultProps = {
 
 export const CubeVacancyText = styled(Box)`
     box-sizing: border-box;
+    padding: 0 15px 15px;
 `;
 
 CubeVacancyText.defaultProps = {
     display: "flex",
     flexDirection: "column",
-    p: 15,
     justifyContent: "space-between",
 };
 
@@ -105,3 +120,19 @@ export const CubeVacancySalary = styled(Box)`
 CubeVacancySalary.defaultProps = {
     display: "flex",
 };
+
+export const CubeVacancyLogo = styled(Box)`
+    box-sizing: border-box;
+    margin: 15px 60px 15px 15px;
+    height: 30%;
+    min-height: 30px;
+    width: auto;
+    background: ${p => `url("${p.image}")`} no-repeat;
+    background-size: contain;
+    width: 100%;
+`;
+
+CubeVacancyLogo.defaultProps = {
+    display: "block",
+};
+
