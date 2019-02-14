@@ -2,7 +2,7 @@ import { styled, css, Box } from "@smooth-ui/core-sc";
 import { Textfit } from 'react-textfit';
 
 export const TerminalSliderWrap = styled(Box)`
-    height: 100vh;
+    height: 100%;
     background: ${p => `url("${p.image}")`} no-repeat;
     background-size: cover;
     overflow: hidden;
