@@ -234,6 +234,10 @@ TerminalSliderList.defaultProps = {
 export const TerminalQRCodeBox = styled(Box)`
     height: 80%;
     width: fit-content;
+    canvas{
+        width: auto!important;
+        height: 100%!important;
+    }
 `;
 
 export const TerminalQRCodeImg = styled.img`

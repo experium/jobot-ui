@@ -1,6 +1,6 @@
 {
   "name": "@experium/jobot-ui",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "description": "Jobot-UI components",
   "main": "lib/index.js",
   "homepage": "https://experium.github.io/jobot-ui",
