@@ -13,11 +13,10 @@ import {
     TerminalSliderFlex,
     TerminalSliderBoxFloat,
     TerminalSliderFooterBg,
-    TerminalSliderFigure,
-    TerminalButton,
-    TerminalButtonTextfit,
-    Box
-} from '../';
+    TerminalSliderFigure
+} from './TerminalSlider';
+import { TerminalButton, TerminalButtonTextfit } from './TerminalButton';
+import { Box } from '@smooth-ui/core-sc';
 import Qr from 'qrcode.react';
 
 const Template1 = ({ data, logo, qr, terminalSliderListContent, onMoreClick }) =>
