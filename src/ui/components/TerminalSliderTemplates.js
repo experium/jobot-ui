@@ -177,20 +177,22 @@ const Template6 = ({ data, logo, qr, terminalSliderListContent, onMoreClick }) =
                 </TerminalSliderList>
             </TerminalSliderContentColumn>
         </TerminalSliderRow>
-        <TerminalSliderBg flex={2} image={data.bg}>
+        <TerminalSliderBg flex={2} backgroundPosition='center' image={data.bg}>
             <Box display='flex' width='50%' p={data.showQr ? null : '4%'}>
+                <Box display='flex' flex={1} />
                 { data.showQr ?
                     <TerminalSliderQRBtn flex={3}>
                         <TerminalQRCodeBox>
                             { qr && <Qr level='H' value={qr} includeMargin renderAs='svg' bgColor={data.qrBg} /> }
                         </TerminalQRCodeBox>
                     </TerminalSliderQRBtn> :
-                    <TerminalSliderQRBtn flex={3} alignSelf='flex-end'>
+                    <TerminalSliderQRBtn flex={3} alignSelf='center'>
                         <TerminalButton themes='blue' width='auto' type='button' onClick={onMoreClick}>
                             <TerminalButtonTextfit mode="single" max={40}>{ data.title }</TerminalButtonTextfit>
                         </TerminalButton>
                     </TerminalSliderQRBtn>
                 }
+                <Box display='flex' flex={1} />
             </Box>
             <Box width='50%'></Box>
         </TerminalSliderBg>

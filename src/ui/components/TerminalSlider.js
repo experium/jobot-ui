@@ -7,6 +7,7 @@ export const TerminalSliderWrap = styled(Box)`
     background-size: cover;
     overflow: hidden;
     position: relative;
+    z-index: 1;
 `;
 
 TerminalSliderWrap.defaultProps = {
@@ -26,6 +27,7 @@ TerminalSliderRow.defaultProps = {
 export const TerminalSliderBg = styled(Box)`
     background: ${p => `url("${p.image}")`} no-repeat;
     box-sizing: border-box;
+    background-position: center;
     width: 100%;
     height: 100%;
     ${p => p.absolute && css`
@@ -46,9 +48,9 @@ export const TerminalSliderFigure = styled(Box)`
     background: #8C97B2;
     position: absolute;
     width: 110%;
-    height: 110%;
-    right: -42%;
-    top: 16%;
+    height: 85%;
+    right: -33%;
+    top: 18%;
     z-index: -1;
     transform: rotate(50deg) skew(20deg);
     border-radius: 50px;
@@ -59,8 +61,8 @@ export const TerminalSliderFigure = styled(Box)`
         width: 100%;
         height: 100%;
         display: block;
-        right: -15%;
-        top: -10%;
+        right: -12%;
+        top: -25%;
     }
 `;
 
