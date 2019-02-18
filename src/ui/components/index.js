@@ -17,4 +17,5 @@ export * from './TerminalInput';
 export * from './TerminalRadio';
 export * from './TerminalType';
 export * from './TerminalSlider';
+export * from './TerminalSliderTemplates';
 export * from './Icon';
