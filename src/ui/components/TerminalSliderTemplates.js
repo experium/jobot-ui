@@ -178,7 +178,7 @@ const Template6 = ({ data, logo, qr, terminalSliderListContent, onMoreClick }) =
             </TerminalSliderContentColumn>
         </TerminalSliderRow>
         <TerminalSliderBg flex={2} backgroundPosition='center' image={data.bg}>
-            <Box display='flex' width='50%' p={data.showQr ? null : '4%'}>
+            <Box display='flex' width='50%' flexDirection='column' p={data.showQr ? null : '4%'}>
                 <Box display='flex' flex={1} />
                 { data.showQr ?
                     <TerminalSliderQRBtn flex={3}>

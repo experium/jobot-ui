@@ -36,6 +36,7 @@ export const TerminalSliderBg = styled(Box)`
         left: 0;
         right: 0;
         z-index: -1;
+        background-position: center top;
     `}
 `;
 
@@ -48,12 +49,12 @@ export const TerminalSliderFigure = styled(Box)`
     background: #8C97B2;
     position: absolute;
     width: 110%;
-    height: 85%;
+    height: 75%;
     right: -33%;
     top: 18%;
     z-index: -1;
     transform: rotate(50deg) skew(20deg);
-    border-radius: 50px;
+    border-radius: 100px;
     &:before{
         content: '';
         position: relative;
@@ -62,7 +63,7 @@ export const TerminalSliderFigure = styled(Box)`
         height: 100%;
         display: block;
         right: -12%;
-        top: -25%;
+        top: -33%;
     }
 `;
 
