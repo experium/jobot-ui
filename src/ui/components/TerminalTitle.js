@@ -10,13 +10,13 @@ export const TerminalSubTitle = styled(Textfit)`
     color: #444c63;
     font-size: 32px;
     font-weight: 600;
-    margin-bottom: 1.5rem;
     text-transform: uppercase;
 `;
 export const TerminalOrText = styled(Box)`
     overflow: hidden;
     text-align: center;
     color: #444c63;
+    min-height: 20px;
     &:after,&:before{
         content: "";
         display: inline-block;
