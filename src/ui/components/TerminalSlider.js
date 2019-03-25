@@ -27,7 +27,7 @@ TerminalSliderRow.defaultProps = {
 export const TerminalSliderBg = styled(Box)`
     background: ${p => `url("${p.image}")`} no-repeat;
     box-sizing: border-box;
-    background-position: center;
+    background-position: ${p => p.bgPosition ? p.bgPosition : "center"};
     width: 100%;
     height: 100%;
     ${p => p.absolute && css`

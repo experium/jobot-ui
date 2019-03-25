@@ -66,7 +66,7 @@ const TerminalSliderTemplate1 = () => (
                                     <TerminalCompanyLogo image={logoRed}></TerminalCompanyLogo>
                                 </TerminalCompanyLogoBox>
                             </TerminalSliderRow>
-                            <TerminalSliderBg flex={4} image={bg1}>
+                            <TerminalSliderBg flex={4} image={bg1} bgPosition="center top">
                                 <TerminalSliderContentColumn backgroundColor='rgba(189,16,44,0.8)'>
                                     <TerminalSliderTitle>Приглашаем на работу</TerminalSliderTitle>
                                     <TerminalSliderList>
