@@ -23,6 +23,7 @@ export const TerminalLogoBox = styled(Box)`
     img{
         width: auto;
         max-height: 100%;
+        padding: 15px;
     }
 `;
 
@@ -59,6 +60,7 @@ export const TerminalRow = styled(Box)`
             }
         }
         ${TerminalEqualButton && css`
+            width: calc(${p.gridRowHeight}/12*${p.num});
             ${p => p.py && css`
                 ${TerminalEqualButton}{
                     width: calc(${p.gridRowHeight}/12*${p.num} - (${p.py}px*2));
