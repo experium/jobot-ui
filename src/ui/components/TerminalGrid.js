@@ -4,6 +4,11 @@ import { TerminalButtonTextfit } from "./TerminalButton";
 export const TerminalEqualButton = styled(Button)`
     box-sizing: border-box;
     height: 100%;
+    ${p => p.bgHover && css`
+        &:not(:disabled):hover{
+            background-color: ${p.bgHover};
+        }
+    `}
     img{
         width: 100%;
     }
@@ -60,7 +65,6 @@ export const TerminalRow = styled(Box)`
             }
         }
         ${TerminalEqualButton && css`
-            width: calc(${p.gridRowHeight}/12*${p.num});
             ${p => p.py && css`
                 ${TerminalEqualButton}{
                     width: calc(${p.gridRowHeight}/12*${p.num} - (${p.py}px*2));

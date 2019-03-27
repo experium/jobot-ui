@@ -79,7 +79,7 @@ import { `}<b>Textfit</b>{` } from `}<Box color="red" display="inline-block">'re
         </code>
         <TerminalRow num={2} py={15}>
             <TerminalCol num={2.5} alignItems="center">
-                <TerminalEqualButton to="/shop/" borderRadius='0' fontSize="1.7rem">
+                <TerminalEqualButton bgHover="#f1f1f1" to="/shop/" borderRadius='0' fontSize="1.7rem">
                     Назад
                 </TerminalEqualButton>
             </TerminalCol>
