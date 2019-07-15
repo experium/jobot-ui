@@ -76,14 +76,8 @@ storiesOf('Library', module)
 </Box>);
 
 storiesOf('Examples', module)
-.add('Header', () => <Header />)
-.add('List Vacancy', () => <ListVacancy />)
-.add('List Vacancy Search', () => <ListVacancySearch />)
-.add('Card Vacancy', () => <CardVacancy />)
-.add('Box image bg', () => <BoxImageBg />)
-.add('Box Color bg', () => <BoxColorBg />)
-.add('Footer', () => <Footer />)
-.add('Main page', () => <MainPage />);
+.add('Main page', () => <MainPage />)
+.add('Search page', () => <ListVacancySearch />);
 
 storiesOf('Components', module)
 .add('Icon', () => <IconStory />)

@@ -1,12 +1,15 @@
 import React from 'react';
 import { styled , Box, css } from "@smooth-ui/core-sc";
 
-export const Tag = ({ link, ...props }) => {
+export const Tag = ({ link, purple, ...props }) => {
     const Component = styled(Box)`
         cursor: ${link === 'true' ? 'pointer' : 'inherit'};
         &:hover {
                 ${link && css`
                     color: #FF4F57;
+                `}
+                ${purple && css`
+                    color: #5E57A7;
                 `}
             }
         svg {

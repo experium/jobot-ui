@@ -1,351 +1,358 @@
 import React from 'react';
-import { AccessTime, Brush, Computer, LocationOn, Work } from "styled-icons/material";
-import { Search } from "styled-icons/octicons";
-import { Heart } from "styled-icons/fa-regular";
-import { Facebook, LinkedinIn, Twitter, Vk } from "styled-icons/fa-brands";
-
+import { LocationOn, Work } from "styled-icons/material";
 
 import {
-    Alert, Box, Col, Grid, Row, Typography,
+    Box, Col, Grid, Row, Typography,
     Badge, BoxImage, Container, FormGroup,
-    FormGroupIcon, ItemList, LinkWhite, ListUl, Tag,
-    Button, Input, Select
+    FormGroupIcon, ItemList,
+    Button, Input, Select, BoxList, BoxLogo, TitleVacancy,
+    SumVacancy, TitleBox, ItemListBox, Icon, BoxImageTopBottom
 } from '../ui';
 
-import bgHeader from "../../assets/img/bg-header.jpg";
-import imgItem1 from "../../assets/img/item.jpg";
-import imgItem2 from "../../assets/img/item2.png";
+import bgHeader from "../../assets/img/bg-header-right.svg";
+import bgWaveHeader from "../../assets/img/bg-wave-header.svg";
+import bgWaveFooter from "../../assets/img/bg-wave-footer.svg";
+import logo from '../../assets/img/logo-gradient.svg';
+import imgItem1 from "../../assets/img/company/4.png";
+import imgItem2 from "../../assets/img/company/2.png";
+import imgItem3 from "../../assets/img/company/6.png";
 
 const MainPage = () => (
     <Box>
-        <Typography variant="h1">Main page</Typography>
-        <Alert variant="success">
-            <Typography variant="h5" mt={20}>Assembled from components: <br/><b>Row, Col, Box, Typography, Container, Button, ItemList, Tag, Badge</b></Typography>
-        </Alert>
-        <Typography variant="h3" mt={20}>How to Use</Typography>
-        <code>
-<pre>{`import { Grid, Row, Col, Box, Typography, BoxImage, Container, FormGroup, FormGroupIcon, Badge, Button, Input, Select, ListUl, LinkWhite  } from `}<Box color="red" display="inline-block">'@experium/jobot-ui';</Box>{`
-import { LocationOn, Work,AccessTime, Brush, Computer } from `}<Box color="red" display="inline-block">'styled-icons/material';</Box>{`
-import bg from `}<Box color="red" display="inline-block">'../assets/img/bg-header.jpg';</Box>{`
-import imgItem1 from `}<Box color="red" display="inline-block">'../../assets/img/item.jpg';</Box>{`
-import imgItem2 from `}<Box color="red" display="inline-block">'../../assets/img/ite2.jpg';</Box>{`
-import { Heart } from `}<Box color="red" display="inline-block">'styled-icons/fa-regular';</Box>{`
-import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="inline-block">'styled-icons/fa-brands';</Box><br/>{`
-<BoxImage `}<b>{`image={bg}`} mb={`{30}`} py={`{150}`}</b>{`>
-    <Container>
-        <Typography `}<b>variant="h1" color="#fff" fontSize={`{50}`}</b>{`>Работа найдется для каждого</Typography>
-        <Typography `}<b>variant="h2" color="#ff4f57" fontSize={`{30}`}</b>{`>Здесь находят работу и подбирают персонал</Typography>
-        <Box `}<b>backgroundColor="rgba(255, 255, 255, 0.1)" p={`{10}`} my={`{30}`}</b>{`>
-            <Grid `}<b>fluid gutter={`{0}`}</b>{`>
-                <Row>
-                    <Col `}<b>xs={`{12}`} md={`{12}`} mb={`{{ md: '10px', xs: '10px' }}`} lg={`{4}`}</b>{`>
-                        <FormGroup><FormGroupIcon><Work /></FormGroupIcon><Input size="lg" icon control placeholder="Название вакансии / Компания" /></FormGroup>
-                    </Col>
-                    <Col `}<b>xs={`{12}`} md={`{12}`} mb={`{{ md: '10px', xs: '10px' }}`} lg={`{4}`}</b>{`>
-                        <FormGroup>
-                            <FormGroupIcon><LocationOn /></FormGroupIcon>
-                            <Input `}<b>size="lg" icon control placeholder="Название вакансии / Компания"</b>{` />
-                        </FormGroup>
-                    </Col>
-                    <Col `}<b>xs={`{12}`} md={`{12}`} lg={`{4}`}</b>{`>
+        <Box>
+            <BoxImage image={bgHeader} backgroundColor='#F8F9FD' mb={0} pb={{ xs: 0, md: 150 }} pt={{ xs: 20, md: 40 }}>
+                <Container header>
+                    <Grid fluid pb={{ xs: 15, md: 70 }}>
                         <Row>
-                            <Col `}<b>xs="auto" flex="auto"</b>{`>
-                                <FormGroup>
-                                    <FormGroupIcon><Work /></FormGroupIcon>
-                                    <Select `}<b>size="lg" control icon</b>{`>
-                                        <option>Все категории</option>
+                            <Col xs={12} md={8} lg={8}>
+                                <img src={logo} width={220} alt=""/>
+                            </Col>
+                            <Col xs={12} md={4} lg={4}>
+                                <FormGroup header>
+                                    <FormGroupIcon landing><LocationOn /></FormGroupIcon>
+                                    <Select size="lg" control icon landing>
+                                        <option>Москва</option>
                                         <option>Control</option>
                                         <option>Other</option>
                                     </Select>
                                 </FormGroup>
                             </Col>
-                            <Col `}<b>xs="auto" flex="none"</b>{`>
-                                <Button `}<b>size="lg"</b>{`><Search /></Button>
-                            </Col>
                         </Row>
-                    </Col>
-                </Row>
-            </Grid>
-        </Box>
-        <Box>
-            <Typography `}<b>color="#fff" as="b"</b>{`>Популярные запросы: </Typography>
-            <Badge `}<b>variant="light" link as="a"</b>{`>Менеджер</Badge>
-            <Badge `}<b>variant="light" link as="a"</b>{`>Дизайнер</Badge>
-            <Badge `}<b>variant="light" link as="a"</b>{`>Программист</Badge>
-        </Box>
-    </Container>
-</BoxImage>
-<Container>
-    <Typography `}<b>variant="h1" mb={`{30}`}</b>{`>Вакансии дня</Typography>
-    <ItemList>
-        <Col `}<b>xs="auto" display={`{{ xs: 'none', md: "block" }}`}</b>{`>
-            <img `}<b>width={`{100}`} src={`{imgItem1}`}</b>{` />
-        </Col>
-        <Col `}<b>pl={`{25}`}</b>{`>
-            <Box `}<b>mb={`{20}`}</b>{`>
-                <Typography `}<b>variant="h2</b>{`">Дизайнер <Badge>Полный день</Badge></Typography>
-            </Box>
-            <p>Внесение правок в готовые макеты полиграфии. Подготовка поздравительных открыток. Грамотно распределять объём работ между собой и вторым дизайнером.</p>
-            <hr/>
-            <Row `}<b>mt={`{10}`}</b>{`>
-                <Col `}<b>flex="auto"</b>{`>
-                    <Tag `}<b>link as="a"</b>{`><Brush />Дизайн</Tag>
-                    <Tag><LocationOn />Москва</Tag>
-                    <Tag><AccessTime />12:00</Tag>
-                </Col>
-                <Col `}<b>xs='auto' flex="none"</b>{`>
-                    <Button `}<b>mr={`{20}`} variant="secondary" round</b>{`><Heart /></Button>
-                    <Button>Подробнее</Button>
-                </Col>
-            </Row>
-        </Col>
-    </ItemList>
-    <ItemList>
-        <Col `}<b>xs="auto" display={`{{ xs: 'none', md: "block" }}`}</b>{`>
-            <img `}<b>width={`{100}`} src={`{imgItem2}`}</b>{`/>
-        </Col>
-        <Col `}<b>pl={`{25}`}</b>{`>
-            <Box `}<b>mb={`{20}`}</b>{`>
-                <Typography `}<b>variant="h2"</b>{`>Программист <Badge `}<b>variant="secondary"</b>{`>Полный день</Badge></Typography>
-            </Box>
-            <p>Проектирование и разработка CRM системы на базе bpm'online. - Доработка и поддержка введенных в эксплуатацию модулей системы. Профильное техническое образование. - Знание ООП и теории БД. - Навыки программирования C# и JS.</p>
-            <hr/>
-            <Row `}<b>mt={`{10}`}</b>{`>
-                <Box `}<b>flex="auto"</b>{`>
-                    <Tag l`}<b>ink as="a"</b>{`><Computer />Информационные технологии</Tag>
-                    <Tag><LocationOn />Москва</Tag>
-                    <Tag><AccessTime />12:00</Tag>
-                </Box>
-                <Box `}<b>xs='auto' flex="none"</b>{`>
-                    <Button `}<b>mr={`{20}`} variant="secondary" round</b>{`><Heart /></Button>
-                    <Button>Подробнее</Button>
-                </Box>
-            </Row>
-        </Col>
-    </ItemList>
-</Container>
-<Box `}<b>backgroundColor="#202020" mt={`{60}`}</b>{`>
-    <Container `}<b>py={`{60}`}</b>{`>
-        <Row `}<b>mx={`{-15}`}</b>{`>
-                    <Col `}<b>xs={`{12}`} md={`{6}`} lg={`{3}`} order={`{{ md: "3", lg: "1" }}`} mb={`{{ md: "10px", xs: "15px" }}`}</b>{`>
-                        <Typography `}<b>variant="h3" color='#FF4F57' mb={`{30}`}</b>{`>Заголовок</Typography>
-                        <Box `}<b>color='#fff'</b>{`>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus suscipit quis.</Box>
-                    </Col>
-                    <Col `}<b>xs={`{12}`} md={`{6}`} lg={`{3}`} order={`{{ md: "1", lg: "2" }}`} mb={`{{ md: "10px", xs: "15px" }}`}</b>{`>
-                        <Typography `}<b>variant="h3" color='#fff' mb={`{30}`}</b>{`>Раздел</Typography>
-                        <ListUl `}<b>styleNone</b>{`>
-                            <li>
-                                <LinkWhite href="#">Link 1</LinkWhite>
-                            </li>
-                            <li>
-                                <LinkWhite href="#">Link 2</LinkWhite>
-                            </li>
-                            <li>
-                                <LinkWhite href="#">Link 3</LinkWhite>
-                            </li>
-                            <li>
-                                <LinkWhite href="#">Link 4</LinkWhite>
-                            </li>
-                        </ListUl>
-                    </Col>
-                    <Col `}<b>xs={`{12}`} md={`{6}`} lg={`{3}`} order={`{{ md: "2", lg: "3" }}`} mb={`{{ md: "10px", xs: "15px" }}`}</b>{`>
-                        <Typography `}<b>variant="h3" color='#fff' mb={`{30}`}</b>{`>Раздел</Typography>
-                        <ListUl `}<b>styleNone</b>{`>
-                            <li>
-                                <LinkWhite href="#">Link 1</LinkWhite>
-                            </li>
-                            <li>
-                                <LinkWhite href="#">Link 2</LinkWhite>
-                            </li>
-                            <li>
-                                <LinkWhite href="#">Link 3</LinkWhite>
-                            </li>
-                            <li>
-                                <LinkWhite href="#">Link 4</LinkWhite>
-                            </li>
-                        </ListUl>
-                    </Col>
-                    <Col `}<b>xs={`{12}`} md={`{6}`} lg={`{3}`} order={`{{ md: "4", lg: "4" }}`} mb={`{{ md: "10px", xs: "15px" }}`}</b>{`>
-                        <Typography `}<b>variant="h3" color='#fff' mb={`{30}`}</b>{`>Подписаться</Typography>
-                        <Row>
-                            <Col `}<b>xs="auto" mr={`{10}`}</b>{`>
-                                <Button `}<b>round icon</b>{`><Vk /></Button>
-                            </Col>
-                            <Col `}<b>xs="auto" mr={`{10}`}</b>{`>
-                                <Button `}<b>round icon</b>{`><Facebook /></Button>
-                            </Col>
-                            <Col `}<b>xs="auto" mr={`{10}`}</b>{`>
-                                <Button `}<b>round icon</b>{`><Twitter /></Button>
-                            </Col>
-                            <Col `}<b>xs="auto" mr={`{10}`}</b>{`>
-                                <Button `}<b>round icon</b>{`><LinkedinIn /></Button>
-                            </Col>
-                        </Row>
-                        <Box `}<b>mt={`{10}`}</b>{`>
-                            <Box `}<b>color='#fff'</b>{`>Join our mailing list to stay up to date and get notices about our new releases!</Box>
-                        </Box>
-                    </Col>
-                </Row>
-    </Container>
-</Box>
-`}</pre>
-        </code>
-        <Box>
-            <BoxImage image={bgHeader} mb={30} py={150}>
-                <Container>
-                    <Typography variant="h1" color="#fff" fontSize={50}>Работа найдется для каждого</Typography>
-                    <Typography variant="h2" color="#ff4f57" fontSize={30}>Здесь находят работу и подбирают персонал</Typography>
-                    <Box backgroundColor="rgba(255, 255, 255, 0.1)" p={10} my={30}>
-                        <Grid fluid gutter={0}>
+                    </Grid>
+                    <Box backgroundColor={{ xs: 'rgba(255,255,255,0.4)', md: 'transparent' }} textAlign={{ xs: 'center', md: 'left'}}>
+                        <Typography variant="h1" color="#5E57A7" fontSize={{ xs: 30, md: 50}}>Здесь находят работу <br/> и подбирают персонал</Typography>
+                    </Box>
+                    <Box backgroundColor="rgba(255, 255, 255, 0.1)" py={10} py={30}>
+                        <Grid fluid>
                             <Row>
-                                <Col xs={12} md={12} mb={{ md: '10px', xs: '10px' }} lg={4}>
-                                    <FormGroup><FormGroupIcon><Work /></FormGroupIcon><Input size="lg" icon control placeholder="Название вакансии / Компания" /></FormGroup>
+                                <Col xs={12} md={6} mb={{ md: '10px', xs: '10px' }} lg={5}>
+                                    <FormGroup><FormGroupIcon landing><Work /></FormGroupIcon><Input size="lg" icon control landing placeholder="Название вакансии / Компания" /></FormGroup>
                                 </Col>
-                                <Col xs={12} md={12} mb={{ md: '10px', xs: '10px' }} lg={4}>
-                                    <FormGroup>
-                                        <FormGroupIcon><LocationOn /></FormGroupIcon>
-                                        <Input size="lg" icon control placeholder="Название вакансии / Компания" />
-                                    </FormGroup>
-                                </Col>
-                                <Col xs={12} md={12} lg={4}>
+                            </Row>
+                            <Box>
+                                <Badge variant="info" link as="a">Менеджер</Badge>&nbsp;•&nbsp;
+                                <Badge variant="info" link as="a">Дизайнер</Badge>&nbsp;•&nbsp;
+                                <Badge variant="info" link as="a">Программист</Badge>
+                            </Box>
+                            <Row>
+                                <Col xs={12} md={6} lg={5} mt={15}>
                                     <Row>
-                                        <Col xs="auto" flex="auto">
-                                            <FormGroup>
-                                                <FormGroupIcon><Work /></FormGroupIcon>
-                                                <Select size="lg" control icon>
-                                                    <option>Все категории</option>
-                                                    <option>Control</option>
-                                                    <option>Other</option>
-                                                </Select>
-                                            </FormGroup>
-                                        </Col>
                                         <Col xs="auto" flex="none">
-                                            <Button size="lg"><Search title="Search" /></Button>
+                                            <Button variant='info' size="lg">ИСКАТЬ</Button>
                                         </Col>
                                     </Row>
                                 </Col>
                             </Row>
                         </Grid>
                     </Box>
-                    <Box>
-                        <Typography color="#fff" as="b">Популярные запросы: </Typography>
-                        <Badge variant="light" link as="a">Менеджер</Badge>
-                        <Badge variant="light" link as="a">Дизайнер</Badge>
-                        <Badge variant="light" link as="a">Программист</Badge>
-                    </Box>
                 </Container>
             </BoxImage>
-            <Container>
-                <Typography variant="h1" mb={30}>Вакансии дня</Typography>
-                <ItemList>
-                    <Col xs="auto" display={{ xs: 'none', md: "block" }}>
-                        <img width={100} src={imgItem1} alt=""/>
-                    </Col>
-                    <Col pl={25}>
-                        <Box mb={20}>
-                            <Typography variant="h2">Дизайнер <Badge>Полный день</Badge></Typography>
-                        </Box>
-                        <p>Внесение правок в готовые макеты полиграфии. Подготовка поздравительных открыток. Грамотно распределять объём работ между собой и вторым дизайнером.</p>
-                        <hr/>
-                        <Row mt={10}>
-                            <Col flex="auto">
-                                <Tag link as="a"><Brush />Дизайн</Tag>
-                                <Tag><LocationOn />Москва</Tag>
-                                <Tag><AccessTime />12:00</Tag>
-                            </Col>
-                            <Col xs='auto' flex="none">
-                                <Button mr={20} variant="secondary" round><Heart /></Button>
-                                <Button>Подробнее</Button>
-                            </Col>
-                        </Row>
-                    </Col>
-                </ItemList>
-                <ItemList>
-                    <Col xs="auto" display={{ xs: 'none', md: "block" }}>
-                        <img width={100} src={imgItem2} alt=""/>
-                    </Col>
-                    <Col pl={25}>
-                        <Box mb={20}>
-                            <Typography variant="h2">Программист <Badge variant="secondary">Полный день</Badge></Typography>
-                        </Box>
-                        <p>Проектирование и разработка CRM системы на базе bpm'online. - Доработка и поддержка введенных в эксплуатацию модулей системы. Профильное техническое образование. - Знание ООП и теории БД. - Навыки программирования C# и JS.</p>
-                        <hr/>
-                        <Row mt={10}>
-                            <Box flex="auto">
-                                <Tag link as="a"><Computer />Информационные технологии</Tag>
-                                <Tag><LocationOn />Москва</Tag>
-                                <Tag><AccessTime />12:00</Tag>
+            <Box backgroundColor='#F8F9FD'>
+            <Container >
+                <Grid fluid>
+                    <Row>
+                        <Col xs={12} md={4} lg={4}>
+                            <Box textAlign={{ xs: 'center', md: 'left'}}>
+                                <TitleBox mt={{ xs: 30, md: 0 }} fontSize={{ xs: '1.5rem', md: '2.2rem' }}>Компании</TitleBox>
                             </Box>
-                            <Box xs='auto' flex="none">
-                                <Button mr={20} variant="secondary" round><Heart /></Button>
-                                <Button>Подробнее</Button>
+                            <BoxList>
+                                <ItemList>
+                                    <Col xs="auto">
+                                        <BoxLogo>
+                                            <img src={imgItem1} alt=""/>
+                                        </BoxLogo>
+                                    </Col>
+                                    <Col pl={15} alignSelf='center'>
+                                        <TitleVacancy>АНКОР</TitleVacancy>
+                                        <Box><a>210 вакансий</a></Box>
+                                    </Col>
+                                </ItemList>
+                                <ItemList>
+                                    <Col xs="auto">
+                                        <BoxLogo>
+                                            <img src={imgItem2} alt=""/>
+                                        </BoxLogo>
+                                    </Col>
+                                    <Col pl={15} alignSelf='center'>
+                                        <TitleVacancy>Мегафон</TitleVacancy>
+                                        <Box><a>106 вакансий</a></Box>
+                                    </Col>
+                                </ItemList>
+                                <ItemList>
+                                    <Col xs="auto">
+                                        <BoxLogo>
+                                            <img src={imgItem3} alt=""/>
+                                        </BoxLogo>
+                                    </Col>
+                                    <Col pl={15} alignSelf='center'>
+                                        <TitleVacancy>ВТБ</TitleVacancy>
+                                        <Box><a>97 вакансий</a></Box>
+                                    </Col>
+                                </ItemList>
+                                <ItemList>
+                                    <Col xs="auto">
+                                        <BoxLogo>
+                                            <img src={imgItem1} alt=""/>
+                                        </BoxLogo>
+                                    </Col>
+                                    <Col pl={15} alignSelf='center'>
+                                        <TitleVacancy>АНКОР</TitleVacancy>
+                                        <Box><a>210 вакансий</a></Box>
+                                    </Col>
+                                </ItemList>
+                                <ItemList>
+                                    <Col xs="auto">
+                                        <BoxLogo>
+                                            <img src={imgItem2} alt=""/>
+                                        </BoxLogo>
+                                    </Col>
+                                    <Col pl={15} alignSelf='center'>
+                                        <TitleVacancy>Мегафон</TitleVacancy>
+                                        <Box><a>106 вакансий</a></Box>
+                                    </Col>
+                                </ItemList>
+                                <ItemList>
+                                    <Col xs="auto">
+                                        <BoxLogo>
+                                            <img src={imgItem3} alt=""/>
+                                        </BoxLogo>
+                                    </Col>
+                                    <Col pl={15} alignSelf='center'>
+                                        <TitleVacancy>ВТБ</TitleVacancy>
+                                        <Box><a>97 вакансий</a></Box>
+                                    </Col>
+                                </ItemList>
+                            </BoxList>
+                        </Col>
+                        <Col xs={12} md={8} lg={8}>
+                            <Box textAlign={{ xs: 'center', md: 'left'}}>
+                                <TitleBox mt={{ xs: 30, md: 0 }} fontSize={{ xs: '1.5rem', md: '2.2rem' }}>Вакансии дня</TitleBox>
                             </Box>
-                        </Row>
-                    </Col>
-                </ItemList>
-            </Container>
-            <Box backgroundColor='#202020' mt={60}>
-                <Container py={60}>
-                    <Row mx={-15}>
-                        <Col xs={12} md={6} lg={3} order={{ md: "3", lg: "1" }} mb={{ md: "10px", xs: "15px" }}>
-                            <Typography variant="h3" color='#FF4F57' mb={30}>Заголовок</Typography>
-                            <Box color='#fff'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus suscipit quis.</Box>
-                        </Col>
-                        <Col xs={12} md={6} lg={3} order={{ md: "1", lg: "2" }} mb={{ md: "10px", xs: "15px" }}>
-                            <Typography variant="h3" color='#fff' mb={30}>Раздел</Typography>
-                            <ListUl styleNone>
-                                <li>
-                                    <LinkWhite href="#">Link 1</LinkWhite>
-                                </li>
-                                <li>
-                                    <LinkWhite href="#">Link 2</LinkWhite>
-                                </li>
-                                <li>
-                                    <LinkWhite href="#">Link 3</LinkWhite>
-                                </li>
-                                <li>
-                                    <LinkWhite href="#">Link 4</LinkWhite>
-                                </li>
-                            </ListUl>
-                        </Col>
-                        <Col xs={12} md={6} lg={3} order={{ md: "2", lg: "3" }} mb={{ md: "10px", xs: "15px" }}>
-                            <Typography variant="h3" color='#fff' mb={30}>Раздел</Typography>
-                            <ListUl styleNone>
-                                <li>
-                                    <LinkWhite href="#">Link 1</LinkWhite>
-                                </li>
-                                <li>
-                                    <LinkWhite href="#">Link 2</LinkWhite>
-                                </li>
-                                <li>
-                                    <LinkWhite href="#">Link 3</LinkWhite>
-                                </li>
-                                <li>
-                                    <LinkWhite href="#">Link 4</LinkWhite>
-                                </li>
-                            </ListUl>
-                        </Col>
-                        <Col xs={12} md={6} lg={3} order={{ md: "4", lg: "4" }} mb={{ md: "10px", xs: "15px" }}>
-                            <Typography variant="h3" color='#fff' mb={30}>Подписаться</Typography>
-                            <Row>
-                                <Col xs="auto" mr={10}>
-                                    <Button round icon><Vk /></Button>
-                                </Col>
-                                <Col xs="auto" mr={10}>
-                                    <Button round icon><Facebook /></Button>
-                                </Col>
-                                <Col xs="auto" mr={10}>
-                                    <Button round icon><Twitter /></Button>
-                                </Col>
-                                <Col xs="auto" mr={10}>
-                                    <Button round icon><LinkedinIn /></Button>
-                                </Col>
-                            </Row>
-                            <Box mt={10}>
-                                <Box color='#fff'>Join our mailing list to stay up to date and get notices about our new releases!</Box>
-                            </Box>
+                            <BoxList>
+                                <ItemList>
+                                    <Col alignSelf='center'>
+                                        <Row>
+                                            <Col>
+                                                <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
+                                            </Col>
+                                            <Col xs="auto" pl={{ xs: '8px', md: 15 }}>
+                                                <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
+                                            </Col>
+                                        </Row>
+                                        <Box><a>АНКОР</a></Box>
+                                    </Col>
+                                </ItemList>
+                                <ItemList>
+                                    <Col alignSelf='center'>
+                                        <Row>
+                                            <Col>
+                                                <TitleVacancy>Дизайнер</TitleVacancy>
+                                            </Col>
+                                            <Col xs="auto" pl={{ xs: '8px', md: 15 }}>
+                                                <SumVacancy>по договоренности</SumVacancy>
+                                            </Col>
+                                        </Row>
+                                        <Box><a>Связной</a></Box>
+                                    </Col>
+                                </ItemList>
+                                <ItemList>
+                                    <Col alignSelf='center'>
+                                        <Row>
+                                            <Col>
+                                                <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
+                                            </Col>
+                                            <Col xs="auto" pl={{ xs: '8px', md: 15 }}>
+                                                <SumVacancy>110 000 руб.</SumVacancy>
+                                            </Col>
+                                        </Row>
+                                        <Box><a>OBI</a></Box>
+                                    </Col>
+                                </ItemList>
+                                <ItemList>
+                                    <Col alignSelf='center'>
+                                        <Row>
+                                            <Col>
+                                                <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
+                                            </Col>
+                                            <Col xs="auto" pl={{ xs: '8px', md: 15 }}>
+                                                <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
+                                            </Col>
+                                        </Row>
+                                        <Box><a>АНКОР</a></Box>
+                                    </Col>
+                                </ItemList>
+                                <ItemList>
+                                    <Col alignSelf='center'>
+                                        <Row>
+                                            <Col>
+                                                <TitleVacancy>Дизайнер</TitleVacancy>
+                                            </Col>
+                                            <Col xs="auto" pl={{ xs: '8px', md: 15 }}>
+                                                <SumVacancy>по договоренности</SumVacancy>
+                                            </Col>
+                                        </Row>
+                                        <Box><a>Связной</a></Box>
+                                    </Col>
+                                </ItemList>
+                                <ItemList>
+                                    <Col alignSelf='center'>
+                                        <Row>
+                                            <Col>
+                                                <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
+                                            </Col>
+                                            <Col xs="auto" pl={{ xs: '8px', md: 15 }}>
+                                                <SumVacancy>110 000 руб.</SumVacancy>
+                                            </Col>
+                                        </Row>
+                                        <Box><a>OBI</a></Box>
+                                    </Col>
+                                </ItemList>
+                            </BoxList>
                         </Col>
                     </Row>
+                </Grid>
+            </Container>
+            </Box>
+            <BoxImageTopBottom imageTop={bgWaveHeader} imageBottom={bgWaveFooter} backgroundColor='#F8F9FD' mb={0}>
+                <Box py={50} background='linear-gradient(to bottom, rgba(120,105,255,1) 0%, rgba(143,87,255,1) 100%)'>
+                    <Container textAlign='center'>
+                        <TitleBox color='#fff' mt={0} mb={40}>Компании</TitleBox>
+                        <Grid fluid>
+                            <Row mt={16}>
+                                <Col xs={12} md={2} lg={2} mb={{ xs: 16, md: 0 }}>
+                                    <ItemListBox>
+                                        <Icon icon="builder" size={40} color={'#fff'} />
+                                        <Box>
+                                            <Typography variant='h4'>Строитель</Typography>
+                                        </Box>
+                                    </ItemListBox>
+                                </Col>
+                                <Col xs={12} md={2} lg={2} mb={{ xs: 16, md: 0 }}>
+                                    <ItemListBox>
+                                        <Icon icon="builder" size={40} color={'#fff'} />
+                                        <Box>
+                                            <Typography variant='h4'>Строитель</Typography>
+                                        </Box>
+                                    </ItemListBox>
+                                </Col>
+                                <Col xs={12} md={2} lg={2} mb={{ xs: 16, md: 0 }}>
+                                    <ItemListBox>
+                                        <Icon icon="builder" size={40} color={'#fff'} />
+                                        <Box>
+                                            <Typography variant='h4'>Строитель</Typography>
+                                        </Box>
+                                    </ItemListBox>
+                                </Col>
+                                <Col xs={12} md={2} lg={2} mb={{ xs: 16, md: 0 }}>
+                                    <ItemListBox>
+                                        <Icon icon="builder" size={40} color={'#fff'} />
+                                        <Box>
+                                            <Typography variant='h4'>Строитель</Typography>
+                                        </Box>
+                                    </ItemListBox>
+                                </Col>
+                                <Col xs={12} md={2} lg={2} mb={{ xs: 16, md: 0 }}>
+                                    <ItemListBox>
+                                        <Icon icon="builder" size={40} color={'#fff'} />
+                                        <Box>
+                                            <Typography variant='h4'>Строитель</Typography>
+                                        </Box>
+                                    </ItemListBox>
+                                </Col>
+                                <Col xs={12} md={2} lg={2} mb={{ xs: 16, md: 0 }}>
+                                    <ItemListBox>
+                                        <Icon icon="builder" size={40} color={'#fff'} />
+                                        <Box>
+                                            <Typography variant='h4'>Строитель</Typography>
+                                        </Box>
+                                    </ItemListBox>
+                                </Col>
+                            </Row>
+                            <Row mt={16}>
+                                <Col xs={12} md={2} lg={2} mb={{ xs: 16, md: 0 }}>
+                                    <ItemListBox>
+                                        <Icon icon="builder" size={40} color={'#fff'} />
+                                        <Box>
+                                            <Typography variant='h4'>Строитель</Typography>
+                                        </Box>
+                                    </ItemListBox>
+                                </Col>
+                                <Col xs={12} md={2} lg={2} mb={{ xs: 16, md: 0 }}>
+                                    <ItemListBox>
+                                        <Icon icon="builder" size={40} color={'#fff'} />
+                                        <Box>
+                                            <Typography variant='h4'>Строитель</Typography>
+                                        </Box>
+                                    </ItemListBox>
+                                </Col>
+                                <Col xs={12} md={2} lg={2} mb={{ xs: 16, md: 0 }}>
+                                    <ItemListBox>
+                                        <Icon icon="builder" size={40} color={'#fff'} />
+                                        <Box>
+                                            <Typography variant='h4'>Строитель</Typography>
+                                        </Box>
+                                    </ItemListBox>
+                                </Col>
+                                <Col xs={12} md={2} lg={2} mb={{ xs: 16, md: 0 }}>
+                                    <ItemListBox>
+                                        <Icon icon="builder" size={40} color={'#fff'} />
+                                        <Box>
+                                            <Typography variant='h4'>Строитель</Typography>
+                                        </Box>
+                                    </ItemListBox>
+                                </Col>
+                                <Col xs={12} md={2} lg={2} mb={{ xs: 16, md: 0 }}>
+                                    <ItemListBox>
+                                        <Icon icon="builder" size={40} color={'#fff'} />
+                                        <Box>
+                                            <Typography variant='h4'>Строитель</Typography>
+                                        </Box>
+                                    </ItemListBox>
+                                </Col>
+                                <Col xs={12} md={2} lg={2} mb={{ xs: 16, md: 0 }}>
+                                    <ItemListBox>
+                                        <Icon icon="builder" size={40} color={'#fff'} />
+                                        <Box>
+                                            <Typography variant='h4'>Строитель</Typography>
+                                        </Box>
+                                    </ItemListBox>
+                                </Col>
+                            </Row>
+                        </Grid>
+                    </Container>
+                </Box>
+            </BoxImageTopBottom>
+            <Box backgroundColor='#F8F9FD'>
+                <Container pb={100} textAlign='center'>
+                    <Typography color='#5E57A7' variant='h1'  fontSize={{ xs: 70, md: 150}} fontWeight='bold'>3000+</Typography>
+                    <Box>
+                        <Typography color='#5E57A7' variant='h2' textTransform='uppercase'>Вакансий</Typography>
+                    </Box>
+                </Container>
+            </Box>
+            <Box backgroundColor='#fff'>
+                <Container py={20}>
+                    <Box color='#5E57A7'> ©  2019 Jobot. Работа найдется для каждого</Box>
                 </Container>
             </Box>
         </Box>

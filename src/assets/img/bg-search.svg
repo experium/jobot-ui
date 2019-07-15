@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="379px" height="113px" viewBox="0 0 379 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6B73FF" offset="0%"></stop>
+            <stop stop-color="#9B4EFE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#6B73FF" offset="0%"></stop>
+            <stop stop-color="#9B4EFE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-259" transform="translate(-10.000000, -1087.000000)" fill-rule="nonzero">
+            <path d="M1638.75514,998.251526 C1638.75514,998.251526 1527.45224,856.46243 1367.06035,973.808991 C1206.66846,1091.15555 960.529768,919.541004 718.739395,976.321018 C476.949022,1033.10103 421.888343,1125.84212 230.370503,1142.87652 C38.8526639,1159.91093 22.092154,1229.93981 22.092154,1229.93981 L38.8496651,480.439036 L1638.75514,480.439036" id="Path_2206" fill="url(#linearGradient-1)" opacity="0.25" transform="translate(830.423648, 855.189423) rotate(2.006539) translate(-830.423648, -855.189423) "></path>
+            <path d="M16.828,442.024 L29.664,442.024 L29.664,273.2 C29.664,273.2 133.472,328.073 290.444,189.7 C375.644,114.6 487.075,172.966 609,231.335 C711.7,280.503 821.855,329.671 930.047,299.059 C1166.676,232.105 1220.562,122.748 1407.991,102.659 C1595.42,82.57 1611.819,0 1611.819,0 L1603.619,442.024 L1623.485,442.024 L1623.485,960.124 C1623.485,960.124 1516.966,913.562 1355.894,1030.975 C1268.466,1094.703 1154.126,1045.175 1029.017,995.647 C923.628,953.928 810.6,912.208 699.583,938.183 C456.772,994.996 401.483,1087.788 209.153,1104.831 C16.823,1121.874 -4.08562073e-14,1191.945 -4.08562073e-14,1191.945 L16.828,442.024 Z" id="Union_1" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

@@ -1,4 +1,4 @@
-import { styled, css } from "@smooth-ui/core-sc";
+import { styled, css, Typography } from "@smooth-ui/core-sc";
 
 export const ListUl = styled.ul`
     margin: 0;
@@ -17,7 +17,16 @@ export const ListUl = styled.ul`
             }
         }
     `}
+    ${p => p.filter && css`
+        li{
+            font-weight: 300;
+            span{
+                float: right;
+            }
+        }
+    `}
 `;
+
 export const LinkWhite = styled.a`
     color: #fff;
     &:hover{
@@ -25,3 +34,26 @@ export const LinkWhite = styled.a`
     }
 `;
 
+export const TitleBox = styled(Typography)`
+    color: #5E57A7;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.2rem;
+`;
+
+TitleBox.defaultProps = {
+    variant: 'h1',
+    mb: '15px',
+};
+
+export const TitleVacancy = styled.a`
+    color: #5E57A7;
+    font-size: 16px;
+    font-weight: 600;
+`;
+
+export const SumVacancy = styled.span`
+    color: #5E57A7;
+    font-size: 14px;
+    font-weight: 600;
+`;

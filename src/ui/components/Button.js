@@ -33,6 +33,40 @@ const sizeStyleIcon = {
         }
     `,
 };
+const buttonTheme = {
+    primary: css`
+        background: ${th('primary')};
+    `,
+    secondary: css`
+        background: ${th('secondary')};
+    `,
+    light: css`
+        background: transparent;
+        border: 1px solid #fff
+        color: #fff;
+        &:not(:disabled):hover{
+            background: transparent;
+            opacity: 0.7;
+        }
+    `,
+    success: css`
+        background: ${th('success')};
+    `,
+    danger: css`
+        background: ${th('danger')};
+    `,
+    warning: css`
+        background: ${th('warning')};
+    `,
+    info: css`
+        background: rgba(155,78,254,1);
+        background: linear-gradient(45deg, rgba(155,78,254,1) 0%, rgba(107,115,255,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b4efe', endColorstr='#6b73ff', GradientType=1 );
+    `,
+    dark: css`
+        background: ${th('dark')};
+    `,
+};
 
 export const Button = styled(SmoothButton)`
     ${p => p.size && sizeStyleIcon[p.size]};
@@ -43,6 +77,7 @@ export const Button = styled(SmoothButton)`
         width: calc(${th('inputBtnPaddingY')} + ${th('inputBtnPaddingY')} + ${th('btnLineHeight')}rem);
         ${p => p.size && sizeStyle[p.size]};
     `}
+    ${p => p.variant && buttonTheme[p.variant]};
 `;
 
 Button.propTypes = {

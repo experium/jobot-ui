@@ -27,7 +27,16 @@ const badgeTheme = {
         background: ${th('warning')};
     `,
     info: css`
-        background: ${th('info')};
+        background: transparent;
+        color: #5E57A7!important;
+        border: 0;
+        margin-right: 0!important;
+        padding: 0!important;
+        &:hover{
+            background: transparent;
+            color: #38317d!important;
+            cursor: pointer;
+        }
     `,
     dark: css`
         background: ${th('dark')};

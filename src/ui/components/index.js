@@ -8,6 +8,8 @@ export * from './List';
 export * from './Select';
 export * from './Tag';
 export * from './Typography';
+export * from './Logo';
+export * from './Pagination';
 export * from './TerminalTitle';
 export * from './TerminalButton';
 export * from './TerminalGrid';

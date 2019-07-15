@@ -1,21 +1,57 @@
-import { styled, Row } from '@smooth-ui/core-sc'
-import { Badge } from './Badge';
+import { styled, Row, Box } from '@smooth-ui/core-sc'
+
+export const BoxList = styled(Box)`
+    background-color: #fff;
+`;
+
+BoxList.defaultProps = {
+    borderRadius: '.5rem',
+    p: '0 25px',
+};
 
 export const ItemList = styled(Row)`
-    ${Badge}{
-        position: relative;
-        top: -3px;
-    }
-    hr{
-        border: none;
-        color: #ddd;
-        background-color: #ddd;
-        height: 1px;
+    background-color: #fff;
+    border-bottom: 1px solid #D7D4F2;
+    min-height: 91px;
+    &:last-child{
+        border: 0;
     }
 `;
 
 ItemList.defaultProps = {
-    border: '1px solid #f1f1f1',
-    p: '15px',
-    mb: '15px'
+    p: '15px 0',
+};
+
+export const ItemListBox = styled(Box)`
+    background-color: rgba(255,255,255,0.1);
+    min-height: 90px;
+    text-align: center;
+    position: relative;
+    &:hover{
+        cursor: cover;
+        background-color: rgba(255,255,255,0.4);
+        box-shadow: 0 3px 50px rgba(0,0,0,0.4);
+        &:before{
+            content: '';
+            border: 1px solid #fff;
+            border-radius: .5rem;
+            position: absolute;
+            left: -5px;
+            top: -5px;
+            right: -5px;
+            bottom: -5px;
+        }
+    }
+    h4{
+        font-size: 13px;
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+`;
+
+ItemListBox.defaultProps = {
+    p: '15px 0',
+    borderRadius: '.5rem'
 };
