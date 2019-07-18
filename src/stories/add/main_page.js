@@ -42,7 +42,7 @@ const MainPage = () => (
                     <Box backgroundColor={{ xs: 'rgba(255,255,255,0.4)', md: 'transparent' }} textAlign={{ xs: 'center', md: 'left'}}>
                         <Typography variant="h1" color="#5E57A7" fontSize={{ xs: 30, md: 50}}>Здесь находят работу <br/> и подбирают персонал</Typography>
                     </Box>
-                    <Box backgroundColor="rgba(255, 255, 255, 0.1)" py={10} py={30}>
+                    <Box backgroundColor="rgba(255, 255, 255, 0.1)" py={10}>
                         <Grid fluid>
                             <Row>
                                 <Col xs={12} md={6} mb={{ md: '10px', xs: '10px' }} lg={5}>
@@ -151,11 +151,11 @@ const MainPage = () => (
                             <BoxList>
                                 <ItemList>
                                     <Col alignSelf='center'>
-                                        <Row>
+                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
                                             </Col>
-                                            <Col xs="auto" pl={{ xs: '8px', md: 15 }}>
+                                            <Col pl={{ xs: '8px', md: 15 }}>
                                                 <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
                                             </Col>
                                         </Row>
@@ -164,11 +164,11 @@ const MainPage = () => (
                                 </ItemList>
                                 <ItemList>
                                     <Col alignSelf='center'>
-                                        <Row>
+                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Дизайнер</TitleVacancy>
                                             </Col>
-                                            <Col xs="auto" pl={{ xs: '8px', md: 15 }}>
+                                            <Col pl={{ xs: '8px', md: 15 }}>
                                                 <SumVacancy>по договоренности</SumVacancy>
                                             </Col>
                                         </Row>
@@ -177,11 +177,11 @@ const MainPage = () => (
                                 </ItemList>
                                 <ItemList>
                                     <Col alignSelf='center'>
-                                        <Row>
+                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
                                             </Col>
-                                            <Col xs="auto" pl={{ xs: '8px', md: 15 }}>
+                                            <Col pl={{ xs: '8px', md: 15 }}>
                                                 <SumVacancy>110 000 руб.</SumVacancy>
                                             </Col>
                                         </Row>
@@ -190,11 +190,11 @@ const MainPage = () => (
                                 </ItemList>
                                 <ItemList>
                                     <Col alignSelf='center'>
-                                        <Row>
+                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
                                             </Col>
-                                            <Col xs="auto" pl={{ xs: '8px', md: 15 }}>
+                                            <Col pl={{ xs: '8px', md: 15 }}>
                                                 <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
                                             </Col>
                                         </Row>
@@ -203,11 +203,11 @@ const MainPage = () => (
                                 </ItemList>
                                 <ItemList>
                                     <Col alignSelf='center'>
-                                        <Row>
+                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Дизайнер</TitleVacancy>
                                             </Col>
-                                            <Col xs="auto" pl={{ xs: '8px', md: 15 }}>
+                                            <Col pl={{ xs: '8px', md: 15 }}>
                                                 <SumVacancy>по договоренности</SumVacancy>
                                             </Col>
                                         </Row>
@@ -216,11 +216,11 @@ const MainPage = () => (
                                 </ItemList>
                                 <ItemList>
                                     <Col alignSelf='center'>
-                                        <Row>
+                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
                                             </Col>
-                                            <Col xs="auto" pl={{ xs: '8px', md: 15 }}>
+                                            <Col pl={{ xs: '8px', md: 15 }}>
                                                 <SumVacancy>110 000 руб.</SumVacancy>
                                             </Col>
                                         </Row>

@@ -2,6 +2,7 @@ import React from 'react';
 import '../index.css';
 
 import { storiesOf } from '@storybook/react';
+import withCode from 'storybook-addon-code';
 
 /*Add*/
 import MainPage from './add/main_page';
@@ -39,6 +40,9 @@ import IconStory from "./add/icon";
 import TerminalCategories from "./add/terminal_categories";
 import TerminalSliderTemplate1 from "./add/terminal/slider/template1";
 
+const javascriptCodeMain  = require('!raw-loader!./add/main_page.js');
+const javascriptCodeSearch  = require('!raw-loader!./add/list_vacancy_search.js');
+
 /*Components*/
 import { Typography, Box, Button } from './ui';
 
@@ -75,8 +79,12 @@ storiesOf('Library', module)
     <Button as="a" href="https://github.com/malte-wessel/react-textfit" variant="dark" size="lg"><Github /> Github</Button>
 </Box>);
 
-storiesOf('Examples', module)
+storiesOf('Examples site', module)
+.addDecorator(withCode(javascriptCodeMain, 'typescript'))
 .add('Main page', () => <MainPage />)
+
+storiesOf('Examples site', module)
+.addDecorator(withCode(javascriptCodeSearch, 'typescript'))
 .add('Search page', () => <ListVacancySearch />);
 
 storiesOf('Components', module)

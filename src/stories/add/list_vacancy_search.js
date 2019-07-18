@@ -157,11 +157,11 @@ const ListVacancySearch = () => ( <Box>
                                         </BoxLogo>
                                     </Col>
                                     <Col alignSelf='center'>
-                                        <Row>
+                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
                                             </Col>
-                                            <Col xs="auto" pl={15}>
+                                            <Col xs="auto">
                                                 <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
                                             </Col>
                                         </Row>
@@ -175,11 +175,11 @@ const ListVacancySearch = () => ( <Box>
                                         </BoxLogo>
                                     </Col>
                                     <Col alignSelf='center'>
-                                        <Row>
+                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Дизайнер</TitleVacancy>
                                             </Col>
-                                            <Col xs="auto" pl={15}>
+                                            <Col xs="auto">
                                                 <SumVacancy>по договоренности</SumVacancy>
                                             </Col>
                                         </Row>
@@ -193,11 +193,11 @@ const ListVacancySearch = () => ( <Box>
                                         </BoxLogo>
                                     </Col>
                                     <Col alignSelf='center'>
-                                        <Row>
+                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
                                             </Col>
-                                            <Col xs="auto" pl={15}>
+                                            <Col xs="auto">
                                                 <SumVacancy>110 000 руб.</SumVacancy>
                                             </Col>
                                         </Row>
@@ -211,11 +211,11 @@ const ListVacancySearch = () => ( <Box>
                                         </BoxLogo>
                                     </Col>
                                     <Col alignSelf='center'>
-                                        <Row>
+                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
                                             </Col>
-                                            <Col xs="auto" pl={15}>
+                                            <Col xs="auto">
                                                 <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
                                             </Col>
                                         </Row>
@@ -229,11 +229,11 @@ const ListVacancySearch = () => ( <Box>
                                         </BoxLogo>
                                     </Col>
                                     <Col alignSelf='center'>
-                                        <Row>
+                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Дизайнер</TitleVacancy>
                                             </Col>
-                                            <Col xs="auto" pl={15}>
+                                            <Col xs="auto">
                                                 <SumVacancy>по договоренности</SumVacancy>
                                             </Col>
                                         </Row>
@@ -247,11 +247,11 @@ const ListVacancySearch = () => ( <Box>
                                         </BoxLogo>
                                     </Col>
                                     <Col alignSelf='center'>
-                                        <Row>
+                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
                                             </Col>
-                                            <Col xs="auto" pl={15}>
+                                            <Col xs="auto">
                                                 <SumVacancy>110 000 руб.</SumVacancy>
                                             </Col>
                                         </Row>

@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "@smooth-ui/core-sc": "^7.0.5",
+    "qrcode.react": "^0.9.3",
     "react-select": "^2.1.2",
     "react-tabs": "^3.0.0",
     "react-textfit": "^1.1.0",
-    "styled-icons": "^3.6.0",
-    "qrcode.react": "^0.9.3"
+    "storybook-addon-code": "^0.1.4",
+    "styled-icons": "^3.6.0"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",

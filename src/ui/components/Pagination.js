@@ -8,6 +8,7 @@ export const Pagination = styled(Box)`
     justify-content: center;
     ul{
         list-style: none;
+        padding-left: 0;
         li{
             display: inline-block;
             margin: 0 5px;
