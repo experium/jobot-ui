@@ -30,6 +30,7 @@ import {Grid} from "@smooth-ui/core-sc";
 
 const ListVacancySearch = () => ( <Box>
         <Box backgroundColor='#F8F9FD'>
+            {/*HEADER START*/}
             <BoxImageSearch image={bgFooter}>
                 <Box background='linear-gradient(45deg, rgba(155,78,254,1) 0%, rgba(107,115,255,1) 100%)' py={15}>
                     <Container>
@@ -51,6 +52,9 @@ const ListVacancySearch = () => ( <Box>
                     </Container>
                 </Box>
             </BoxImageSearch>
+            {/*HEADER END*/}
+
+            {/*LIST VACANCY & FILTER START*/}
             <Container>
                 <Grid fluid>
                     <Box textAlign={{ xs: 'center', md: 'left'}}>
@@ -275,11 +279,15 @@ const ListVacancySearch = () => ( <Box>
                     </Row>
                 </Grid>
             </Container>
+            {/*LIST VACANCY & FILTER END*/}
+
+            {/*FOOTER START*/}
             <Box backgroundColor='#fff' mt={80}>
                 <Container py={20}>
                     <Box color='#5E57A7'> ©  2019 Jobot. Работа найдется для каждого</Box>
                 </Container>
             </Box>
+            {/*FOOTER END*/}
         </Box>
     </Box>
 );

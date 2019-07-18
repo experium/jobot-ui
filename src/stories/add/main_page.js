@@ -19,8 +19,9 @@ import imgItem3 from "../../assets/img/company/6.png";
 
 const MainPage = () => (
     <Box>
-        <Box>
-            <BoxImage image={bgHeader} backgroundColor='#F8F9FD' mb={0} pb={{ xs: 0, md: 150 }} pt={{ xs: 20, md: 40 }}>
+        <Box backgroundColor='#F8F9FD'>
+            {/*HEADER START*/}
+            <BoxImage image={bgHeader} mb={0} pb={{ xs: 0, md: 150 }} pt={{ xs: 20, md: 40 }}>
                 <Container header>
                     <Grid fluid pb={{ xs: 15, md: 70 }}>
                         <Row>
@@ -67,173 +68,179 @@ const MainPage = () => (
                     </Box>
                 </Container>
             </BoxImage>
-            <Box backgroundColor='#F8F9FD'>
-            <Container >
-                <Grid fluid>
-                    <Row>
-                        <Col xs={12} md={4} lg={4}>
-                            <Box textAlign={{ xs: 'center', md: 'left'}}>
-                                <TitleBox mt={{ xs: 30, md: 0 }} fontSize={{ xs: '1.5rem', md: '2.2rem' }}>Компании</TitleBox>
-                            </Box>
-                            <BoxList>
-                                <ItemList>
-                                    <Col xs="auto">
-                                        <BoxLogo>
-                                            <img src={imgItem1} alt=""/>
-                                        </BoxLogo>
-                                    </Col>
-                                    <Col pl={15} alignSelf='center'>
-                                        <TitleVacancy>АНКОР</TitleVacancy>
-                                        <Box><a>210 вакансий</a></Box>
-                                    </Col>
-                                </ItemList>
-                                <ItemList>
-                                    <Col xs="auto">
-                                        <BoxLogo>
-                                            <img src={imgItem2} alt=""/>
-                                        </BoxLogo>
-                                    </Col>
-                                    <Col pl={15} alignSelf='center'>
-                                        <TitleVacancy>Мегафон</TitleVacancy>
-                                        <Box><a>106 вакансий</a></Box>
-                                    </Col>
-                                </ItemList>
-                                <ItemList>
-                                    <Col xs="auto">
-                                        <BoxLogo>
-                                            <img src={imgItem3} alt=""/>
-                                        </BoxLogo>
-                                    </Col>
-                                    <Col pl={15} alignSelf='center'>
-                                        <TitleVacancy>ВТБ</TitleVacancy>
-                                        <Box><a>97 вакансий</a></Box>
-                                    </Col>
-                                </ItemList>
-                                <ItemList>
-                                    <Col xs="auto">
-                                        <BoxLogo>
-                                            <img src={imgItem1} alt=""/>
-                                        </BoxLogo>
-                                    </Col>
-                                    <Col pl={15} alignSelf='center'>
-                                        <TitleVacancy>АНКОР</TitleVacancy>
-                                        <Box><a>210 вакансий</a></Box>
-                                    </Col>
-                                </ItemList>
-                                <ItemList>
-                                    <Col xs="auto">
-                                        <BoxLogo>
-                                            <img src={imgItem2} alt=""/>
-                                        </BoxLogo>
-                                    </Col>
-                                    <Col pl={15} alignSelf='center'>
-                                        <TitleVacancy>Мегафон</TitleVacancy>
-                                        <Box><a>106 вакансий</a></Box>
-                                    </Col>
-                                </ItemList>
-                                <ItemList>
-                                    <Col xs="auto">
-                                        <BoxLogo>
-                                            <img src={imgItem3} alt=""/>
-                                        </BoxLogo>
-                                    </Col>
-                                    <Col pl={15} alignSelf='center'>
-                                        <TitleVacancy>ВТБ</TitleVacancy>
-                                        <Box><a>97 вакансий</a></Box>
-                                    </Col>
-                                </ItemList>
-                            </BoxList>
-                        </Col>
-                        <Col xs={12} md={8} lg={8}>
-                            <Box textAlign={{ xs: 'center', md: 'left'}}>
-                                <TitleBox mt={{ xs: 30, md: 0 }} fontSize={{ xs: '1.5rem', md: '2.2rem' }}>Вакансии дня</TitleBox>
-                            </Box>
-                            <BoxList>
-                                <ItemList>
-                                    <Col alignSelf='center'>
-                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
-                                            <Col>
-                                                <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
-                                            </Col>
-                                            <Col pl={{ xs: '8px', md: 15 }}>
-                                                <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
-                                            </Col>
-                                        </Row>
-                                        <Box><a>АНКОР</a></Box>
-                                    </Col>
-                                </ItemList>
-                                <ItemList>
-                                    <Col alignSelf='center'>
-                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
-                                            <Col>
-                                                <TitleVacancy>Дизайнер</TitleVacancy>
-                                            </Col>
-                                            <Col pl={{ xs: '8px', md: 15 }}>
-                                                <SumVacancy>по договоренности</SumVacancy>
-                                            </Col>
-                                        </Row>
-                                        <Box><a>Связной</a></Box>
-                                    </Col>
-                                </ItemList>
-                                <ItemList>
-                                    <Col alignSelf='center'>
-                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
-                                            <Col>
-                                                <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
-                                            </Col>
-                                            <Col pl={{ xs: '8px', md: 15 }}>
-                                                <SumVacancy>110 000 руб.</SumVacancy>
-                                            </Col>
-                                        </Row>
-                                        <Box><a>OBI</a></Box>
-                                    </Col>
-                                </ItemList>
-                                <ItemList>
-                                    <Col alignSelf='center'>
-                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
-                                            <Col>
-                                                <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
-                                            </Col>
-                                            <Col pl={{ xs: '8px', md: 15 }}>
-                                                <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
-                                            </Col>
-                                        </Row>
-                                        <Box><a>АНКОР</a></Box>
-                                    </Col>
-                                </ItemList>
-                                <ItemList>
-                                    <Col alignSelf='center'>
-                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
-                                            <Col>
-                                                <TitleVacancy>Дизайнер</TitleVacancy>
-                                            </Col>
-                                            <Col pl={{ xs: '8px', md: 15 }}>
-                                                <SumVacancy>по договоренности</SumVacancy>
-                                            </Col>
-                                        </Row>
-                                        <Box><a>Связной</a></Box>
-                                    </Col>
-                                </ItemList>
-                                <ItemList>
-                                    <Col alignSelf='center'>
-                                        <Row flexDirection={{ xs: 'column', md: 'row' }}>
-                                            <Col>
-                                                <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
-                                            </Col>
-                                            <Col pl={{ xs: '8px', md: 15 }}>
-                                                <SumVacancy>110 000 руб.</SumVacancy>
-                                            </Col>
-                                        </Row>
-                                        <Box><a>OBI</a></Box>
-                                    </Col>
-                                </ItemList>
-                            </BoxList>
-                        </Col>
-                    </Row>
-                </Grid>
-            </Container>
+            {/*HEADER END*/}
+
+            {/*LIST COMPANY & VACANCY START*/}
+            <Box>
+                <Container >
+                    <Grid fluid>
+                        <Row>
+                            <Col xs={12} md={4} lg={4}>
+                                <Box textAlign={{ xs: 'center', md: 'left'}}>
+                                    <TitleBox mt={{ xs: 30, md: 0 }} fontSize={{ xs: '1.5rem', md: '2.2rem' }}>Компании</TitleBox>
+                                </Box>
+                                <BoxList>
+                                    <ItemList>
+                                        <Col xs="auto">
+                                            <BoxLogo>
+                                                <img src={imgItem1} alt=""/>
+                                            </BoxLogo>
+                                        </Col>
+                                        <Col pl={15} alignSelf='center'>
+                                            <TitleVacancy>АНКОР</TitleVacancy>
+                                            <Box><a>210 вакансий</a></Box>
+                                        </Col>
+                                    </ItemList>
+                                    <ItemList>
+                                        <Col xs="auto">
+                                            <BoxLogo>
+                                                <img src={imgItem2} alt=""/>
+                                            </BoxLogo>
+                                        </Col>
+                                        <Col pl={15} alignSelf='center'>
+                                            <TitleVacancy>Мегафон</TitleVacancy>
+                                            <Box><a>106 вакансий</a></Box>
+                                        </Col>
+                                    </ItemList>
+                                    <ItemList>
+                                        <Col xs="auto">
+                                            <BoxLogo>
+                                                <img src={imgItem3} alt=""/>
+                                            </BoxLogo>
+                                        </Col>
+                                        <Col pl={15} alignSelf='center'>
+                                            <TitleVacancy>ВТБ</TitleVacancy>
+                                            <Box><a>97 вакансий</a></Box>
+                                        </Col>
+                                    </ItemList>
+                                    <ItemList>
+                                        <Col xs="auto">
+                                            <BoxLogo>
+                                                <img src={imgItem1} alt=""/>
+                                            </BoxLogo>
+                                        </Col>
+                                        <Col pl={15} alignSelf='center'>
+                                            <TitleVacancy>АНКОР</TitleVacancy>
+                                            <Box><a>210 вакансий</a></Box>
+                                        </Col>
+                                    </ItemList>
+                                    <ItemList>
+                                        <Col xs="auto">
+                                            <BoxLogo>
+                                                <img src={imgItem2} alt=""/>
+                                            </BoxLogo>
+                                        </Col>
+                                        <Col pl={15} alignSelf='center'>
+                                            <TitleVacancy>Мегафон</TitleVacancy>
+                                            <Box><a>106 вакансий</a></Box>
+                                        </Col>
+                                    </ItemList>
+                                    <ItemList>
+                                        <Col xs="auto">
+                                            <BoxLogo>
+                                                <img src={imgItem3} alt=""/>
+                                            </BoxLogo>
+                                        </Col>
+                                        <Col pl={15} alignSelf='center'>
+                                            <TitleVacancy>ВТБ</TitleVacancy>
+                                            <Box><a>97 вакансий</a></Box>
+                                        </Col>
+                                    </ItemList>
+                                </BoxList>
+                            </Col>
+                            <Col xs={12} md={8} lg={8}>
+                                <Box textAlign={{ xs: 'center', md: 'left'}}>
+                                    <TitleBox mt={{ xs: 30, md: 0 }} fontSize={{ xs: '1.5rem', md: '2.2rem' }}>Вакансии дня</TitleBox>
+                                </Box>
+                                <BoxList>
+                                    <ItemList>
+                                        <Col alignSelf='center'>
+                                            <Row flexDirection={{ xs: 'column', md: 'row' }}>
+                                                <Col>
+                                                    <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
+                                                </Col>
+                                                <Col pl={{ xs: '8px', md: 15 }}>
+                                                    <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
+                                                </Col>
+                                            </Row>
+                                            <Box><a>АНКОР</a></Box>
+                                        </Col>
+                                    </ItemList>
+                                    <ItemList>
+                                        <Col alignSelf='center'>
+                                            <Row flexDirection={{ xs: 'column', md: 'row' }}>
+                                                <Col>
+                                                    <TitleVacancy>Дизайнер</TitleVacancy>
+                                                </Col>
+                                                <Col pl={{ xs: '8px', md: 15 }}>
+                                                    <SumVacancy>по договоренности</SumVacancy>
+                                                </Col>
+                                            </Row>
+                                            <Box><a>Связной</a></Box>
+                                        </Col>
+                                    </ItemList>
+                                    <ItemList>
+                                        <Col alignSelf='center'>
+                                            <Row flexDirection={{ xs: 'column', md: 'row' }}>
+                                                <Col>
+                                                    <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
+                                                </Col>
+                                                <Col pl={{ xs: '8px', md: 15 }}>
+                                                    <SumVacancy>110 000 руб.</SumVacancy>
+                                                </Col>
+                                            </Row>
+                                            <Box><a>OBI</a></Box>
+                                        </Col>
+                                    </ItemList>
+                                    <ItemList>
+                                        <Col alignSelf='center'>
+                                            <Row flexDirection={{ xs: 'column', md: 'row' }}>
+                                                <Col>
+                                                    <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
+                                                </Col>
+                                                <Col pl={{ xs: '8px', md: 15 }}>
+                                                    <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
+                                                </Col>
+                                            </Row>
+                                            <Box><a>АНКОР</a></Box>
+                                        </Col>
+                                    </ItemList>
+                                    <ItemList>
+                                        <Col alignSelf='center'>
+                                            <Row flexDirection={{ xs: 'column', md: 'row' }}>
+                                                <Col>
+                                                    <TitleVacancy>Дизайнер</TitleVacancy>
+                                                </Col>
+                                                <Col pl={{ xs: '8px', md: 15 }}>
+                                                    <SumVacancy>по договоренности</SumVacancy>
+                                                </Col>
+                                            </Row>
+                                            <Box><a>Связной</a></Box>
+                                        </Col>
+                                    </ItemList>
+                                    <ItemList>
+                                        <Col alignSelf='center'>
+                                            <Row flexDirection={{ xs: 'column', md: 'row' }}>
+                                                <Col>
+                                                    <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
+                                                </Col>
+                                                <Col pl={{ xs: '8px', md: 15 }}>
+                                                    <SumVacancy>110 000 руб.</SumVacancy>
+                                                </Col>
+                                            </Row>
+                                            <Box><a>OBI</a></Box>
+                                        </Col>
+                                    </ItemList>
+                                </BoxList>
+                            </Col>
+                        </Row>
+                    </Grid>
+                </Container>
             </Box>
-            <BoxImageTopBottom imageTop={bgWaveHeader} imageBottom={bgWaveFooter} backgroundColor='#F8F9FD' mb={0}>
+            {/*LIST COMPANY & VACANCY END*/}
+
+            {/*GRID CATEGORY START*/}
+            <BoxImageTopBottom imageTop={bgWaveHeader} imageBottom={bgWaveFooter} mb={0}>
                 <Box py={50} background='linear-gradient(to bottom, rgba(120,105,255,1) 0%, rgba(143,87,255,1) 100%)'>
                     <Container textAlign='center'>
                         <TitleBox color='#fff' mt={0} mb={40}>Компании</TitleBox>
@@ -342,7 +349,10 @@ const MainPage = () => (
                     </Container>
                 </Box>
             </BoxImageTopBottom>
-            <Box backgroundColor='#F8F9FD'>
+            {/*GRID CATEGORY END*/}
+
+            {/*LARGE LABEL START*/}
+            <Box>
                 <Container pb={100} textAlign='center'>
                     <Typography color='#5E57A7' variant='h1'  fontSize={{ xs: 70, md: 150}} fontWeight='bold'>3000+</Typography>
                     <Box>
@@ -350,11 +360,15 @@ const MainPage = () => (
                     </Box>
                 </Container>
             </Box>
+            {/*LARGE LABEL END*/}
+
+            {/*FOOTER START*/}
             <Box backgroundColor='#fff'>
                 <Container py={20}>
                     <Box color='#5E57A7'> ©  2019 Jobot. Работа найдется для каждого</Box>
                 </Container>
             </Box>
+            {/*FOOTER END*/}
         </Box>
     </Box>
 );
