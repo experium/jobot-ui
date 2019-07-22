@@ -159,7 +159,7 @@ const MainPage = () => (
                                                 <Col>
                                                     <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
                                                 </Col>
-                                                <Col pl={{ xs: '8px', md: 15 }}>
+                                                <Col pl={{ xs: '8px', md: 15 }} xs="auto">
                                                     <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
                                                 </Col>
                                             </Row>
@@ -172,7 +172,7 @@ const MainPage = () => (
                                                 <Col>
                                                     <TitleVacancy>Дизайнер</TitleVacancy>
                                                 </Col>
-                                                <Col pl={{ xs: '8px', md: 15 }}>
+                                                <Col pl={{ xs: '8px', md: 15 }} xs="auto">
                                                     <SumVacancy>по договоренности</SumVacancy>
                                                 </Col>
                                             </Row>
@@ -185,7 +185,7 @@ const MainPage = () => (
                                                 <Col>
                                                     <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
                                                 </Col>
-                                                <Col pl={{ xs: '8px', md: 15 }}>
+                                                <Col pl={{ xs: '8px', md: 15 }} xs="auto">
                                                     <SumVacancy>110 000 руб.</SumVacancy>
                                                 </Col>
                                             </Row>
@@ -198,7 +198,7 @@ const MainPage = () => (
                                                 <Col>
                                                     <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
                                                 </Col>
-                                                <Col pl={{ xs: '8px', md: 15 }}>
+                                                <Col pl={{ xs: '8px', md: 15 }} xs="auto">
                                                     <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
                                                 </Col>
                                             </Row>
@@ -211,7 +211,7 @@ const MainPage = () => (
                                                 <Col>
                                                     <TitleVacancy>Дизайнер</TitleVacancy>
                                                 </Col>
-                                                <Col pl={{ xs: '8px', md: 15 }}>
+                                                <Col pl={{ xs: '8px', md: 15 }} xs="auto">
                                                     <SumVacancy>по договоренности</SumVacancy>
                                                 </Col>
                                             </Row>
@@ -224,7 +224,7 @@ const MainPage = () => (
                                                 <Col>
                                                     <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
                                                 </Col>
-                                                <Col pl={{ xs: '8px', md: 15 }}>
+                                                <Col pl={{ xs: '8px', md: 15 }} xs="auto">
                                                     <SumVacancy>110 000 руб.</SumVacancy>
                                                 </Col>
                                             </Row>
