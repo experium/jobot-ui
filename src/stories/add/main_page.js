@@ -23,12 +23,12 @@ const MainPage = () => (
             {/*HEADER START*/}
             <BoxImage image={bgHeader} mb={0} pb={{ xs: 0, md: 150 }} pt={{ xs: 20, md: 40 }}>
                 <Container header>
-                    <Grid fluid pb={{ xs: 15, md: 70 }}>
+                    <Grid fluid>
                         <Row>
-                            <Col xs={12} md={8} lg={8}>
+                            <Col xs={12} md={8} lg={8} order={{ xs: 1, md: 1}} textAlign={{ xs: 'center', md: 'left'}}>
                                 <img src={logo} width={220} alt=""/>
                             </Col>
-                            <Col xs={12} md={4} lg={4}>
+                            <Col xs={12} md={4} lg={4} order={{ xs: 3, md: 2}}>
                                 <FormGroup header>
                                     <FormGroupIcon landing><LocationOn /></FormGroupIcon>
                                     <Select size="lg" control icon landing>
@@ -38,11 +38,13 @@ const MainPage = () => (
                                     </Select>
                                 </FormGroup>
                             </Col>
+                            <Col xs={12} md={12} lg={12} pt={{ xs: 15, md: 70 }} order={{ xs: 2, md: 3}}>
+                                <Box backgroundColor={{ xs: 'rgba(255,255,255,0.4)', md: 'transparent' }} textAlign={{ xs: 'center', md: 'left'}}>
+                                    <Typography variant="h1" color="#5E57A7" fontSize={{ xs: 30, md: 50}}>Здесь находят работу <br/> и подбирают персонал</Typography>
+                                </Box>
+                            </Col>
                         </Row>
                     </Grid>
-                    <Box backgroundColor={{ xs: 'rgba(255,255,255,0.4)', md: 'transparent' }} textAlign={{ xs: 'center', md: 'left'}}>
-                        <Typography variant="h1" color="#5E57A7" fontSize={{ xs: 30, md: 50}}>Здесь находят работу <br/> и подбирают персонал</Typography>
-                    </Box>
                     <Box backgroundColor="rgba(255, 255, 255, 0.1)" py={10}>
                         <Grid fluid>
                             <Row>
@@ -57,7 +59,7 @@ const MainPage = () => (
                             </Box>
                             <Row>
                                 <Col xs={12} md={6} lg={5} mt={15}>
-                                    <Row>
+                                    <Row justifyContent={{ xs: 'center', md: 'left'}}>
                                         <Col xs="auto" flex="none">
                                             <Button variant='info' size="lg">ИСКАТЬ</Button>
                                         </Col>
@@ -232,6 +234,11 @@ const MainPage = () => (
                                         </Col>
                                     </ItemList>
                                 </BoxList>
+                                <Row justifyContent='center' mt={20}>
+                                    <Col xs="auto" flex="none">
+                                        <Button variant='info' size="lg">Посмотреть все</Button>
+                                    </Col>
+                                </Row>
                             </Col>
                         </Row>
                     </Grid>

@@ -57,27 +57,29 @@ const ListVacancySearch = () => ( <Box>
             {/*LIST VACANCY & FILTER START*/}
             <Container>
                 <Grid fluid>
-                    <Box textAlign={{ xs: 'center', md: 'left'}}>
-                        <Row>
-                            <Col>
-                                <TitleBox mt={{ xs: 30, md: 0 }} fontSize={{ xs: '1.5rem', md: '2.2rem' }}>Найдено 7 вакансий</TitleBox>
-                            </Col>
-                            <Col xs='block' md='auto' flex={{ xs: 'none', md: 'auto' }} mb={{ xs: 20, md: 0}} textAlign={{ xs: 'center', md: 'right'}}>
-                                <Select filter mr={15}>
-                                    <option>По дате</option>
-                                    <option>Control</option>
-                                    <option>Other</option>
-                                </Select>
-                                <Select filter>
-                                    <option>За месяц</option>
-                                    <option>Control</option>
-                                    <option>Other</option>
-                                </Select>
-                            </Col>
-                        </Row>
-                    </Box>
                     <Row>
-                        <Col xs={12} md={4} lg={3} mb={{ xs: 20, md: 0}}>
+                        <Col xs={12} md={12} lg={12} order={{ xs: 2, md: 1}}>
+                            <Box textAlign={{ xs: 'center', md: 'left'}}>
+                                <Row>
+                                    <Col md={7}>
+                                        <TitleBox mt={{ xs: 30, md: 0 }} fontSize={{ xs: '1.5rem', md: '2.2rem' }}>Найдено 7 вакансий</TitleBox>
+                                    </Col>
+                                    <Col xs='block' md={5} flex={{ xs: 'none', md: 'auto' }} mb={{ xs: 20, md: 0}} textAlign={{ xs: 'center', md: 'right'}}>
+                                        <Select filter mr={15}>
+                                            <option>По дате</option>
+                                            <option>Control</option>
+                                            <option>Other</option>
+                                        </Select>
+                                        <Select filter>
+                                            <option>За месяц</option>
+                                            <option>Control</option>
+                                            <option>Other</option>
+                                        </Select>
+                                    </Col>
+                                </Row>
+                            </Box>
+                        </Col>
+                        <Col xs={12} md={4} lg={3} mb={{ xs: 20, md: 0}} order={{ xs: 1, md: 2}}>
                             <BoxList pb={15}>
                                 <Box mb={15} pt={15}>
                                     <TitleVacancy mb={10}>Регион</TitleVacancy>
@@ -152,7 +154,7 @@ const ListVacancySearch = () => ( <Box>
                                 </Box>
                             </BoxList>
                         </Col>
-                        <Col xs={12} md={8} lg={9}>
+                        <Col xs={12} md={8} lg={9}  order={{ xs: 3, md: 3}}>
                             <BoxList>
                                 <ItemList>
                                     <Col xs="auto">
