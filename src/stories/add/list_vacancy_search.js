@@ -32,7 +32,7 @@ const ListVacancySearch = () => ( <Box>
         <Box backgroundColor='#F8F9FD'>
             {/*HEADER START*/}
             <BoxImageSearch image={bgFooter}>
-                <Box background='linear-gradient(45deg, rgba(155,78,254,1) 0%, rgba(107,115,255,1) 100%)' py={15}>
+                <Box background='linear-gradient(45deg, rgba(150,81,254,1) 0%, rgba(150,81,254,1) 59%, rgba(107,114,255,1) 100%)' py={15}>
                     <Container>
                         <Row flexWrap={{ xs: 'wrap', md: 'nowrap'}} alignItems="center">
                             <Col xs='block' md='auto' flex="none" pr={20} textAlign='center' mb={{ xs: 20, md: 0}}>

@@ -6,7 +6,7 @@ import {
     Badge, BoxImage, Container, FormGroup,
     FormGroupIcon, ItemList,
     Button, Input, Select, BoxList, BoxLogo, TitleVacancy,
-    SumVacancy, TitleBox, ItemListBox, Icon, BoxImageTopBottom
+    SumVacancy, TitleBox, ItemListBox, Icon, BoxImageTopBottom, BadgeRow, TypographyUppercase
 } from '../ui';
 
 import bgHeader from "../../assets/img/bg-header-right.svg";
@@ -52,11 +52,11 @@ const MainPage = () => (
                                     <FormGroup><FormGroupIcon landing><Work /></FormGroupIcon><Input size="lg" icon control landing placeholder="Название вакансии / Компания" /></FormGroup>
                                 </Col>
                             </Row>
-                            <Box>
-                                <Badge variant="info" link as="a">Менеджер</Badge>&nbsp;•&nbsp;
-                                <Badge variant="info" link as="a">Дизайнер</Badge>&nbsp;•&nbsp;
+                            <BadgeRow>
+                                <Badge variant="info" link as="a">Менеджер</Badge>
+                                <Badge variant="info" link as="a">Дизайнер</Badge>
                                 <Badge variant="info" link as="a">Программист</Badge>
-                            </Box>
+                            </BadgeRow>
                             <Row>
                                 <Col xs={12} md={6} lg={5} mt={15}>
                                     <Row justifyContent={{ xs: 'center', md: 'left'}}>
@@ -247,7 +247,7 @@ const MainPage = () => (
             {/*LIST COMPANY & VACANCY END*/}
 
             {/*GRID CATEGORY START*/}
-            <BoxImageTopBottom imageTop={bgWaveHeader} imageBottom={bgWaveFooter} mb={0}>
+            <BoxImageTopBottom imagetop={bgWaveHeader} imagebottom={bgWaveFooter} mb={0}>
                 <Box py={50} background='linear-gradient(to bottom, rgba(120,105,255,1) 0%, rgba(143,87,255,1) 100%)'>
                     <Container textAlign='center'>
                         <TitleBox color='#fff' mt={0} mb={40}>Компании</TitleBox>
@@ -363,7 +363,7 @@ const MainPage = () => (
                 <Container pb={100} textAlign='center'>
                     <Typography color='#5E57A7' variant='h1'  fontSize={{ xs: 70, md: 150}} fontWeight='bold'>3000+</Typography>
                     <Box>
-                        <Typography color='#5E57A7' variant='h2' textTransform='uppercase'>Вакансий</Typography>
+                        <TypographyUppercase color='#5E57A7'>Вакансий</TypographyUppercase>
                     </Box>
                 </Container>
             </Box>

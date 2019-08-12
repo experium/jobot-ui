@@ -63,6 +63,19 @@ export const Badge = styled(Box)`
     ${p => p.size && sizeStyle[p.size]};
 `;
 
+export const BadgeRow = styled(Box)`
+    ${Badge}{
+        &:after{
+            content: '•';
+            display: inline-block;
+            margin: 0 5px;
+        }
+        &:last-child:after{
+            content: none;
+        }
+    }
+`;
+
 Badge.defaultProps = {
     size: 'md',
     variant: 'primary',

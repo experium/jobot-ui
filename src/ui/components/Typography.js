@@ -57,3 +57,11 @@ export const SumVacancy = styled.span`
     font-size: 14px;
     font-weight: 600;
 `;
+
+export const TypographyUppercase = styled(Typography)`
+    text-transform: uppercase;
+`;
+
+TypographyUppercase.defaultProps = {
+    variant: 'h2',
+};

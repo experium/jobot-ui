@@ -51,8 +51,8 @@ export const BoxImageTopBottom = styled(Box)`
         background-size: cover;
     }
     &:before{
-        ${p => p.imageTop && css`
-            background: ${props => `url("${props.imageTop}")`} top center / cover no-repeat;
+        ${p => p.imagetop && css`
+            background: ${props => `url("${props.imagetop}")`} top center / cover no-repeat;
             height: 400px;
             @media (max-width: 769px){
                 height: 150px;
@@ -60,8 +60,8 @@ export const BoxImageTopBottom = styled(Box)`
         `}
     }
     &:after{
-        ${p => p.imageBottom && css`
-            background: ${props => `url("${props.imageBottom}")`} bottom center /cover no-repeat;
+        ${p => p.imagebottom && css`
+            background: ${props => `url("${props.imagebottom}")`} bottom center /cover no-repeat;
             height: 300px;
             @media (max-width: 769px){
                 height: 150px;
@@ -79,7 +79,7 @@ export const BoxImageSearch = styled(Box)`
     &:after{
         content: '';
         width: 100%;
-        height: 70px;
+        height: 108px;
         display: block;
         background-size: cover;
     }
