@@ -118,7 +118,7 @@ const MainPage = () => (
                                     <ItemList>
                                         <Col xs="auto">
                                             <BoxLogo>
-                                                <img src={imgItem1} alt=""/>
+                                                A
                                             </BoxLogo>
                                         </Col>
                                         <Col pl={15} alignSelf='center'>
@@ -129,7 +129,7 @@ const MainPage = () => (
                                     <ItemList>
                                         <Col xs="auto">
                                             <BoxLogo>
-                                                <img src={imgItem2} alt=""/>
+                                                М
                                             </BoxLogo>
                                         </Col>
                                         <Col pl={15} alignSelf='center'>
@@ -140,7 +140,7 @@ const MainPage = () => (
                                     <ItemList>
                                         <Col xs="auto">
                                             <BoxLogo>
-                                                <img src={imgItem3} alt=""/>
+                                               <small>logo</small>
                                             </BoxLogo>
                                         </Col>
                                         <Col pl={15} alignSelf='center'>

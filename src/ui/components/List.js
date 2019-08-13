@@ -13,6 +13,7 @@ export const ItemList = styled(Row)`
     background-color: #fff;
     border-bottom: 1px solid #D7D4F2;
     min-height: 91px;
+    color: #5E57A7;
     &:last-child{
         border: 0;
     }
