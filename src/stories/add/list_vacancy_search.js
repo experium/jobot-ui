@@ -29,7 +29,7 @@ import imgItem3 from "../../assets/img/company/6.png";
 import {Grid} from "@smooth-ui/core-sc";
 
 const ListVacancySearch = () => ( <Box>
-        <Box backgroundColor='#F8F9FD'>
+        <Box backgroundColor='#edeff7'>
             {/*HEADER START*/}
             <BoxImageSearch image={bgFooter}>
                 <Box background='linear-gradient(45deg, rgba(150,81,254,1) 0%, rgba(150,81,254,1) 59%, rgba(107,114,255,1) 100%)' py={15}>

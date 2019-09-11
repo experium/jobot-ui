@@ -19,7 +19,7 @@ import imgItem3 from "../../assets/img/company/6.png";
 
 const MainPage = () => (
     <Box>
-        <Box backgroundColor='#F8F9FD'>
+        <Box backgroundColor='#edeff7'>
             {/*HEADER START*/}
             <BoxImage image={bgHeader} mb={0} pb={{ xs: 0, md: 150 }} pt={{ xs: 20, md: 40 }}>
                 <Container header>

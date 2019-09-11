@@ -14,7 +14,7 @@ export const Select = ({ icon, landing, filter, ...props }) => {
         `}
         
         ${landing && css`
-            width: 200px;
+            width: 260px;
             select {
                 border-radius: .3rem;
                 border-color: #fff;

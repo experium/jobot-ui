@@ -86,6 +86,9 @@ export const BoxImageSearch = styled(Box)`
     &:after{
         ${p => p.image && css`
             background: ${props => `url("${props.image}")`} bottom left / contain no-repeat;
+            @media (max-width: 769px){
+                background-position: top left;
+            }
         `}
     }
 `;
