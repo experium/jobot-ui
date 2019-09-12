@@ -21,7 +21,7 @@ const MainPage = () => (
     <Box>
         <Box backgroundColor='#edeff7'>
             {/*HEADER START*/}
-            <BoxImage image={bgHeader} mb={0} pb={{ xs: 0, md: 150 }} pt={{ xs: 20, md: 40 }}>
+            <BoxImage image={bgHeader} mb={0} pb={{ xs: 0, md: 150 }} pt={{ xs: 20, md: 25 }}>
                 <Container header>
                     <Grid fluid>
                         <Row>
@@ -45,7 +45,7 @@ const MainPage = () => (
                             </Col>
                         </Row>
                     </Grid>
-                    <Box backgroundColor="rgba(255, 255, 255, 0.1)" py={10}>
+                    <Box py={10}>
                         <Grid fluid>
                             <Row>
                                 <Col xs={12} md={6} mb={{ md: '10px', xs: '10px' }} lg={5}>

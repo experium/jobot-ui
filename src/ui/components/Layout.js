@@ -34,6 +34,7 @@ export const Container = styled(Box)`
     `}
     a{
         color: #5E57A7;
+        outline: none;
     }
 `;
 

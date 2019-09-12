@@ -10,6 +10,7 @@ export const Pagination = styled(Box)`
         list-style: none;
         padding-left: 0;
         li{
+            position: relative;
             display: inline-block;
             margin: 0 5px;
             border: 1px solid #5E57A7;
@@ -22,6 +23,11 @@ export const Pagination = styled(Box)`
             font-size: 14px;
             &:first-child,&:last-child{
                 border: 0;
+            }
+            a{
+                position: absolute;
+                left: 0;
+                right: 0;
             }
             &.active{
                 background-color: #5E57A7;
