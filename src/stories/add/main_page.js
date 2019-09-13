@@ -1,27 +1,52 @@
 import React from 'react';
 import { LocationOn, Work } from "styled-icons/material";
+import Tilt from 'react-tilt';
+import ReactWOW from 'react-wow';
 
 import {
     Box, Col, Grid, Row, Typography,
     Badge, BoxImage, Container, FormGroup,
     FormGroupIcon, ItemList,
     Button, Input, Select, BoxList, BoxLogo, TitleVacancy,
-    SumVacancy, TitleBox, ItemListBox, Icon, BoxImageTopBottom, BadgeRow, TypographyUppercase
+    SumVacancy, TitleBox, ItemListBox, Icon, BoxImageTopBottom, BadgeRow, TypographyUppercase, BoxImageAnimate, BoxImageAnimateWrap
 } from '../ui';
 
 import bgHeader from "../../assets/img/bg-header-right.svg";
 import bgWaveHeader from "../../assets/img/bg-wave-header.svg";
+import bgAnimate1 from "../../assets/img/animate/1.svg";
+import bgAnimate2 from "../../assets/img/animate/2.svg";
+import bgAnimate3 from "../../assets/img/animate/3.svg";
+import bgAnimate4 from "../../assets/img/animate/4.svg";
+import bgAnimate5 from "../../assets/img/animate/5.svg";
 import bgWaveFooter from "../../assets/img/bg-wave-footer.svg";
 import logo from '../../assets/img/logo-gradient.svg';
 import imgItem1 from "../../assets/img/company/4.png";
 import imgItem2 from "../../assets/img/company/2.png";
 import imgItem3 from "../../assets/img/company/6.png";
 
+
 const MainPage = () => (
     <Box>
         <Box backgroundColor='#edeff7'>
             {/*HEADER START*/}
             <BoxImage image={bgHeader} mb={0} pb={{ xs: 0, md: 150 }} pt={{ xs: 20, md: 25 }}>
+                <BoxImageAnimateWrap>
+                    <Tilt className="Tilt" options={{ max : 10, easing: "cubic-bezier(.03,.98,.52,.99)", reverse: true }}>
+                        <BoxImageAnimate image={bgAnimate3} variant='var3' />
+                    </Tilt>
+                    <Tilt className="Tilt" options={{ max : 12, easing: "cubic-bezier(.03,.98,.52,.99)", reverse: true, speed: 1500 }}>
+                        <BoxImageAnimate image={bgAnimate2} variant='var2' />
+                    </Tilt>
+                    <Tilt className="Tilt" options={{ max : 15, easing: "cubic-bezier(.03,.98,.52,.99)", reverse: true, speed: 2000 }}>
+                        <BoxImageAnimate image={bgAnimate1} variant='var1' />
+                    </Tilt>
+                    <Tilt className="Tilt" options={{ max : 5, easing: "cubic-bezier(.03,.98,.52,.99)", reverse: true, speed: 2500 }}>
+                        <BoxImageAnimate image={bgAnimate4} variant='var4' />
+                    </Tilt>
+                    <Tilt className="Tilt" options={{ max : 5, easing: "cubic-bezier(.03,.98,.52,.99)", reverse: true, speed: 2500 }}>
+                        <BoxImageAnimate image={bgAnimate5} variant='var5' />
+                    </Tilt>
+                </BoxImageAnimateWrap>
                 <Container header>
                     <Grid fluid>
                         <Row>
@@ -40,7 +65,7 @@ const MainPage = () => (
                             </Col>
                             <Col xs={12} md={12} lg={12} pt={{ xs: 15, md: 70 }} order={{ xs: 2, md: 3}}>
                                 <Box backgroundColor={{ xs: 'rgba(255,255,255,0.4)', md: 'transparent' }} textAlign={{ xs: 'center', md: 'left'}}>
-                                    <Typography variant="h1" color="#5E57A7" fontSize={{ xs: 30, md: 50}}>Здесь находят работу <br/> и подбирают персонал</Typography>
+                                    <Typography variant="h1" color="#5E57A7" display="inline-block" position="relative" zIndex={100} fontSize={{ xs: 30, md: 50}}>Здесь находят работу <br/> и подбирают персонал</Typography>
                                 </Box>
                             </Col>
                         </Row>
@@ -48,7 +73,7 @@ const MainPage = () => (
                     <Box py={10}>
                         <Grid fluid>
                             <Row>
-                                <Col xs={12} md={6} mb={{ md: '10px', xs: '10px' }} lg={5}>
+                                <Col xs={12} md={6} mb={{ md: '10px', xs: '10px' }} lg={5} display="inline-block">
                                     <FormGroup><FormGroupIcon landing><Work /></FormGroupIcon><Input size="lg" icon control landing placeholder="Название вакансии / Компания" /></FormGroup>
                                 </Col>
                             </Row>
@@ -361,7 +386,9 @@ const MainPage = () => (
             {/*LARGE LABEL START*/}
             <Box>
                 <Container pb={100} textAlign='center'>
-                    <Typography color='#5E57A7' variant='h1'  fontSize={{ xs: 70, md: 150}} fontWeight='bold'>3000+</Typography>
+                    <ReactWOW animation='fadeIn'>
+                        <Typography color='#5E57A7' variant='h1'  fontSize={{ xs: 70, md: 150}} fontWeight='bold'>3000+</Typography>
+                    </ReactWOW>
                     <Box>
                         <TypographyUppercase color='#5E57A7'>Вакансий</TypographyUppercase>
                     </Box>

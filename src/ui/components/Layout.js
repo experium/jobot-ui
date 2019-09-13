@@ -1,9 +1,10 @@
-import { styled, css, Box, Col } from '@smooth-ui/core-sc'
+import {styled, css, Box, Col, th} from '@smooth-ui/core-sc'
 
 export const BoxImage = styled(Box)`
     box-sizing: border-box;
     ${p => p.image && css`
         background: ${props => `url("${props.image}")`} right top no-repeat;
+        overflow: hidden;
         @media (max-width: 769px){
             background: none;
         }
@@ -12,7 +13,70 @@ export const BoxImage = styled(Box)`
 
 BoxImage.defaultProps = {
     position: 'relative',
-    backgroundSize: '700px auto'
+    backgroundSize: '830px auto'
+};
+
+const animate = {
+    var1: css`
+        width: 230px;
+        height: 115px;
+        right: 240px;
+        top: 100px;
+        transform: rotate(-25deg);
+    `,
+    var2: css`
+        width: 115px;
+        height: 160px;
+        right: 250px;
+        top: 205px;
+        transform: rotate(-8deg);
+    `,
+    var3: css`
+        
+        width: 115px;
+        height: 160px;
+        right: 28px;
+        top: 220px;
+        transform: rotate(-25deg);
+    `,
+    var4: css`
+        width: 115px;
+        height: 160px;
+        right: 115px;
+        top: 195px;
+        transform: rotate(15deg);
+
+    `,
+    var5: css`
+        width: 222px;
+        height: 275px;
+        right: -1px;
+        top: 188px;
+    `,
+};
+
+export const BoxImageAnimateWrap = styled(Box)`
+    position: relative;
+    z-index: 90;
+    box-sizing: border-box;
+`;
+
+export const BoxImageAnimate = styled(Box)`
+    box-sizing: border-box;
+    display: inline-block;
+    background-size: contain;
+    ${p => p.variant && animate[p.variant]};
+    ${p => p.image && css`
+        background: ${props => `url("${props.image}")`} no-repeat;
+        @media (max-width: 769px){
+            background: none;
+        }
+    `}
+`;
+
+BoxImageAnimate.defaultProps = {
+    position: 'absolute',
+    backgroundSize: 'contain',
 };
 
 export const Container = styled(Box)`
@@ -29,7 +93,7 @@ export const Container = styled(Box)`
         box-sizing: border-box;
     }
     ${({header}) => header && css`
-        max-width: 100%;
+        max-width: 1300px;
         padding: 0 25px;
     `}
     a{

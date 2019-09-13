@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="165px" height="231px" viewBox="0 0 165 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4" transform="translate(83.000000, 116.000000) rotate(-11.000000) translate(-83.000000, -116.000000) translate(-19.000000, -12.000000)" fill-rule="nonzero">
+            <g id="Group" fill="#FFFFFF">
+                <rect id="Rectangle_77-2" transform="translate(101.961185, 127.874505) rotate(10.972240) translate(-101.961185, -127.874505) " x="20.3379018" y="13.443786" width="163.246566" height="228.861438"></rect>
+            </g>
+            <rect id="Rectangle_78" fill="#AE9AD9" transform="translate(77.667029, 65.772635) rotate(11.242526) translate(-77.667029, -65.772635) " x="46.6100362" y="22.9848789" width="62.1139845" height="85.5755113" rx="25.995"></rect>
+            <g id="Group_140" transform="translate(56.383000, 29.293000)">
+                <path d="M28.418,0.577 C8.407,-3.391 4.945,13.9 2.888,27.695 L6.022,30.867 L21.792,33.994 L37.562,37.121 L41.669,35.384 C45.032,21.849 48.429,4.545 28.418,0.577 Z" id="Path_89" fill="#5546C5"></path>
+                <path d="M28.176,57.419 L6.953,53.21 L5.004,63.042 L5.01,63.042 C5.01,63.054 5,63.063 4.997,63.075 C4.213,67.031 8.327,71.182 14.188,72.344 C20.049,73.506 25.435,71.244 26.221,67.283 L26.221,67.249 L26.227,67.249 L28.176,57.419 Z" id="Path_90" fill="#F0A79E"></path>
+                <path d="M41.669,35.384 C40.6740895,35.4229705 39.6827125,35.5258493 38.701,35.692 C42.296,17.561 36.542,13.061 26.421,11.054 C14.639,8.717 9.239,10.534 5.547,29.134 C4.69191933,28.598706 3.8034343,28.1187236 2.887,27.697 C2.341,27.543 0.507,28.75 0.057,35.285 C-0.393,41.82 1.94,42.847 3.357,42.926 L3.357,42.926 C3.51,53.439 8.457,62.026 16.011,63.526 C23.565,65.026 31.411,58.978 35.563,49.326 C36.938,49.738 39.375,49.489 41.383,43.486 C43.466,37.266 42.232,35.45 41.669,35.384 Z" id="Path_91" fill="#F5B1A8"></path>
+                <path d="M34.62,14.107 C31.965,15.544 12.991,21.337 7.828,20.371 C15.195,17.428 15.102,16.671 15.102,16.671 L7.828,19.309 C7.828,19.309 9.728,9.322 15.949,8.192 C22.17,7.062 36.016,9.467 36.016,9.467 L36.675,14.182 L34.62,14.107 Z" id="Path_92" fill="#5546C5"></path>
+            </g>
+            <rect id="Rectangle_79" fill="#AE9AD9" transform="translate(158.162768, 47.742783) rotate(11.186000) translate(-158.162768, -47.742783) " x="130.950268" y="45.3057828" width="54.425" height="4.874" rx="2.424"></rect>
+            <rect id="Rectangle_80" fill="#AE9AD9" transform="translate(155.350684, 61.925922) rotate(11.186329) translate(-155.350684, -61.925922) " x="128.138225" y="59.4889257" width="54.4249184" height="4.87399269" rx="2.424"></rect>
+            <rect id="Rectangle_81" fill="#AE9AD9" transform="translate(152.537768, 76.107783) rotate(11.186000) translate(-152.537768, -76.107783) " x="125.325268" y="73.6707828" width="54.425" height="4.874" rx="2.424"></rect>
+            <rect id="Rectangle_82" fill="#C9C3CC" transform="translate(101.810008, 130.260450) rotate(11.186000) translate(-101.810008, -130.260450) " x="36.5260079" y="127.82345" width="130.568" height="4.874" rx="2.424"></rect>
+            <rect id="Rectangle_83" fill="#C9C3CC" transform="translate(98.669826, 146.095793) rotate(11.186329) translate(-98.669826, -146.095793) " x="33.3859239" y="143.658797" width="130.567804" height="4.87399269" rx="2.424"></rect>
+            <rect id="Rectangle_84" fill="#C9C3CC" transform="translate(69.889920, 156.860312) rotate(11.186329) translate(-69.889920, -156.860312) " x="30.7424782" y="154.423316" width="78.2948826" height="4.87399269" rx="2.424"></rect>
+            <rect id="Rectangle_85" fill="#C9C3CC" transform="translate(91.588498, 180.575547) rotate(11.186000) translate(-91.588498, -180.575547) " x="26.3039984" y="178.138547" width="130.569" height="4.874" rx="2.424"></rect>
+            <rect id="Rectangle_86" fill="#C9C3CC" transform="translate(62.807919, 191.341312) rotate(11.186329) translate(-62.807919, -191.341312) " x="23.6604782" y="188.904316" width="78.2948826" height="4.87399269" rx="2.424"></rect>
+        </g>
+    </g>
+</svg>

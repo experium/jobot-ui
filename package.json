@@ -1,6 +1,6 @@
 {
   "name": "@experium/jobot-ui",
-  "version": "1.7.7",
+  "version": "1.7.8",
   "description": "Jobot-UI components",
   "main": "lib/index.js",
   "homepage": "https://experium.github.io/jobot-ui",
@@ -14,6 +14,8 @@
     "react-select": "^2.1.2",
     "react-tabs": "^3.0.0",
     "react-textfit": "^1.1.0",
+    "react-tilt": "^0.1.4",
+    "react-wow": "^1.0.0",
     "storybook-addon-code": "^0.1.4",
     "styled-icons": "^3.6.0"
   },
