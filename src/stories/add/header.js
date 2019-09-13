@@ -1,6 +1,7 @@
 import React from 'react';
-import { LocationOn, Work } from 'styled-icons/material';
-import { Search } from "styled-icons/octicons";
+import { LocationOn } from 'styled-icons/material/LocationOn.cjs';
+import { Work } from 'styled-icons/material/Work.cjs';
+import { Search } from "styled-icons/octicons/Search.cjs";
 
 import {
     Alert, Box, Col, Grid, Row, Typography,

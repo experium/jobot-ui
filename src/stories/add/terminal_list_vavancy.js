@@ -1,6 +1,7 @@
 import React from 'react';
 import { Textfit } from "react-textfit";
-import { ChevronLeft, ChevronRight } from 'styled-icons/fa-solid'
+import { ChevronLeft } from 'styled-icons/fa-solid/ChevronLeft.cjs'
+import { ChevronRight } from 'styled-icons/fa-solid/ChevronRight.cjs'
 import logo from "../../assets/img/logo.svg";
 
 import {

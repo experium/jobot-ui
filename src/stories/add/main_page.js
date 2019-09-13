@@ -1,5 +1,6 @@
 import React from 'react';
-import { LocationOn, Work } from "styled-icons/material";
+import { LocationOn } from "styled-icons/material/LocationOn.cjs";
+import { Work } from "styled-icons/material/Work.cjs";
 import Tilt from 'react-tilt';
 import ReactWOW from 'react-wow';
 
@@ -31,19 +32,19 @@ const MainPage = () => (
             {/*HEADER START*/}
             <BoxImage image={bgHeader} mb={0} pb={{ xs: 0, md: 150 }} pt={{ xs: 20, md: 25 }}>
                 <BoxImageAnimateWrap>
-                    <Tilt className="Tilt" options={{ max : 10, easing: "cubic-bezier(.03,.98,.52,.99)", reverse: true }}>
+                    <Tilt className="Tilt" options={{ max : 10, easing: "cubic-bezier(0.785, 0.135, 0.15, 0.86)", reverse: true }}>
                         <BoxImageAnimate image={bgAnimate3} variant='var3' />
                     </Tilt>
-                    <Tilt className="Tilt" options={{ max : 12, easing: "cubic-bezier(.03,.98,.52,.99)", reverse: true, speed: 1500 }}>
+                    <Tilt className="Tilt" options={{ max : 12, easing: "cubic-bezier(0.785, 0.135, 0.15, 0.86)", reverse: true }}>
                         <BoxImageAnimate image={bgAnimate2} variant='var2' />
                     </Tilt>
-                    <Tilt className="Tilt" options={{ max : 15, easing: "cubic-bezier(.03,.98,.52,.99)", reverse: true, speed: 2000 }}>
+                    <Tilt className="Tilt" options={{ max : 15, easing: "cubic-bezier(0.785, 0.135, 0.15, 0.86)", reverse: true }}>
                         <BoxImageAnimate image={bgAnimate1} variant='var1' />
                     </Tilt>
-                    <Tilt className="Tilt" options={{ max : 5, easing: "cubic-bezier(.03,.98,.52,.99)", reverse: true, speed: 2500 }}>
+                    <Tilt className="Tilt" options={{ max : 5, easing: "cubic-bezier(0.785, 0.135, 0.15, 0.86)", reverse: true }}>
                         <BoxImageAnimate image={bgAnimate4} variant='var4' />
                     </Tilt>
-                    <Tilt className="Tilt" options={{ max : 5, easing: "cubic-bezier(.03,.98,.52,.99)", reverse: true, speed: 2500 }}>
+                    <Tilt className="Tilt" options={{ max : 5, easing: "cubic-bezier(0.785, 0.135, 0.15, 0.86)", reverse: true }}>
                         <BoxImageAnimate image={bgAnimate5} variant='var5' />
                     </Tilt>
                 </BoxImageAnimateWrap>

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Search } from 'styled-icons/octicons';
-import { ChevronLeft, ChevronRight } from 'styled-icons/feather';
+import { Search } from 'styled-icons/octicons/Search.cjs';
+import { ChevronLeft } from 'styled-icons/feather/ChevronLeft.cjs';
+import { ChevronRight } from 'styled-icons/feather/ChevronRight.cjs';
 
 import {
     Box,

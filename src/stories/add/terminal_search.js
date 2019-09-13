@@ -15,7 +15,7 @@ import {
     TerminalTypeBox
 
 } from '../ui';
-import { AccessTime } from 'styled-icons/material/AccessTime';
+import { AccessTime } from 'styled-icons/material/AccessTime.cjs';
 
 
 

@@ -27,16 +27,15 @@ const animate = {
     var2: css`
         width: 115px;
         height: 160px;
-        right: 250px;
-        top: 205px;
+        right: 230px;
+        top: 183px;
         transform: rotate(-8deg);
     `,
     var3: css`
-        
         width: 115px;
         height: 160px;
         right: 28px;
-        top: 220px;
+        top: 120px;
         transform: rotate(-25deg);
     `,
     var4: css`

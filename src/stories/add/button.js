@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart } from "styled-icons/fa-regular";
+import { Heart } from "styled-icons/fa-regular/Heart.cjs";
 
 import { Alert, Box, Grid, Typography, Button } from '../ui';
 
