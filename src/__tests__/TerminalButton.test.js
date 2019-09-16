@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import { Search } from 'styled-icons/octicons/Search.cjs';
+import { Search } from 'styled-icons/octicons';
 
 import { ThemeProvider, theme, TerminalButton } from '../ui';
 

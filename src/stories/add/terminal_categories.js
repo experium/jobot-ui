@@ -11,7 +11,7 @@ import {
     Icon
 
 } from '../ui';
-import { Clock } from 'styled-icons/feather/Clock.cjs';
+import { Clock } from 'styled-icons/feather';
 
 const TerminalCategories = () => (
     <Box>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import { Computer } from 'styled-icons/material/Computer.cjs';
+import { Computer } from 'styled-icons/material';
 
 import { Tag } from '../ui';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { LocationOn } from 'styled-icons/material/LocationOn.cjs';
+import { LocationOn } from 'styled-icons/material';
 
 import { Alert, Box, Grid, Typography, FormGroup, FormGroupIcon, Select, Input } from '../ui';
 

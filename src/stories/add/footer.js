@@ -1,8 +1,5 @@
 import React from 'react';
-import { Facebook } from 'styled-icons/fa-brands/Facebook.cjs';
-import { LinkedinIn } from 'styled-icons/fa-brands/LinkedinIn.cjs';
-import { Twitter } from 'styled-icons/fa-brands/Twitter.cjs';
-import { Vk } from 'styled-icons/fa-brands/Vk.cjs';
+import { Facebook, LinkedinIn, Twitter, Vk } from 'styled-icons/fa-brands';
 
 import { Alert, Box, Col, Row, Typography, Button, Container, LinkWhite, ListUl } from '../ui';
 

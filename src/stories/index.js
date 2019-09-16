@@ -47,10 +47,10 @@ const javascriptCodeSearch  = require('!raw-loader!./add/list_vacancy_search.js'
 import { Typography, Box, Button } from './ui';
 
 /*Icon*/
-import { LightBulb } from 'styled-icons/octicons/LightBulb.cjs';
-import {  Github } from 'styled-icons/fa-brands/Github.cjs';
-import { Globe } from 'styled-icons/fa-solid/Globe.cjs';
-import { TextFields } from 'styled-icons/material/TextFields.cjs';
+import { LightBulb } from 'styled-icons/octicons';
+import {  Github } from 'styled-icons/fa-brands';
+import { Globe } from 'styled-icons/fa-solid';
+import { TextFields } from 'styled-icons/material';
 
 storiesOf('Library', module)
 .add('smooth-ui', () => <Box my={30} textAlign="center">

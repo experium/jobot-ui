@@ -1,9 +1,6 @@
 import React from 'react';
-import { LocationOn } from "styled-icons/material/LocationOn.cjs";
-import { Computer } from "styled-icons/material/Computer.cjs";
-import { Brush } from "styled-icons/material/Brush.cjs";
-import { AccessTime } from "styled-icons/material/AccessTime.cjs";
-import { Heart } from "styled-icons/fa-regular/Heart.cjs";
+import { LocationOn, Computer, Brush, AccessTime } from "styled-icons/material";
+import { Heart } from "styled-icons/fa-regular";
 
 import {
     Alert, Box, Col, Row, Typography,

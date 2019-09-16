@@ -1,6 +1,5 @@
 import React from 'react';
-import { LocationOn } from "styled-icons/material/LocationOn.cjs";
-import { Work } from "styled-icons/material/Work.cjs";
+import { LocationOn, Work } from "styled-icons/material";
 import Tilt from 'react-tilt';
 import ReactWOW from 'react-wow';
 

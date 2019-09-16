@@ -1,6 +1,6 @@
 {
   "name": "@experium/jobot-ui",
-  "version": "1.7.9",
+  "version": "1.8.0",
   "description": "Jobot-UI components",
   "main": "lib/index.js",
   "homepage": "https://experium.github.io/jobot-ui",
@@ -17,7 +17,7 @@
     "react-tilt": "^0.1.4",
     "react-wow": "^1.0.0",
     "storybook-addon-code": "^0.1.4",
-    "styled-icons": "^3.6.0"
+    "styled-icons": "^8.4.2"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",

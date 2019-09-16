@@ -1,5 +1,5 @@
 import React from 'react';
-import { Computer } from "styled-icons/material/Computer.cjs";
+import { Computer } from "styled-icons/material";
 
 import {
     Alert, Box, Grid, Typography,

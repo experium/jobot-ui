@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-testing-library';
-import { LocationOn } from 'styled-icons/material/LocationOn.cjs';
+import { LocationOn } from 'styled-icons/material';
 
 import {
     ThemeProvider, theme,

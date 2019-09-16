@@ -1,9 +1,5 @@
 import React from 'react';
-import { LocationOn } from 'styled-icons/material/LocationOn.cjs';
-import { DateRange } from 'styled-icons/material/DateRange.cjs';
-import { Comment } from 'styled-icons/material/Comment.cjs';
-import { ArrowForward } from 'styled-icons/material/ArrowForward.cjs';
-import { AccessTime } from 'styled-icons/material/AccessTime.cjs';
+import { LocationOn, DateRange, Comment, ArrowForward, AccessTime } from 'styled-icons/material';
 
 import { Alert, Box, Col, Row, Typography, Button, Card, CardBtn, Container, Tag} from '../ui';
 
