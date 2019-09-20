@@ -14,7 +14,7 @@ const TerminalComponentButton = () => ( <Box p={10}>
 <TerminalButton `}<b>link as="a"</b>{`>Button</TerminalButton>
 `}</pre>
         </code>
-        <TerminalButton link as="a">Button</TerminalButton>
+        <TerminalButton link="true" as="a">Button</TerminalButton>
     </Box>
 );
 

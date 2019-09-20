@@ -129,10 +129,10 @@ import { Facebook, LinkedinIn, Twitter, Vk } from `}<Box color="red" display="in
                                 <Button round icon><Facebook /></Button>
                             </Col>
                             <Col xs="auto" mr={10}>
-                                <Button round icon><Twitter /></Button>
+                                <Button round icon="true"><Twitter /></Button>
                             </Col>
                             <Col xs="auto" mr={10}>
-                                <Button round icon><LinkedinIn /></Button>
+                                <Button round icon="true"><LinkedinIn /></Button>
                             </Col>
                         </Row>
                         <Box mt={10}>

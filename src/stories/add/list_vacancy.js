@@ -88,7 +88,7 @@ import { Heart } from `}<Box color="red" display="inline-block">'styled-icons/fa
                     <hr/>
                     <Row mt={10}>
                         <Col flex="auto">
-                            <Tag link as="a"><Brush />Дизайн</Tag>
+                            <Tag link="true" as="a"><Brush />Дизайн</Tag>
                             <Tag><LocationOn />Москва</Tag>
                             <Tag><AccessTime />12:00</Tag>
                         </Col>
@@ -111,7 +111,7 @@ import { Heart } from `}<Box color="red" display="inline-block">'styled-icons/fa
                     <hr/>
                     <Row mt={10}>
                         <Box flex="auto">
-                            <Tag link as="a"><Computer />Информационные технологии</Tag>
+                            <Tag link="true" as="a"><Computer />Информационные технологии</Tag>
                             <Tag><LocationOn />Москва</Tag>
                             <Tag><AccessTime />12:00</Tag>
                         </Box>

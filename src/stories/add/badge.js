@@ -49,7 +49,7 @@ const BadgeStory = () => ( <Box p={10}>
 
         <Typography variant="h3" mb={20} mt={30}>Badge Link</Typography>
         <Box backgroundColor="#aaa" p={10}>
-            <Badge variant='light' link as="a">Badge Link</Badge>
+            <Badge variant='light' link="true" as="a">Badge Link</Badge>
         </Box>
         <code>
 <pre>{`<Badge `}<b>variant='light' link as="a"</b>{`>Badge Link</Badge>

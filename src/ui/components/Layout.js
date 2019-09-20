@@ -1,4 +1,5 @@
-import {styled, css, Box, Col, th} from '@smooth-ui/core-sc'
+import { styled, css, Box, Col } from '@smooth-ui/core-sc'
+import { animated } from 'react-spring'
 
 export const BoxImage = styled(Box)`
     box-sizing: border-box;
@@ -18,49 +19,48 @@ BoxImage.defaultProps = {
 
 const animate = {
     var1: css`
-        width: 230px;
-        height: 115px;
-        right: 240px;
-        top: 100px;
-        transform: rotate(-25deg);
+        width: 350px;
+        height: 350px;
+        right: 50px;
+        top: 30px;
     `,
     var2: css`
-        width: 115px;
-        height: 160px;
-        right: 230px;
-        top: 183px;
-        transform: rotate(-8deg);
+        width: 300px;
+        height: 300px;
+        right: 130px;
+        top: 150px;
     `,
     var3: css`
-        width: 115px;
-        height: 160px;
-        right: 28px;
-        top: 120px;
-        transform: rotate(-25deg);
+        width: 300px;
+        height: 300px;
+        right: -85px;
+        top: 60px;
     `,
     var4: css`
-        width: 115px;
-        height: 160px;
-        right: 115px;
-        top: 195px;
-        transform: rotate(15deg);
+        width: 300px;
+        height: 300px;
+        right: -10px;
+        top: 185px;
 
     `,
     var5: css`
-        width: 222px;
-        height: 275px;
-        right: -1px;
-        top: 188px;
+        width: 330px;
+        height: 320px;
+        right: -110px;
+        top: 230px;
     `,
 };
 
-export const BoxImageAnimateWrap = styled(Box)`
-    position: relative;
-    z-index: 90;
+export const WrapImageAnimateWrap = styled(Box)`
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
     box-sizing: border-box;
 `;
 
-export const BoxImageAnimate = styled(Box)`
+export const BoxImageAnimate = styled(animated.div)`
+    position: absolute;
     box-sizing: border-box;
     display: inline-block;
     background-size: contain;
@@ -71,12 +71,9 @@ export const BoxImageAnimate = styled(Box)`
             background: none;
         }
     `}
+    background-size: contain;
 `;
 
-BoxImageAnimate.defaultProps = {
-    position: 'absolute',
-    backgroundSize: 'contain',
-};
 
 export const Container = styled(Box)`
     position: relative;

@@ -134,7 +134,7 @@ import { AccessTime, ArrowForward, Comment, DateRange, LocationOn } from `}<Box 
                         <Box m={10}>
                             <Typography variant="h3">Название вакансии</Typography>
                             <Box mt={10}>
-                                <Tag link as="a"><LocationOn />Москва</Tag>
+                                <Tag link="true" as="a"><LocationOn />Москва</Tag>
                             </Box>
                         </Box>
                         <CardBtn>
@@ -152,7 +152,7 @@ import { AccessTime, ArrowForward, Comment, DateRange, LocationOn } from `}<Box 
                         <Box m={10}>
                             <Typography variant="h3">Название вакансии 2</Typography>
                             <Box mt={10}>
-                                <Tag link as="a"><LocationOn />Москва</Tag>
+                                <Tag link="true" as="a"><LocationOn />Москва</Tag>
                             </Box>
                         </Box>
                         <CardBtn>
@@ -170,7 +170,7 @@ import { AccessTime, ArrowForward, Comment, DateRange, LocationOn } from `}<Box 
                         <Box m={10}>
                             <Typography variant="h3">Название вакансии 3</Typography>
                             <Box mt={10}>
-                                <Tag link as="a"><LocationOn />Москва</Tag>
+                                <Tag link="true" as="a"><LocationOn />Москва</Tag>
                             </Box>
                         </Box>
                         <CardBtn>

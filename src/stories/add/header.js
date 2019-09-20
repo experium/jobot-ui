@@ -106,9 +106,9 @@ import bg from `}<Box color="red" display="inline-block">'../assets/img/bg-heade
                 </Box>
                 <Box>
                     <Typography color="#fff" as="b">Популярные запросы: </Typography>
-                    <Badge variant="light" link as="a">Менеджер</Badge>
-                    <Badge variant="light" link as="a">Дизайнер</Badge>
-                    <Badge variant="light" link as="a">Программист</Badge>
+                    <Badge variant="light" link="true" as="a">Менеджер</Badge>
+                    <Badge variant="light" link="true" as="a">Дизайнер</Badge>
+                    <Badge variant="light" link="true" as="a">Программист</Badge>
                 </Box>
             </Container>
         </BoxImage>
