@@ -17,11 +17,6 @@ import bgWaveFooter from "../../assets/img/bg-wave-footer.svg";
 import imgItem1 from "../../assets/img/company/4.png";
 import imgItem2 from "../../assets/img/company/2.png";
 import imgItem3 from "../../assets/img/company/6.png";
-import bgAnimate1 from "../../assets/img/animate/1.svg";
-import bgAnimate2 from "../../assets/img/animate/2.svg";
-import bgAnimate3 from "../../assets/img/animate/3.svg";
-import bgAnimate4 from "../../assets/img/animate/4.svg";
-import bgAnimate5 from "../../assets/img/animate/5.svg";
 
 class MainPage extends Component {
     render() {
@@ -29,13 +24,13 @@ class MainPage extends Component {
             <Box>
                 <Box backgroundColor='#edeff7'>
                     {/*HEADER START*/}
-                    <BoxImage image={bgHeader} mb={0} pb={{ xs: 0, md: 150 }} pt={{ xs: 20, md: 25 }}>
-                        <AnimateImg image={bgAnimate1} image2={bgAnimate2} image3={bgAnimate3} image4={bgAnimate4} image5={bgAnimate5} />
+                    <BoxImage image={bgHeader} mb={0} pb={{ xs: 0, md: 150 }} pt={{ xs: 15, md: 15 }}>
+                        <AnimateImg />
                         <Container header="true">
                             <Grid fluid>
                                 <Row>
                                     <LogoGradient />
-                                    <Col xs={12} md={4} lg={4} order={{ xs: 3, md: 2}}>
+                                    <Col xs={12} md={4} lg={4} order={{ xs: 3, md: 2}} pt={10}>
                                         <FormGroup header="true" display="inline-block" position="relative" zIndex={100}>
                                             <FormGroupIcon landing="true"><LocationOn /></FormGroupIcon>
                                             <Select size="lg" control icon="true" landing="true">

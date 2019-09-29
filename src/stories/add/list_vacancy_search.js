@@ -18,7 +18,8 @@ import {
     TitleVacancy,
     SumVacancy,
     Select,
-    Pagination
+    Pagination,
+    LinkOther
 } from '../ui';
 
 import logo from '../../assets/img/logo-white.svg';
@@ -35,7 +36,7 @@ const ListVacancySearch = () => ( <Box>
                 <Box background='linear-gradient(45deg, rgba(150,81,254,1) 0%, rgba(150,81,254,1) 59%, rgba(107,114,255,1) 100%)' py={15}>
                     <Container>
                         <Row flexWrap={{ xs: 'wrap', md: 'nowrap'}} alignItems="center">
-                            <Col xs='block' md='auto' flex="none" pr={20} textAlign='center' mb={{ xs: 20, md: 0}}>
+                            <Col xs='block' md='auto' flex="none" pr={20} pl={16} textAlign='center' mb={{ xs: 20, md: 0}}>
                                 <img src={logo} width={220} alt=""/>
                             </Col>
                             <Col xs='block' md='auto' flex={{ xs: 'none', md: 'auto' }}>
@@ -122,7 +123,7 @@ const ListVacancySearch = () => ( <Box>
                                                 <a href="#">Строительство <span>46</span></a>
                                             </li>
                                             <li>
-                                                <a href="#">Еще <span>23</span></a>
+                                                <LinkOther href="#">Еще <span>23</span></LinkOther>
                                             </li>
                                         </ListUl>
                                     </Box>

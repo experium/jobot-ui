@@ -21,6 +21,7 @@ export const Pagination = styled(Box)`
             vertical-align: middle;
             line-height: 32px;
             font-size: 14px;
+            cursor: pointer;
             &:first-child,&:last-child{
                 border: 0;
             }

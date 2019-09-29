@@ -27,6 +27,12 @@ export const ListUl = styled.ul`
     `}
 `;
 
+export const LinkOther = styled.span`
+    color: #5E57A7;
+    cursor: pointer;
+    float: none!important;
+`;
+
 export const LinkWhite = styled.a`
     color: #fff;
     &:hover{

@@ -89,8 +89,8 @@ export const Container = styled(Box)`
         box-sizing: border-box;
     }
     ${({header}) => header && css`
-        max-width: 1300px;
-        padding: 0 25px;
+        max-width: 1120px;
+        padding: 0;
     `}
     a{
         color: #5E57A7;
