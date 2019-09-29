@@ -3,11 +3,11 @@ import { useSpring } from 'react-spring'
 
 import { WrapImageAnimateWrap, BoxImageAnimate } from '../../../components/Layout';
 
-import bgAnimate1 from "../../../../assets/img/animate/1.svg";
-import bgAnimate2 from "../../../../assets/img/animate/2.svg";
-import bgAnimate3 from "../../../../assets/img/animate/3.svg";
-import bgAnimate4 from "../../../../assets/img/animate/4.svg";
-import bgAnimate5 from "../../../../assets/img/animate/5.svg";
+import bgAnimate1 from "../../img/animate/1.svg";
+import bgAnimate2 from "../../img/animate/2.svg";
+import bgAnimate3 from "../../img/animate/3.svg";
+import bgAnimate4 from "../../img/animate/4.svg";
+import bgAnimate5 from "../../img/animate/5.svg";
 
 const calc = (x, y, r) => [x - r.left - r.width / 2, y - r.top - r.height / 2];
 const trans1 = (x, y) => `translate3d(${x / 15}px,${y / 15}px,0)`;

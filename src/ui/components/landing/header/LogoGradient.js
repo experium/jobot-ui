@@ -2,7 +2,7 @@ import React from 'react'
 import { Col } from "@smooth-ui/core-sc";
 
 
-import logo from '../../../../assets/img/logo-gradient.svg';
+import logo from '../../img/logo-gradient.svg';
 
 export function LogoGradient() {
     return (
