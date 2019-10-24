@@ -44,11 +44,13 @@ export const ItemListBox = styled(Box)`
         }
     }
     h4{
-        font-size: 13px;
+        font-size: 12px;
         color: #fff;
         text-transform: uppercase;
         margin-top: 10px;
         font-weight: 600;
+        padding: 0 10px;
+        line-height: 1.5;
     }
 `;
 
