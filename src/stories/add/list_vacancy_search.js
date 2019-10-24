@@ -19,7 +19,10 @@ import {
     SumVacancy,
     Select,
     Pagination,
-    LinkOther
+    LinkOther,
+    ScheduleVacancy,
+    OtherVacancy,
+    Geolocation,
 } from '../ui';
 
 import logo from '../../assets/img/logo-white.svg';
@@ -27,6 +30,7 @@ import bgFooter from '../../assets/img/bg-search.svg';
 import imgItem1 from "../../assets/img/company/4.png";
 import imgItem2 from "../../assets/img/company/2.png";
 import imgItem3 from "../../assets/img/company/6.png";
+import company from "../../assets/img/company.svg";
 import {Grid} from "@smooth-ui/core-sc";
 
 const ListVacancySearch = () => ( <Box>
@@ -160,19 +164,21 @@ const ListVacancySearch = () => ( <Box>
                                 <ItemList>
                                     <Col xs="auto">
                                         <BoxLogo>
-                                            <img src={imgItem1} alt=""/>
+                                            <img src={company} alt=""/>
                                         </BoxLogo>
                                     </Col>
                                     <Col alignSelf='center'>
                                         <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
+                                                <OtherVacancy>Работа для IT-специалистов</OtherVacancy>
+                                                <OtherVacancy><Geolocation>Москва, Войковская</Geolocation></OtherVacancy>
                                             </Col>
-                                            <Col xs="auto">
+                                            <Col xs="auto" flexDirection="column" display="flex" alignItems="flex-end">
                                                 <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
+                                                <ScheduleVacancy>Вахтовый метод</ScheduleVacancy>
                                             </Col>
                                         </Row>
-                                        <Box><a>АНКОР</a></Box>
                                     </Col>
                                 </ItemList>
                                 <ItemList>
@@ -185,12 +191,14 @@ const ListVacancySearch = () => ( <Box>
                                         <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Дизайнер</TitleVacancy>
+                                                <OtherVacancy>Наука и образование</OtherVacancy>
+                                                <OtherVacancy><Geolocation>Санкт-Петербург, Горьковская</Geolocation></OtherVacancy>
                                             </Col>
-                                            <Col xs="auto">
+                                            <Col xs="auto" flexDirection="column" display="flex" alignItems="flex-end">
                                                 <SumVacancy>по договоренности</SumVacancy>
+                                                <ScheduleVacancy>Полный день</ScheduleVacancy>
                                             </Col>
                                         </Row>
-                                        <Box><a>Связной</a></Box>
                                     </Col>
                                 </ItemList>
                                 <ItemList>
@@ -203,12 +211,14 @@ const ListVacancySearch = () => ( <Box>
                                         <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
+                                                <OtherVacancy>Работа в продажах</OtherVacancy>
+                                                <OtherVacancy><Geolocation>Москва, Сокол</Geolocation></OtherVacancy>
                                             </Col>
-                                            <Col xs="auto">
+                                            <Col xs="auto" flexDirection="column" display="flex" alignItems="flex-end">
                                                 <SumVacancy>110 000 руб.</SumVacancy>
+                                                <ScheduleVacancy>Вахтовый метод</ScheduleVacancy>
                                             </Col>
                                         </Row>
-                                        <Box><a>OBI</a></Box>
                                     </Col>
                                 </ItemList>
                                 <ItemList>
@@ -221,12 +231,14 @@ const ListVacancySearch = () => ( <Box>
                                         <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Технолог гидрометаллургического производства</TitleVacancy>
+                                                <OtherVacancy>Для админ. персонала</OtherVacancy>
+                                                <OtherVacancy><Geolocation>Москва, Аэропорт</Geolocation></OtherVacancy>
                                             </Col>
-                                            <Col xs="auto">
+                                            <Col xs="auto" flexDirection="column" display="flex" alignItems="flex-end">
                                                 <SumVacancy>от 80 000 до 120 000 руб.</SumVacancy>
+                                                <ScheduleVacancy>Полный день</ScheduleVacancy>
                                             </Col>
                                         </Row>
-                                        <Box><a>АНКОР</a></Box>
                                     </Col>
                                 </ItemList>
                                 <ItemList>
@@ -239,12 +251,14 @@ const ListVacancySearch = () => ( <Box>
                                         <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Дизайнер</TitleVacancy>
+                                                <OtherVacancy>Работа на госслужбе</OtherVacancy>
+                                                <OtherVacancy><Geolocation>Москва, Войковская</Geolocation></OtherVacancy>
                                             </Col>
-                                            <Col xs="auto">
+                                            <Col xs="auto" flexDirection="column" display="flex" alignItems="flex-end">
                                                 <SumVacancy>по договоренности</SumVacancy>
+                                                <ScheduleVacancy>Гибкий график</ScheduleVacancy>
                                             </Col>
                                         </Row>
-                                        <Box><a>Связной</a></Box>
                                     </Col>
                                 </ItemList>
                                 <ItemList>
@@ -257,12 +271,14 @@ const ListVacancySearch = () => ( <Box>
                                         <Row flexDirection={{ xs: 'column', md: 'row' }}>
                                             <Col>
                                                 <TitleVacancy>Водитель-курьер с автомобилем</TitleVacancy>
+                                                <OtherVacancy>Вакансии на производстве</OtherVacancy>
+                                                <OtherVacancy><Geolocation>Москва, Войковская</Geolocation></OtherVacancy>
                                             </Col>
-                                            <Col xs="auto">
+                                            <Col xs="auto" flexDirection="column" display="flex" alignItems="flex-end">
                                                 <SumVacancy>110 000 руб.</SumVacancy>
+                                                <ScheduleVacancy>Удаленная работа</ScheduleVacancy>
                                             </Col>
                                         </Row>
-                                        <Box><a>OBI</a></Box>
                                     </Col>
                                 </ItemList>
                             </BoxList>

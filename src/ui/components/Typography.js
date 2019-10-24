@@ -64,6 +64,26 @@ export const SumVacancy = styled.span`
     font-weight: 600;
 `;
 
+export const OtherVacancy = styled.div`
+    color: #5E57A7;
+    font-size: 14px;
+`;
+
+export const Geolocation = styled.span`
+    border-bottom: 1px dashed;
+`;
+
+export const ScheduleVacancy = styled.span`
+    background-color: #60d482;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    width: 130px;
+    border-radius: 3px;
+    font-weight: 600;
+    margin-top: 5px;
+`;
+
 export const TypographyUppercase = styled(Typography)`
     text-transform: uppercase;
 `;
