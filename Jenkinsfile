@@ -25,7 +25,7 @@ node {
 
             if (!isPR) {
                 stage('Publish artifacts') {
-                    step([$class: 'ArtifactArchiver', artifacts: 'storybook-static/**/*', fingerprint: true])
+                    step([$class: 'ArtifactArchiver', artifacts: '.out/**/*', fingerprint: true])
                     step([$class: 'ArtifactArchiver', artifacts: 'lib/**/*', fingerprint: true])
                 }
 
