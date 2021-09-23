@@ -1,12 +1,23 @@
 {
-  "name": "@experium/jobot-ui",
-  "version": "1.8.6",
-  "description": "Jobot-UI components",
+  "name": "@experium/findy-ui",
+  "version": "1.9.0",
+  "description": "Findy-UI components",
   "main": "lib/index.js",
-  "homepage": "https://experium.github.io/jobot-ui",
-  "repository": "https://github.com/experium/jobot-ui",
+  "homepage": "https://experium.github.io/findy-ui",
+  "repository": "https://github.com/experium/findy-ui",
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "yarn build-storybook",
+    "test": "react-scripts test",
+    "test:ci": "CI=true yarn test --reporters=jest-junit",
+    "eject": "react-scripts eject",
+    "package": "NODE_ENV=test ./node_modules/.bin/babel src/ui --out-dir ./lib",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public -o .out",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
     "@smooth-ui/core-sc": "^7.0.5",
@@ -25,26 +36,6 @@
     "react-dom": ">=16.8.4",
     "styled-components": ">=4.0.0"
   },
-  "scripts": {
-    "start": "yarn storybook",
-    "build": "yarn build-storybook",
-    "test": "react-scripts test",
-    "test:ci": "CI=true yarn test --reporters=jest-junit",
-    "eject": "react-scripts eject",
-    "build:lib": "NODE_ENV=test ./node_modules/.bin/babel src/ui --out-dir ./lib",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public -o .out",
-    "deploy-storybook": "storybook-to-ghpages"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
   "devDependencies": {
     "@babel/cli": "^7.1.5",
     "@babel/preset-react": "^7.0.0",
@@ -56,12 +47,21 @@
     "jest-dom": "^2.1.1",
     "jest-junit": "^5.2.0",
     "prop-types": "^15.6.2",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-scripts": "2.1.1",
     "react-testing-library": "^5.3.1",
     "styled-components": "^4.1.2"
   },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
   "jest-junit": {
     "suiteName": "jest tests",
     "output": "./reports/junit.xml",

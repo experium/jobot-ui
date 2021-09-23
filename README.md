@@ -1,19 +1,17 @@
-[![Build Status](https://travis-ci.com/experium/jobot-ui.svg?branch=master)](https://travis-ci.com/experium/jobot-ui)
-
-[Jobot-UI Storybook](https://experium.github.io/jobot-ui/).
+[Findy-UI Storybook](https://experium.github.io/findy-ui/).
 
 ## Installation
 
 Material-UI is available as an npm package.
 
 ```
-yarn add @experium/jobot-ui
+yarn add @experium/findy-ui
 ```
 
 Usage:
 
 ```
-import * as Components from '@experium/jobot-ui';
+import * as Components from '@experium/findy-ui';
 ```
 
 ## Components
