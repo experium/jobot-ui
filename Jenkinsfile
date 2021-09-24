@@ -29,15 +29,15 @@ node {
                     step([$class: 'ArtifactArchiver', artifacts: 'lib/**/*', fingerprint: true])
                 }
 
-                stage('Publish ghpage storybook') {
-                    sh "yarn deploy-storybook"
-                }
-
                 stage('Publish npm package') {
                     withNPM(npmrcConfig:'publishnpmrc') {
                         sh "npm --no-git-tag-version version 1.9.${env.BUILD_NUMBER} && npm publish"
                     }
                 }
+
+                // stage('Publish ghpage storybook') {
+                //     sh "yarn deploy-storybook"
+                // }
             }
         }
     }
